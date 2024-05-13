@@ -14,18 +14,33 @@
     z-index: 499
     
 .snp-header-wrapper
-    position: fixed
+    position: absolute
     z-index: 500
     top: 0
     left: 0
+    width: 100%
     height: 88px
+    gap: 214px
 
-    .snp-header
-        color: var(--text-color-1)
+.snp-header
+    color: var(--text-color-1) !important
+    a, p
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 400
+        line-height: 28.4px
+        text-align: left
+        text-decoration: none
+        color: var(--text-color-1) !important
+    h2
+        padding-right: 182px
+    p
+        padding-left: 182px
+    .nav
+        gap: 50px
 
-        a
-            text-decoration: none
-            color: var(--text-color-1) !important
+.snp-container-1
+    height: 685px
 
 .snp-container-1-img
     position: absolute
@@ -33,4 +48,46 @@
     width: 100%
     height: auto
 
-.snp-container-1
+.snp-container-1-content
+    margin-top: 40px
+    color: var(--text-color-1) !important
+    h1
+        font-family: Roboto
+        font-size: 96px   //stable - 96px
+        font-weight: 700
+        line-height: 104.64px
+        letter-spacing: 0.02em
+        text-align: center
+    p
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 400
+        line-height: 28.4px
+        text-align: center
+        margin-top: 50px
+    button
+        font-family: Roboto
+        font-size: 17px
+        font-weight: 400
+        line-height: 24.14px
+        letter-spacing: -0.01em
+        text-align: left
+        border: none
+        border-radius: 10px
+        width: 118px
+        height: 34px
+        padding: 5px 20px 5px 20px
+        gap: 10px
+        opacity: 0px
+        margin-top: 15px
+
+.snp-container-2-content
+    padding: 135px 0
+    color: var(--text-color-2)
+    h2
+        font-family: Roboto
+        font-size: 59px
+        font-weight: 700
+        line-height: 73.16px
+        text-align: center
+
