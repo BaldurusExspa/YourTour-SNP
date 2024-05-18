@@ -56,7 +56,7 @@
   width: 100%;
   height: 88px;
   gap: 214px;
-  background: rgba(243, 239, 232, 0.6);
+  background: rgba(243, 239, 232, 0.95);
 }
 
 .fixed-snp-header {
@@ -176,30 +176,36 @@
 .snp-container-2-content-cards .card:hover {
   background-size: 120% 120%;
 }
+.snp-container-2-content-cards .card:hover button {
+  background: #286562;
+}
 .snp-container-2-content-cards .card-gradient {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(48.44%, rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.5))) !important;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important;
   border-radius: 50px;
   height: 100%;
-  padding: 50px;
 }
-.snp-container-2-content-cards .card-gradient h5 {
+.snp-container-2-content-cards .card-body {
+  height: 100%;
+}
+.snp-container-2-content-cards .card-body h5 {
   font-family: Roboto;
   font-size: 35px;
   font-weight: 500;
   line-height: 42.7px;
   text-align: left;
+  padding: 50px 50px 0 50px;
 }
-.snp-container-2-content-cards .card-gradient p {
+.snp-container-2-content-cards .card-body p {
   font-family: Roboto;
   font-size: 17px;
   font-weight: 400;
   line-height: 24.14px;
   letter-spacing: -0.01em;
   text-align: left;
-  padding-top: 16px;
+  padding: 16px 50px 0 50px;
 }
-.snp-container-2-content-cards .card-gradient button {
+.snp-container-2-content-cards .card-body button {
   font-family: Roboto;
   font-size: 23px;
   font-weight: 700;
@@ -208,8 +214,13 @@
   background: none;
   border: none;
   color: var(--text-color-1);
+  border-radius: 50px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  padding: 7px 20px !important;
+  margin: 0 50px 43px 30px;
 }
-.snp-container-2-content-cards .card-gradient img {
+.snp-container-2-content-cards .card-body img {
   padding-left: 15px;
   fill: white;
 }
