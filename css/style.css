@@ -33,6 +33,11 @@
   text-decoration: none;
   color: var(--text-color-1) !important;
 }
+.snp-header a:hover {
+  -webkit-text-decoration: underline var(--text-color-1);
+          text-decoration: underline var(--text-color-1);
+  text-underline-offset: 7px;
+}
 .snp-header h2 {
   padding-right: 182px;
 }
@@ -43,12 +48,38 @@
   gap: 50px;
 }
 
+.fixed-snp-header-wrapper {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  gap: 214px;
+  background: rgba(243, 239, 232, 0.6);
+}
+
+.fixed-snp-header {
+  color: var(--text-color-2) !important;
+}
+.fixed-snp-header a, .fixed-snp-header p {
+  color: var(--text-color-2) !important;
+}
+.fixed-snp-header a:hover {
+  -webkit-text-decoration: underline var(--text-color-2);
+          text-decoration: underline var(--text-color-2);
+  text-underline-offset: 7px;
+}
+
 .snp-container-1 {
-  height: 685px;
+  max-height: 915px;
+  height: 915px;
 }
 
 .snp-container-1-img {
   position: absolute;
+  top: 0;
+  left: 0;
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -101,4 +132,84 @@
   font-weight: 700;
   line-height: 73.16px;
   text-align: center;
+}
+
+.snp-container-2-content-nav .nav {
+  padding-top: 31px;
+  gap: 30px;
+}
+.snp-container-2-content-nav .nav button {
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28.06px;
+  text-align: left;
+}
+.snp-container-2-content-nav .nav button:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  text-underline-offset: 10px;
+}
+
+.snp-container-2-content-cards {
+  padding: 100px 0;
+}
+.snp-container-2-content-cards .col-4 {
+  gap: 30px;
+  padding-top: 30px;
+  width: 370px;
+}
+.snp-container-2-content-cards .card {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 370px;
+  height: 531px;
+  border-radius: 50px;
+  border: none;
+  -webkit-transition: background-size 0.3s ease;
+  transition: background-size 0.3s ease;
+  color: var(--text-color-1);
+}
+.snp-container-2-content-cards .card:hover {
+  background-size: 120% 120%;
+}
+.snp-container-2-content-cards .card-gradient {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(48.44%, rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.5))) !important;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important;
+  border-radius: 50px;
+  height: 100%;
+  padding: 50px;
+}
+.snp-container-2-content-cards .card-gradient h5 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42.7px;
+  text-align: left;
+}
+.snp-container-2-content-cards .card-gradient p {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24.14px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  padding-top: 16px;
+}
+.snp-container-2-content-cards .card-gradient button {
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28.06px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text-color-1);
+}
+.snp-container-2-content-cards .card-gradient img {
+  padding-left: 15px;
+  fill: white;
 }
