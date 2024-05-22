@@ -2,13 +2,24 @@
 :root {
   --text-color-1: #FFF;
   --text-color-2: #1B1F2B;
+  --text-color-3: #A6A6A6;
+  --text-color-4: #286562;
+  --input-color-1: #F9F7F4;
+  --input-border-color-1: #F4F0E9;
 }
 
 * {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   z-index: 499;
+}
+
+body {
+  background-color: #F9F7F4 !important;
+}
+body p, body h1, body h2, body h5 {
+  cursor: default;
 }
 
 .snp-header-wrapper {
@@ -39,10 +50,10 @@
   text-underline-offset: 7px;
 }
 .snp-header h2 {
-  padding-right: 182px;
+  padding-right: 182px !important;
 }
 .snp-header p {
-  padding-left: 182px;
+  padding-left: 182px !important;
 }
 .snp-header .nav {
   gap: 50px;
@@ -58,7 +69,6 @@
   gap: 214px;
   background: rgba(243, 239, 232, 0.95);
 }
-
 .fixed-snp-header {
   color: var(--text-color-2) !important;
 }
@@ -69,6 +79,8 @@
   -webkit-text-decoration: underline var(--text-color-2);
           text-decoration: underline var(--text-color-2);
   text-underline-offset: 7px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 .snp-container-1 {
@@ -103,7 +115,7 @@
   font-weight: 400;
   line-height: 28.4px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 50px !important;
 }
 .snp-container-1-content button {
   font-family: Roboto;
@@ -121,9 +133,17 @@
   opacity: 0px;
   margin-top: 15px;
 }
+.snp-container-1-content button:hover {
+  background-color: #EFA501;
+  color: var(--text-color-1);
+}
+.snp-container-1-content button:active {
+  background-color: #F8E6BE;
+  color: var(--text-color-2);
+}
 
 .snp-container-2-content {
-  padding: 135px 0;
+  padding: 135px 0 0 0 !important;
   color: var(--text-color-2);
 }
 .snp-container-2-content h2 {
@@ -133,9 +153,12 @@
   line-height: 73.16px;
   text-align: center;
 }
+.snp-container-2-content .row {
+  width: 100%;
+}
 
 .snp-container-2-content-nav .nav {
-  padding-top: 31px;
+  padding-top: 31px !important;
   gap: 30px;
 }
 .snp-container-2-content-nav .nav button {
@@ -151,14 +174,17 @@
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   text-underline-offset: 10px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 .snp-container-2-content-cards {
-  padding: 100px 0;
+  padding: 100px 0 !important;
+}
+.snp-container-2-content-cards .row {
+  gap: 30px 30px !important;
 }
 .snp-container-2-content-cards .col-4 {
-  gap: 30px;
-  padding-top: 30px;
   width: 370px;
 }
 .snp-container-2-content-cards .card {
@@ -175,15 +201,24 @@
 }
 .snp-container-2-content-cards .card:hover {
   background-size: 120% 120%;
+  cursor: pointer;
 }
 .snp-container-2-content-cards .card:hover button {
-  background: #286562;
+  background-color: var(--text-color-4);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.snp-container-2-content-cards .card:active button {
+  background-color: #EFA501;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 .snp-container-2-content-cards .card-gradient {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(48.44%, rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.5))) !important;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important;
   border-radius: 50px;
   height: 100%;
+  padding-bottom: 43px !important;
 }
 .snp-container-2-content-cards .card-body {
   height: 100%;
@@ -194,7 +229,7 @@
   font-weight: 500;
   line-height: 42.7px;
   text-align: left;
-  padding: 50px 50px 0 50px;
+  padding: 50px 50px 0 50px !important;
 }
 .snp-container-2-content-cards .card-body p {
   font-family: Roboto;
@@ -203,7 +238,7 @@
   line-height: 24.14px;
   letter-spacing: -0.01em;
   text-align: left;
-  padding: 16px 50px 0 50px;
+  padding: 16px 50px 0 50px !important;
 }
 .snp-container-2-content-cards .card-body button {
   font-family: Roboto;
@@ -215,12 +250,298 @@
   border: none;
   color: var(--text-color-1);
   border-radius: 50px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   padding: 7px 20px !important;
-  margin: 0 50px 43px 30px;
+  margin: 70% 50px 0 30px !important;
 }
 .snp-container-2-content-cards .card-body img {
   padding-left: 15px;
-  fill: white;
+  fill: var(--text-color-1);
+}
+
+.snp-container-3-content {
+  padding: 135px 0 0 0 !important;
+  margin: 0 375px !important;
+  color: var(--text-color-2);
+}
+.snp-container-3-content h2 {
+  font-family: Roboto;
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 73.16px;
+  text-align: center;
+}
+.snp-container-3-content p {
+  color: var(--text-color-3);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: center;
+  padding-top: 30px;
+}
+.snp-container-3-content .row {
+  width: 100%;
+}
+
+.snp-container-3-content-cards .card {
+  color: var(--text-color-2);
+  border: none;
+  border-radius: 50px;
+  margin-top: 100px;
+  padding: 70px;
+}
+.snp-container-3-content-cards .card .card-input label {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  color: var(--text-color-2);
+}
+.snp-container-3-content-cards .card .card-input input {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  width: 100%;
+  height: 68px;
+  background-color: var(--input-color-1);
+  border-radius: 10px;
+  border: 1px solid var(--input-border-color-1);
+  padding: 20px;
+}
+.snp-container-3-content-cards .card .card-input input::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  color: var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input input::-moz-placeholder {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  color: var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input input:-ms-input-placeholder {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  color: var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input input::-ms-input-placeholder {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  color: var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input input::placeholder {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  color: var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input input:hover {
+  border: 1px solid var(--input-border-color-1);
+  background-color: var(--input-border-color-1);
+  cursor: pointer;
+}
+.snp-container-3-content-cards .card .card-input input:focus {
+  outline: 1px solid var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input select {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  width: 100%;
+  height: 68px;
+  background-color: var(--input-color-1);
+  border-radius: 10px;
+  border: 1px solid var(--input-border-color-1);
+  padding: 20px;
+}
+.snp-container-3-content-cards .card .card-input select:hover {
+  border: 1px solid var(--input-border-color-1);
+  background-color: var(--input-border-color-1);
+  cursor: pointer;
+}
+.snp-container-3-content-cards .card .card-input select:hover option {
+  background-color: var(--input-color-1);
+}
+.snp-container-3-content-cards .card .card-input select:focus {
+  outline: 1px solid var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input select:invalid {
+  color: var(--text-color-3);
+}
+.snp-container-3-content-cards .card .card-input option {
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+}
+.snp-container-3-content-cards .card .card-input .row {
+  padding-bottom: 33px;
+}
+.snp-container-3-content-cards .card .card-input .snp-container-3-content-cards-col {
+  padding-right: 30px !important;
+}
+.snp-container-3-content-cards .card .card-input .snp-container-3-content-cards-input-comment {
+  height: 152px;
+}
+.snp-container-3-content-cards .card .card-button {
+  color: var(--text-color-2);
+}
+.snp-container-3-content-cards .card .card-button input {
+  width: 26px;
+  height: 26px;
+  border: none;
+}
+.snp-container-3-content-cards .card .card-button input[type=radio] {
+  accent-color: var(--text-color-2);
+}
+.snp-container-3-content-cards .card .card-button input:hover {
+  cursor: pointer;
+}
+.snp-container-3-content-cards .card .card-button label {
+  padding-left: 11px;
+}
+.snp-container-3-content-cards .card .card-button p {
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.snp-container-3-content-cards .card .card-button .card-button-button-1 {
+  background-color: var(--text-color-4);
+  color: var(--text-color-1);
+}
+.snp-container-3-content-cards .card .card-button .card-button-button-1:hover {
+  background-color: #3B7E7B;
+}
+.snp-container-3-content-cards .card .card-button .card-button-button-1:active {
+  background-color: #627F7E;
+}
+.snp-container-3-content-cards .card .card-button .card-button-button-2 {
+  background-color: #E0F0E5;
+  color: var(--text-color-4);
+}
+.snp-container-3-content-cards .card .card-button .card-button-button-2:hover {
+  background-color: #F1F3F2;
+}
+.snp-container-3-content-cards .card .card-button .card-button-button-2:active {
+  background-color: #D9DFDB;
+}
+.snp-container-3-content-cards .card .card-button .input-yes {
+  padding-right: 31px;
+}
+.snp-container-3-content-cards .card .card-button .padding-col {
+  padding-top: 33px !important;
+}
+.snp-container-3-content-cards .card .card-button .padding-col p {
+  color: var(--text-color-3);
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24.14px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  padding-left: 19px !important;
+}
+.snp-container-3-content-cards .card .card-button .padding-col span {
+  color: var(--text-color-2);
+}
+.snp-container-3-content-cards .card .card-button .padding-col span:hover {
+  -webkit-text-decoration: underline var(--text-color-2);
+          text-decoration: underline var(--text-color-2);
+  text-underline-offset: 2px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.snp-container-3-content-cards .card .card-button .padding-col span:active {
+  color: var(--text-color-4);
+}
+.snp-container-3-content-cards .card .card-button .padding-col button {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: center;
+  width: 235px;
+  height: 58px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 30px 15px 30px !important;
+  margin-right: 30px;
+}
+
+.snp-container-4-content {
+  padding: 135px 0 0 0 !important;
+  margin: 0 375px !important;
+  color: var(--text-color-2);
+}
+.snp-container-4-content h2 {
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 73.16px;
+  text-align: center;
+}
+.snp-container-4-content p {
+  color: var(--text-color-3);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: center;
+  padding-top: 30px !important;
+}
+.snp-container-4-content .snp-container-4-content-cards-row-1 {
+  width: 100%;
+}
+
+.snp-container-4-content-cards .card {
+  color: var(--text-color-2);
+  height: 673px;
+  background-color: var(--input-border-color-1);
+  border: none;
+  border-radius: 50px;
+  padding: 40px !important;
+  margin-top: 100px !important;
+}
+.snp-container-4-content-cards .card p {
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28.06px;
+  text-align: left;
+  padding: 0 !important;
+}
+.snp-container-4-content-cards .snp-container-4-content-cards-col-1 {
+  padding-right: 15px !important;
+}
+.snp-container-4-content-cards .snp-container-4-content-cards-col-2 {
+  padding-left: 15px !important;
 }

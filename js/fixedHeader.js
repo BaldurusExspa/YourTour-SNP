@@ -1,8 +1,8 @@
 window.addEventListener("scroll", function(){
     // console.log(this.pageYOffset)
 
-    var headerWrapper = document.getElementById("snp-header-wrapper")
-    var header = this.document.getElementById("snp-header")
+    let headerWrapper = document.getElementById("snp-header-wrapper")
+    let header = this.document.getElementById("snp-header")
 
     if (this.pageYOffset >= 449) {
         headerWrapper.classList.add("fixed-snp-header-wrapper")

@@ -6,12 +6,22 @@
 :root
     --text-color-1: #FFF
     --text-color-2: #1B1F2B
+    --text-color-3: #A6A6A6
+    --text-color-4: #286562
+    --input-color-1: #F9F7F4
+    --input-border-color-1: #F4F0E9
     
 *
+    // overflow-x: hidden
     font-family: "Roboto", sans-serif
-    font-weight: 300
+    font-weight: 400
     font-style: normal
     z-index: 499
+
+body
+    background-color: #F9F7F4 !important
+    p, h1, h2, h5
+        cursor: default
 
 .snp-header-wrapper
     position: absolute
@@ -36,9 +46,9 @@
         text-decoration: underline var(--text-color-1)
         text-underline-offset: 7px
     h2
-        padding-right: 182px
+        padding-right: 182px !important
     p
-        padding-left: 182px
+        padding-left: 182px !important
     .nav
         gap: 50px
 
@@ -51,6 +61,7 @@
     width: 100%
     height: 88px
     gap: 214px
+    TODO:FIXME
     background: rgba(243, 239, 232, 0.95)
 
 .fixed-snp-header
@@ -60,6 +71,7 @@
     a:hover
         text-decoration: underline var(--text-color-2)
         text-underline-offset: 7px
+        text-decoration-skip-ink: none
 
 .snp-container-1
     max-height: 915px
@@ -88,7 +100,7 @@
         font-weight: 400
         line-height: 28.4px
         text-align: center
-        margin-top: 50px
+        margin-top: 50px !important
     button
         font-family: Roboto
         font-size: 17px
@@ -104,9 +116,15 @@
         gap: 10px
         opacity: 0px
         margin-top: 15px
+    button:hover
+        background-color: #EFA501
+        color: var(--text-color-1)
+    button:active
+        background-color: #F8E6BE
+        color: var(--text-color-2)
 
 .snp-container-2-content
-    padding: 135px 0
+    padding: 135px 0 0 0!important
     color: var(--text-color-2)
     h2
         font-family: Roboto
@@ -114,9 +132,11 @@
         font-weight: 700
         line-height: 73.16px
         text-align: center
+    .row
+        width: 100%
 .snp-container-2-content-nav
     .nav
-        padding-top: 31px
+        padding-top: 31px !important
         gap: 30px
         button
             background: none
@@ -129,11 +149,12 @@
         button:hover
             text-decoration: underline 2px
             text-underline-offset: 10px
+            text-decoration-skip-ink: none
 .snp-container-2-content-cards
-    padding: 100px 0
+    padding: 100px 0 !important
+    .row
+        gap: 30px 30px !important
     .col-4
-        gap: 30px
-        padding-top: 30px
         width: 370px
     .card
         background-repeat: no-repeat
@@ -146,20 +167,34 @@
         height: 531px
         border-radius: 50px
         border: none
+        -webkit-transition: background-size 0.3s ease
+        -moz-transition: background-size 0.3s ease
+        -o-transition: background-size 0.3s ease
         transition: background-size 0.3s ease
         color: var(--text-color-1)
     .card:hover
         background-size: 120% 120%
+        cursor: pointer
         button
-            background: #286562
-
+            background-color: var(--text-color-4)
+            -webkit-transition: .1s
+            -moz-transition: .1s
+            -o-transition: .1s
+            transition: .1s
+    .card:active
+        button
+            background-color: #EFA501
+            -webkit-transition: .1s
+            -moz-transition: .1s
+            -o-transition: .1s
+            transition: .1s
     .card-gradient
         background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important
         border-radius: 50px
         height: 100%
         // Card padding
         // padding: 50px
-    
+        padding-bottom: 43px !important
     .card-body
         height: 100%
         h5
@@ -168,7 +203,7 @@
             font-weight: 500
             line-height: 42.7px
             text-align: left
-            padding: 50px 50px 0 50px
+            padding: 50px 50px 0 50px !important
         p
             font-family: Roboto
             font-size: 17px
@@ -177,7 +212,7 @@
             letter-spacing: -0.01em
             text-align: left
             // padding-top: 16px
-            padding: 16px 50px 0 50px
+            padding: 16px 50px 0 50px !important
         button
             font-family: Roboto
             font-size: 23px
@@ -188,12 +223,227 @@
             border: none
             color: var(--text-color-1)
             border-radius: 50px
-            transition: 0.2s ease
+            -webkit-transition: all 0.2s ease
+            -moz-transition: all 0.2s ease
+            -o-transition: all 0.2s ease
+            transition: all 0.2s ease
             padding: 7px 20px !important
             // margin-top: 100%
-            margin: 0 50px 43px 30px
+            margin: 70% 50px 0 30px !important
         img
             padding-left: 15px
-            fill: white
+            fill: var(--text-color-1)
     
+.snp-container-3-content
+    padding: 135px 0 0 0 !important
+    margin: 0 375px !important
+    color: var(--text-color-2)
+    h2
+        font-family: Roboto
+        font-size: 59px
+        font-weight: 700
+        line-height: 73.16px
+        text-align: center
+    p
+        color: var(--text-color-3)
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 400
+        line-height: 28.4px
+        text-align: center
+        padding-top: 30px
+    .row
+        width: 100%
+
     
+.snp-container-3-content-cards
+    .card
+        color: var(--text-color-2)
+        border: none
+        border-radius: 50px
+        margin-top: 100px
+        padding: 70px
+        .card-input
+            label
+                font-family: Roboto
+                font-size: 20px
+                font-weight: 400
+                line-height: 28.4px
+                text-align: left
+                color: var(--text-color-2)
+            input
+                font-family: Roboto
+                font-size: 20px
+                font-weight: 400
+                line-height: 28.4px
+                text-align: left
+                width: 100%
+                height: 68px
+                background-color: var(--input-color-1)
+                border-radius: 10px
+                border: 1px solid var(--input-border-color-1)
+                padding: 20px
+            input::placeholder
+                font-family: Roboto
+                font-size: 20px
+                font-weight: 400
+                line-height: 28.4px
+                text-align: left
+                color: var(--text-color-3)
+            input:hover
+                border: 1px solid var(--input-border-color-1)
+                background-color: var(--input-border-color-1)
+                cursor: pointer
+            input:focus
+                outline: 1px solid var(--text-color-3)
+            select
+                font-family: Roboto
+                font-size: 20px
+                font-weight: 400
+                line-height: 28.4px
+                text-align: left
+                width: 100%
+                height: 68px
+                background-color: var(--input-color-1)
+                border-radius: 10px
+                border: 1px solid var(--input-border-color-1)
+                padding: 20px
+            select:hover
+                border: 1px solid var(--input-border-color-1)
+                background-color: var(--input-border-color-1)
+                cursor: pointer
+                option
+                    background-color: var(--input-color-1)
+            select:focus
+                outline: 1px solid var(--text-color-3)
+            select:invalid
+                color: var(--text-color-3)
+            option
+                color: var(--text-color-2)
+                font-family: Roboto
+                font-size: 20px
+                font-weight: 400
+                line-height: 28.4px
+                text-align: left
+            .row
+                padding-bottom: 33px
+            .snp-container-3-content-cards-col
+                padding-right: 30px !important
+            .snp-container-3-content-cards-input-comment
+                height: 152px
+        .card-button
+            color: var(--text-color-2)
+            input
+                width: 26px
+                height: 26px
+                border: none
+            input[type='radio']
+                accent-color: var(--text-color-2)
+            TODO:FIXME
+            // input[type='checkbox']
+            //     accent-color: var(--text-color-1)
+            input:hover
+                cursor: pointer
+            label
+                padding-left: 11px
+            p
+                color: var(--text-color-2)
+                font-family: Roboto
+                font-size: 20px
+                font-weight: 400
+                line-height: 28.4px
+                text-align: left
+                margin-bottom: 8px
+            .card-button-button-1
+                background-color: var(--text-color-4)
+                color: var(--text-color-1)
+            .card-button-button-1:hover
+                background-color: #3B7E7B
+            .card-button-button-1:active
+                background-color: #627F7E
+            .card-button-button-2
+                background-color: #E0F0E5
+                color: var(--text-color-4)
+            .card-button-button-2:hover
+                background-color: #F1F3F2
+            .card-button-button-2:active
+                background-color: #D9DFDB
+            .input-yes
+                padding-right: 31px
+            .padding-col
+                padding-top: 33px !important
+                p
+                    color: var(--text-color-3)
+                    font-family: Roboto
+                    font-size: 17px
+                    font-weight: 400
+                    line-height: 24.14px
+                    letter-spacing: -0.01em
+                    text-align: left
+                    padding-left: 19px !important
+                span
+                    color: var(--text-color-2)
+                span:hover
+                    text-decoration: underline var(--text-color-2)
+                    text-underline-offset: 2px
+                    text-decoration-skip-ink: none
+                    cursor: pointer
+                span:active
+                    color: var(--text-color-4)
+                button
+                    font-family: Roboto
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 28.4px
+                    text-align: center
+                    width: 235px
+                    height: 58px
+                    border-radius: 10px
+                    border: none
+                    padding: 15px 30px 15px 30px !important
+                    margin-right: 30px
+
+.snp-container-4-content
+    padding: 135px 0 0 0 !important
+    margin: 0 375px !important
+    color: var(--text-color-2)
+    h2
+        color: var(--text-color-2)
+        font-family: Roboto
+        font-size: 59px
+        font-weight: 700
+        line-height: 73.16px
+        text-align: center
+    p
+        color: var(--text-color-3)
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 400
+        line-height: 28.4px
+        text-align: center
+        padding-top: 30px !important
+    .snp-container-4-content-cards-row-1
+        width: 100%
+
+.snp-container-4-content-cards
+    .card
+        color: var(--text-color-2)
+        height: 673px
+        background-color: var(--input-border-color-1)
+        border: none
+        border-radius: 50px
+        padding: 40px !important
+        margin-top: 100px !important
+        p
+            color: var(--text-color-2)
+            font-family: Roboto
+            font-size: 23px
+            font-weight: 700
+            line-height: 28.06px
+            text-align: left
+            padding: 0 !important
+
+    .snp-container-4-content-cards-col-1
+        padding-right: 15px !important
+    .snp-container-4-content-cards-col-2
+        padding-left: 15px !important
