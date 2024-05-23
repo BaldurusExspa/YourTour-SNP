@@ -6,6 +6,7 @@
   --text-color-4: #286562;
   --input-color-1: #F9F7F4;
   --input-border-color-1: #F4F0E9;
+  --orange-200: #EFA501;
 }
 
 * {
@@ -16,9 +17,9 @@
 }
 
 body {
-  background-color: #F9F7F4 !important;
+  background-color: var(--input-color-1) !important;
 }
-body p, body h1, body h2, body h5 {
+body p, body h1, body h2, body h3 {
   cursor: default;
 }
 
@@ -29,7 +30,6 @@ body p, body h1, body h2, body h5 {
   left: 0;
   width: 100%;
   height: 88px;
-  gap: 214px;
 }
 
 .snp-header {
@@ -50,10 +50,10 @@ body p, body h1, body h2, body h5 {
   text-underline-offset: 7px;
 }
 .snp-header h2 {
-  padding-right: 182px !important;
+  margin-right: 182px !important;
 }
 .snp-header p {
-  padding-left: 182px !important;
+  margin-left: 182px !important;
 }
 .snp-header .nav {
   gap: 50px;
@@ -67,8 +67,11 @@ body p, body h1, body h2, body h5 {
   width: 100%;
   height: 88px;
   gap: 214px;
-  background: rgba(243, 239, 232, 0.95);
+  background: rgba(243, 239, 232, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
+
 .fixed-snp-header {
   color: var(--text-color-2) !important;
 }
@@ -84,17 +87,11 @@ body p, body h1, body h2, body h5 {
 }
 
 .snp-container-1 {
-  max-height: 915px;
-  height: 915px;
-}
-
-.snp-container-1-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
+  background-image: url(../media/header.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .snp-container-1-content {
@@ -128,13 +125,13 @@ body p, body h1, body h2, body h5 {
   border-radius: 10px;
   width: 118px;
   height: 34px;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 20px 5px 20px !important;
   gap: 10px;
   opacity: 0px;
-  margin-top: 15px;
+  margin-top: 50px !important;
 }
 .snp-container-1-content button:hover {
-  background-color: #EFA501;
+  background-color: var(--orange-200);
   color: var(--text-color-1);
 }
 .snp-container-1-content button:active {
@@ -144,6 +141,7 @@ body p, body h1, body h2, body h5 {
 
 .snp-container-2-content {
   padding: 135px 0 0 0 !important;
+  margin: 0 375px !important;
   color: var(--text-color-2);
 }
 .snp-container-2-content h2 {
@@ -162,6 +160,7 @@ body p, body h1, body h2, body h5 {
   gap: 30px;
 }
 .snp-container-2-content-nav .nav button {
+  color: var(--text-color-2);
   background: none;
   border: none;
   font-family: Roboto;
@@ -169,10 +168,36 @@ body p, body h1, body h2, body h5 {
   font-weight: 700;
   line-height: 28.06px;
   text-align: left;
+  padding: 0 !important;
 }
 .snp-container-2-content-nav .nav button:hover {
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
+  color: var(--text-color-2);
+  -webkit-text-decoration: underline 2px var(--text-color-2);
+          text-decoration: underline 2px var(--text-color-2);
+  text-underline-offset: 10px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.snp-container-2-content-nav .nav button:active {
+  color: var(--orange-200);
+  -webkit-text-decoration: underline 2px var(--orange-200);
+          text-decoration: underline 2px var(--orange-200);
+  text-underline-offset: 10px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.snp-container-2-content-nav .nav button.button-choosed {
+  color: var(--orange-200) !important;
+  -webkit-text-decoration: underline 2px var(--orange-200);
+          text-decoration: underline 2px var(--orange-200);
+  text-underline-offset: 10px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.snp-container-2-content-nav .nav button.button-choosed:hover {
+  color: var(--orange-200) !important;
+  -webkit-text-decoration: underline 2px var(--orange-200);
+          text-decoration: underline 2px var(--orange-200);
   text-underline-offset: 10px;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -223,7 +248,7 @@ body p, body h1, body h2, body h5 {
 .snp-container-2-content-cards .card-body {
   height: 100%;
 }
-.snp-container-2-content-cards .card-body h5 {
+.snp-container-2-content-cards .card-body h3 {
   font-family: Roboto;
   font-size: 35px;
   font-weight: 500;
@@ -253,11 +278,17 @@ body p, body h1, body h2, body h5 {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   padding: 7px 20px !important;
-  margin: 70% 50px 0 30px !important;
+  margin: 0 50px 0 30px !important;
 }
 .snp-container-2-content-cards .card-body img {
   padding-left: 15px;
   fill: var(--text-color-1);
+}
+.snp-container-2-content-cards .card-body .card-button {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .snp-container-3-content {
@@ -287,10 +318,11 @@ body p, body h1, body h2, body h5 {
 
 .snp-container-3-content-cards .card {
   color: var(--text-color-2);
+  width: 1170px;
   border: none;
   border-radius: 50px;
-  margin-top: 100px;
-  padding: 70px;
+  margin-top: 100px !important;
+  padding: 70px !important;
 }
 .snp-container-3-content-cards .card .card-input label {
   font-family: Roboto;
@@ -517,12 +549,13 @@ body p, body h1, body h2, body h5 {
   text-align: center;
   padding-top: 30px !important;
 }
-.snp-container-4-content .snp-container-4-content-cards-row-1 {
+.snp-container-4-content .snp-container-4-content-row-1 {
   width: 100%;
 }
 
 .snp-container-4-content-cards .card {
   color: var(--text-color-2);
+  width: 570px;
   height: 673px;
   background-color: var(--input-border-color-1);
   border: none;
@@ -532,16 +565,336 @@ body p, body h1, body h2, body h5 {
 }
 .snp-container-4-content-cards .card p {
   color: var(--text-color-2);
-  font-family: Roboto;
-  font-size: 23px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
-  line-height: 28.06px;
+  font-size: 23px;
+  line-height: 122%;
   text-align: left;
   padding: 0 !important;
+}
+.snp-container-4-content-cards .card h3 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42.7px;
+  text-align: left;
+}
+.snp-container-4-content-cards .card .card-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.snp-container-4-content-cards .card .card-text p {
+  color: var(--text-color-3);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+}
+.snp-container-4-content-cards .card .card-text img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
 }
 .snp-container-4-content-cards .snp-container-4-content-cards-col-1 {
   padding-right: 15px !important;
 }
 .snp-container-4-content-cards .snp-container-4-content-cards-col-2 {
   padding-left: 15px !important;
+}
+
+.snp-container-5-content {
+  width: 100%;
+  padding: 135px 0 0 0 !important;
+  color: var(--text-color-2);
+}
+.snp-container-5-content h2 {
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 73.16px;
+  text-align: center;
+}
+.snp-container-5-content p {
+  color: var(--text-color-3);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: center;
+  padding-top: 30px !important;
+}
+.snp-container-5-content .snp-container-5-content-images {
+  padding: 30px !important;
+  margin-top: 100px !important;
+  gap: 30px !important;
+}
+.snp-container-5-content .snp-container-5-content-images .row {
+  width: 100%;
+  min-height: 301px;
+  height: auto;
+  gap: 30px !important;
+}
+.snp-container-5-content .snp-container-5-content-images img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 301px;
+  border-radius: 50px;
+}
+
+.snp-container-6-content {
+  padding: 135px 0 0 0 !important;
+  color: var(--text-color-2);
+}
+.snp-container-6-content h2 {
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 73.16px;
+  text-align: center;
+}
+.snp-container-6-content p {
+  color: var(--text-color-3);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: center;
+  padding-top: 30px !important;
+}
+.snp-container-6-content .snp-container-6-content-cards {
+  margin-top: 100px !important;
+  gap: 50px;
+}
+.snp-container-6-content .snp-container-6-content-cards .card {
+  color: var(--text-color-1);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  border: none;
+  border-radius: 50px;
+  height: 567px;
+  -webkit-transition: background-size 0.3s ease;
+  transition: background-size 0.3s ease;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards .card:hover {
+  background-size: 120% 120%;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards .card:hover button {
+  background-color: var(--text-color-4);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.snp-container-6-content .snp-container-6-content-cards .card:active button {
+  background-color: var(--orange-200);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.snp-container-6-content .snp-container-6-content-cards button {
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28.06px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text-color-1);
+  border-radius: 50px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 7px 20px !important;
+  margin: 0 0 0 40px !important;
+}
+.snp-container-6-content .snp-container-6-content-cards img {
+  padding-left: 15px;
+  fill: var(--text-color-1);
+}
+.snp-container-6-content .snp-container-6-content-cards h3 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42.7px;
+  text-align: left;
+  padding: 60px 0 0 60px !important;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards p {
+  color: var(--text-color-1);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  padding: 37px 0 0 60px !important;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards ul {
+  padding: 0 0 0 80px !important;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards li {
+  color: var(--text-color-1);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards a {
+  color: var(--text-color-1);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: center;
+  text-decoration: none;
+}
+.snp-container-6-content .snp-container-6-content-cards a:hover {
+  color: var(--text-color-1);
+  -webkit-text-decoration: underline 1px var(--text-color-1);
+          text-decoration: underline 1px var(--text-color-1);
+  text-underline-offset: 2px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards a:active {
+  color: var(--orange-200);
+  -webkit-text-decoration: underline 1px var(--orange-200);
+          text-decoration: underline 1px var(--orange-200);
+  text-underline-offset: 2px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards .card-gradient {
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.01%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+  border-radius: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+.snp-container-6-content .snp-container-6-content-cards .card-gradient .card-button {
+  padding-bottom: 60px !important;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.snp-container-6-content .snp-container-6-content-cards .card-gradient .card-button .row {
+  width: 100%;
+}
+.snp-container-6-content .snp-container-6-content-cards .card-gradient .card-button .card-button-col-2 {
+  gap: 35px !important;
+  margin-right: 60px !important;
+}
+
+.snp-container-footer-content {
+  padding: 135px 0 !important;
+  margin: 0 375px !important;
+  color: var(--text-color-2);
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card {
+  width: 771px;
+  border-radius: 50px !important;
+  border: none;
+  background-color: var(--input-color-1);
+  white-space: nowrap;
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card img {
+  width: 370px;
+  height: 370px;
+  border-radius: 50px !important;
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card h3 {
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42.7px;
+  text-align: left;
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card p {
+  color: var(--text-color-3);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: left;
+  padding-top: 20px !important;
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card a {
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: center;
+  text-decoration: none;
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card a:hover {
+  color: var(--text-color-2);
+  -webkit-text-decoration: underline 2px var(--text-color-2);
+          text-decoration: underline 2px var(--text-color-2);
+  text-underline-offset: 1px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card .card-title {
+  margin: 104px 0 0 30px !important;
+}
+
+.snp-footer-wrapper {
+  height: 88px;
+  background-color: var(--input-border-color-1);
+}
+.snp-footer-wrapper .snp-footer {
+  white-space: nowrap;
+}
+.snp-footer-wrapper .snp-footer p {
+  color: var(--text-color-3);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: left;
+}
+.snp-footer-wrapper .snp-footer a {
+  color: var(--text-color-2);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: left;
+  text-decoration: none;
+}
+.snp-footer-wrapper .snp-footer a:hover {
+  color: var(--text-color-2);
+  -webkit-text-decoration: underline 2px var(--text-color-2);
+          text-decoration: underline 2px var(--text-color-2);
+  text-underline-offset: 4px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.snp-footer-wrapper .snp-footer img {
+  padding-right: 10px !important;
+}
+.snp-footer-wrapper .snp-footer .snp-footer-links {
+  gap: 25px !important;
+}
+.snp-footer-wrapper .snp-footer .snp-footer-col-1 {
+  margin-right: 527px !important;
 }
