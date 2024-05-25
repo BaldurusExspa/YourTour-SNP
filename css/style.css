@@ -23,6 +23,10 @@ body p, body h1, body h2, body h3 {
   cursor: default;
 }
 
+main {
+  gap: 135px;
+}
+
 .snp-header-wrapper {
   position: absolute;
   z-index: 500;
@@ -56,7 +60,7 @@ body p, body h1, body h2, body h3 {
   margin-left: 182px !important;
 }
 .snp-header .nav {
-  gap: 50px;
+  gap: 50px !important;
 }
 
 .fixed-snp-header-wrapper {
@@ -66,7 +70,6 @@ body p, body h1, body h2, body h3 {
   left: 0;
   width: 100%;
   height: 88px;
-  gap: 214px;
   background: rgba(243, 239, 232, 0.6);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -91,6 +94,7 @@ body p, body h1, body h2, body h3 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  width: 100%;
   height: 100vh;
 }
 
@@ -112,7 +116,6 @@ body p, body h1, body h2, body h3 {
   font-weight: 400;
   line-height: 28.4px;
   text-align: center;
-  margin-top: 50px !important;
 }
 .snp-container-1-content button {
   font-family: Roboto;
@@ -128,7 +131,6 @@ body p, body h1, body h2, body h3 {
   padding: 5px 20px 5px 20px !important;
   gap: 10px;
   opacity: 0px;
-  margin-top: 50px !important;
 }
 .snp-container-1-content button:hover {
   background-color: var(--orange-200);
@@ -138,9 +140,15 @@ body p, body h1, body h2, body h3 {
   background-color: #F8E6BE;
   color: var(--text-color-2);
 }
+.snp-container-1-content .snp-container-1-content-row-1 {
+  gap: 50px !important;
+}
+.snp-container-1-content .snp-container-1-content-br-1 {
+  display: none;
+}
 
 .snp-container-2-content {
-  padding: 135px 0 0 0 !important;
+  gap: 100px !important;
   margin: 0 375px !important;
   color: var(--text-color-2);
 }
@@ -154,12 +162,13 @@ body p, body h1, body h2, body h3 {
 .snp-container-2-content .row {
   width: 100%;
 }
-
-.snp-container-2-content-nav .nav {
-  padding-top: 31px !important;
-  gap: 30px;
+.snp-container-2-content .snp-container-2-content-nav {
+  gap: 35px !important;
 }
-.snp-container-2-content-nav .nav button {
+.snp-container-2-content .snp-container-2-content-nav .nav {
+  gap: 30px !important;
+}
+.snp-container-2-content .snp-container-2-content-nav .nav button {
   color: var(--text-color-2);
   background: none;
   border: none;
@@ -168,9 +177,8 @@ body p, body h1, body h2, body h3 {
   font-weight: 700;
   line-height: 28.06px;
   text-align: left;
-  padding: 0 !important;
 }
-.snp-container-2-content-nav .nav button:hover {
+.snp-container-2-content .snp-container-2-content-nav .nav button:hover {
   color: var(--text-color-2);
   -webkit-text-decoration: underline 2px var(--text-color-2);
           text-decoration: underline 2px var(--text-color-2);
@@ -178,7 +186,7 @@ body p, body h1, body h2, body h3 {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
-.snp-container-2-content-nav .nav button:active {
+.snp-container-2-content .snp-container-2-content-nav .nav button:active {
   color: var(--orange-200);
   -webkit-text-decoration: underline 2px var(--orange-200);
           text-decoration: underline 2px var(--orange-200);
@@ -186,7 +194,7 @@ body p, body h1, body h2, body h3 {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
-.snp-container-2-content-nav .nav button.button-choosed {
+.snp-container-2-content .snp-container-2-content-nav .nav button.button-choosed {
   color: var(--orange-200) !important;
   -webkit-text-decoration: underline 2px var(--orange-200);
           text-decoration: underline 2px var(--orange-200);
@@ -194,7 +202,7 @@ body p, body h1, body h2, body h3 {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
-.snp-container-2-content-nav .nav button.button-choosed:hover {
+.snp-container-2-content .snp-container-2-content-nav .nav button.button-choosed:hover {
   color: var(--orange-200) !important;
   -webkit-text-decoration: underline 2px var(--orange-200);
           text-decoration: underline 2px var(--orange-200);
@@ -202,21 +210,17 @@ body p, body h1, body h2, body h3 {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
-
-.snp-container-2-content-cards {
-  padding: 100px 0 !important;
-}
-.snp-container-2-content-cards .row {
+.snp-container-2-content .snp-container-2-content-cards .row {
   gap: 30px 30px !important;
 }
-.snp-container-2-content-cards .col-4 {
+.snp-container-2-content .snp-container-2-content-cards .snp-container-2-content-cards-col {
   width: 370px;
 }
-.snp-container-2-content-cards .card {
+.snp-container-2-content .snp-container-2-content-cards .card {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
-  width: 370px;
+  background-size: 100% auto;
+  width: 100%;
   height: 531px;
   border-radius: 50px;
   border: none;
@@ -224,48 +228,47 @@ body p, body h1, body h2, body h3 {
   transition: background-size 0.3s ease;
   color: var(--text-color-1);
 }
-.snp-container-2-content-cards .card:hover {
-  background-size: 120% 120%;
+.snp-container-2-content .snp-container-2-content-cards .card:hover {
+  background-size: 120% auto;
   cursor: pointer;
 }
-.snp-container-2-content-cards .card:hover button {
+.snp-container-2-content .snp-container-2-content-cards .card:hover button {
   background-color: var(--text-color-4);
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-.snp-container-2-content-cards .card:active button {
+.snp-container-2-content .snp-container-2-content-cards .card:active button {
   background-color: #EFA501;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-.snp-container-2-content-cards .card-gradient {
+.snp-container-2-content .snp-container-2-content-cards .card-gradient {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(48.44%, rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.5))) !important;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important;
   border-radius: 50px;
   height: 100%;
   padding-bottom: 43px !important;
 }
-.snp-container-2-content-cards .card-body {
-  height: 100%;
+.snp-container-2-content .snp-container-2-content-cards .card-body .card-title {
+  gap: 16px;
+  margin: 50px 50px 0px 50px !important;
 }
-.snp-container-2-content-cards .card-body h3 {
+.snp-container-2-content .snp-container-2-content-cards .card-body h3 {
   font-family: Roboto;
   font-size: 35px;
   font-weight: 500;
   line-height: 42.7px;
   text-align: left;
-  padding: 50px 50px 0 50px !important;
 }
-.snp-container-2-content-cards .card-body p {
+.snp-container-2-content .snp-container-2-content-cards .card-body p {
   font-family: Roboto;
   font-size: 17px;
   font-weight: 400;
   line-height: 24.14px;
   letter-spacing: -0.01em;
   text-align: left;
-  padding: 16px 50px 0 50px !important;
 }
-.snp-container-2-content-cards .card-body button {
+.snp-container-2-content .snp-container-2-content-cards .card-body button {
   font-family: Roboto;
   font-size: 23px;
   font-weight: 700;
@@ -280,11 +283,11 @@ body p, body h1, body h2, body h3 {
   padding: 7px 20px !important;
   margin: 0 50px 0 30px !important;
 }
-.snp-container-2-content-cards .card-body img {
+.snp-container-2-content .snp-container-2-content-cards .card-body img {
   padding-left: 15px;
   fill: var(--text-color-1);
 }
-.snp-container-2-content-cards .card-body .card-button {
+.snp-container-2-content .snp-container-2-content-cards .card-body .card-button {
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -292,7 +295,6 @@ body p, body h1, body h2, body h3 {
 }
 
 .snp-container-3-content {
-  padding: 135px 0 0 0 !important;
   margin: 0 375px !important;
   color: var(--text-color-2);
 }
@@ -310,21 +312,30 @@ body p, body h1, body h2, body h3 {
   font-weight: 400;
   line-height: 28.4px;
   text-align: center;
-  padding-top: 30px;
+}
+.snp-container-3-content .snp-container-3-content-row {
+  gap: 100px !important;
 }
 .snp-container-3-content .row {
   width: 100%;
 }
-
-.snp-container-3-content-cards .card {
+.snp-container-3-content .snp-container-3-content-nav {
+  gap: 30px !important;
+}
+.snp-container-3-content .snp-container-3-content-cards .card {
   color: var(--text-color-2);
   width: 1170px;
   border: none;
   border-radius: 50px;
-  margin-top: 100px !important;
   padding: 70px !important;
 }
-.snp-container-3-content-cards .card .card-input label {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body {
+  gap: 33px !important;
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input {
+  gap: 33px !important;
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input label {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -332,7 +343,7 @@ body p, body h1, body h2, body h3 {
   text-align: left;
   color: var(--text-color-2);
 }
-.snp-container-3-content-cards .card .card-input input {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -345,7 +356,7 @@ body p, body h1, body h2, body h3 {
   border: 1px solid var(--input-border-color-1);
   padding: 20px;
 }
-.snp-container-3-content-cards .card .card-input input::-webkit-input-placeholder {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-webkit-input-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -353,7 +364,7 @@ body p, body h1, body h2, body h3 {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input input::-moz-placeholder {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-moz-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -361,7 +372,7 @@ body p, body h1, body h2, body h3 {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input input:-ms-input-placeholder {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:-ms-input-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -369,7 +380,7 @@ body p, body h1, body h2, body h3 {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input input::-ms-input-placeholder {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-ms-input-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -377,7 +388,7 @@ body p, body h1, body h2, body h3 {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input input::placeholder {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -385,15 +396,15 @@ body p, body h1, body h2, body h3 {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input input:hover {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:hover {
   border: 1px solid var(--input-border-color-1);
   background-color: var(--input-border-color-1);
   cursor: pointer;
 }
-.snp-container-3-content-cards .card .card-input input:focus {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:focus {
   outline: 1px solid var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input select {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -406,21 +417,21 @@ body p, body h1, body h2, body h3 {
   border: 1px solid var(--input-border-color-1);
   padding: 20px;
 }
-.snp-container-3-content-cards .card .card-input select:hover {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:hover {
   border: 1px solid var(--input-border-color-1);
   background-color: var(--input-border-color-1);
   cursor: pointer;
 }
-.snp-container-3-content-cards .card .card-input select:hover option {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:hover option {
   background-color: var(--input-color-1);
 }
-.snp-container-3-content-cards .card .card-input select:focus {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:focus {
   outline: 1px solid var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input select:invalid {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:invalid {
   color: var(--text-color-3);
 }
-.snp-container-3-content-cards .card .card-input option {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input option {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 20px;
@@ -428,33 +439,30 @@ body p, body h1, body h2, body h3 {
   line-height: 28.4px;
   text-align: left;
 }
-.snp-container-3-content-cards .card .card-input .row {
-  padding-bottom: 33px;
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row {
+  gap: 0 30px !important;
 }
-.snp-container-3-content-cards .card .card-input .snp-container-3-content-cards-col {
-  padding-right: 30px !important;
-}
-.snp-container-3-content-cards .card .card-input .snp-container-3-content-cards-input-comment {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .snp-container-3-content-cards-input-comment {
   height: 152px;
 }
-.snp-container-3-content-cards .card .card-button {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button {
   color: var(--text-color-2);
 }
-.snp-container-3-content-cards .card .card-button input {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input {
   width: 26px;
   height: 26px;
   border: none;
 }
-.snp-container-3-content-cards .card .card-button input[type=radio] {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input[type=radio] {
   accent-color: var(--text-color-2);
 }
-.snp-container-3-content-cards .card .card-button input:hover {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input:hover {
   cursor: pointer;
 }
-.snp-container-3-content-cards .card .card-button label {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button label {
   padding-left: 11px;
 }
-.snp-container-3-content-cards .card .card-button p {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button p {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 20px;
@@ -463,46 +471,31 @@ body p, body h1, body h2, body h3 {
   text-align: left;
   margin-bottom: 8px;
 }
-.snp-container-3-content-cards .card .card-button .card-button-button-1 {
-  background-color: var(--text-color-4);
-  color: var(--text-color-1);
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row {
+  gap: 33px !important;
 }
-.snp-container-3-content-cards .card .card-button .card-button-button-1:hover {
-  background-color: #3B7E7B;
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 {
+  gap: 8px !important;
 }
-.snp-container-3-content-cards .card .card-button .card-button-button-1:active {
-  background-color: #627F7E;
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col {
+  gap: 31px !important;
 }
-.snp-container-3-content-cards .card .card-button .card-button-button-2 {
-  background-color: #E0F0E5;
-  color: var(--text-color-4);
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 {
+  gap: 19px !important;
 }
-.snp-container-3-content-cards .card .card-button .card-button-button-2:hover {
-  background-color: #F1F3F2;
-}
-.snp-container-3-content-cards .card .card-button .card-button-button-2:active {
-  background-color: #D9DFDB;
-}
-.snp-container-3-content-cards .card .card-button .input-yes {
-  padding-right: 31px;
-}
-.snp-container-3-content-cards .card .card-button .padding-col {
-  padding-top: 33px !important;
-}
-.snp-container-3-content-cards .card .card-button .padding-col p {
-  color: var(--text-color-3);
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 p {
+  color: var(--text-color-2);
   font-family: Roboto;
   font-size: 17px;
   font-weight: 400;
   line-height: 24.14px;
   letter-spacing: -0.01em;
   text-align: left;
-  padding-left: 19px !important;
 }
-.snp-container-3-content-cards .card .card-button .padding-col span {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span {
   color: var(--text-color-2);
 }
-.snp-container-3-content-cards .card .card-button .padding-col span:hover {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span:hover {
   -webkit-text-decoration: underline var(--text-color-2);
           text-decoration: underline var(--text-color-2);
   text-underline-offset: 2px;
@@ -510,10 +503,13 @@ body p, body h1, body h2, body h3 {
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
-.snp-container-3-content-cards .card .card-button .padding-col span:active {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span:active {
   color: var(--text-color-4);
 }
-.snp-container-3-content-cards .card .card-button .padding-col button {
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 {
+  gap: 30px !important;
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 button {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -524,11 +520,29 @@ body p, body h1, body h2, body h3 {
   border-radius: 10px;
   border: none;
   padding: 15px 30px 15px 30px !important;
-  margin-right: 30px;
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1 {
+  background-color: var(--text-color-4);
+  color: var(--text-color-1);
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:hover {
+  background-color: #3B7E7B;
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:active {
+  background-color: #627F7E;
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2 {
+  background-color: #E0F0E5;
+  color: var(--text-color-4);
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:hover {
+  background-color: #F1F3F2;
+}
+.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:active {
+  background-color: #D9DFDB;
 }
 
 .snp-container-4-content {
-  padding: 135px 0 0 0 !important;
   margin: 0 375px !important;
   color: var(--text-color-2);
 }
@@ -608,7 +622,6 @@ body p, body h1, body h2, body h3 {
 
 .snp-container-5-content {
   width: 100%;
-  padding: 135px 0 0 0 !important;
   color: var(--text-color-2);
 }
 .snp-container-5-content h2 {
@@ -648,7 +661,6 @@ body p, body h1, body h2, body h3 {
 }
 
 .snp-container-6-content {
-  padding: 135px 0 0 0 !important;
   color: var(--text-color-2);
 }
 .snp-container-6-content h2 {
@@ -799,7 +811,6 @@ body p, body h1, body h2, body h3 {
 }
 
 .snp-container-footer-content {
-  padding: 135px 0 !important;
   margin: 0 375px !important;
   color: var(--text-color-2);
 }
@@ -897,4 +908,40 @@ body p, body h1, body h2, body h3 {
 }
 .snp-footer-wrapper .snp-footer .snp-footer-col-1 {
   margin-right: 527px !important;
+}
+
+@media screen and (max-width: 1025px) {
+  .snp-header h2 {
+    margin-right: 82px !important;
+  }
+  .snp-header p {
+    margin-left: 82px !important;
+  }
+  .snp-header .nav {
+    gap: 30px !important;
+  }
+  .snp-container-1-content .snp-container-1-content-br-1 {
+    display: block;
+  }
+  .snp-container-1-content .snp-container-1-content-br-2 {
+    display: none;
+  }
+  .snp-container-2-content {
+    margin: 0 !important;
+  }
+  .snp-container-2-content .snp-container-2-content-cards .row {
+    gap: 18px 18px !important;
+  }
+  .snp-container-2-content .snp-container-2-content-cards .snp-container-2-content-cards-col {
+    width: 450px;
+  }
+  .snp-container-3-content {
+    margin: 0 !important;
+  }
+  .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row {
+    gap: 0 20px !important;
+  }
+  .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 {
+    gap: 11px !important;
+  }
 }

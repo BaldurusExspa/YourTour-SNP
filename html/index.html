@@ -37,18 +37,18 @@
             </div>
         </header>
 
-        <main>
+        <main class="d-flex flex-column">
             <section class="snp-container-1 container-fluid p-0 d-flex justify-content-center align-items-center">
                 <!-- <img src="../media/header.png" alt="" class="snp-container-1-img"> -->
-                <div class="snp-container-1-content container">
+                <div class="snp-container-1-content container px-0">
                     <div class="row">
                         <div class="col-12 p-0">
-                            <div class="row">
+                            <div class="row snp-container-1-content-row-1 d-flex justify-content-center align-items-center">
                                 <div class="col-12 d-flex justify-content-center align-items-center p-0">
                                     <h1 class="m-0">Идеальные <br> путешествия <br> существуют</h1>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center align-items-center p-0">
-                                    <p class="m-0">Идейные соображения высшего порядка, а также рамки и <br> место обучения кадров</p>
+                                    <p class="m-0">Идейные соображения высшего порядка, а <br class="snp-container-1-content-br-1"> также рамки и <br class="snp-container-1-content-br-2"> место обучения кадров</p>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center align-items-center p-0">
                                     <button>Найти тур</button>
@@ -60,92 +60,104 @@
             </section>
 
             <section class="snp-container-2 container-fluid p-0 d-flex justify-content-center align-items-center">
-                <div class="snp-container-2-content container px-0 d-flex justify-content-center align-items-center">
-                    <div class="snp-container-2-content-nav ">
+                <div class="snp-container-2-content container px-0 d-flex justify-content-center align-items-center flex-column">
+                    <div class="snp-container-2-content-nav d-flex flex-column">
                         <h2 class="m-0">Выбери свой тур</h2>
                         <ul class="nav d-flex justify-content-center align-items-center">
-                            <li class="nav-item"><button class="tab-btn button-choosed" id="1">Популярные</button></li>
-                            <li class="nav-item"><button class="tab-btn" id="2">Авторские</button></li>
-                            <li class="nav-item"><button class="tab-btn" id="3">Походы</button></li>
-                            <li class="nav-item"><button class="tab-btn" id="4">Сплавы</button></li>
-                            <li class="nav-item"><button class="tab-btn" id="5">Велопрогулки</button></li>
+                            <li class="nav-item"><button class="tab-btn button-choosed p-0" id="1">Популярные</button></li>
+                            <li class="nav-item"><button class="tab-btn p-0" id="2">Авторские</button></li>
+                            <li class="nav-item"><button class="tab-btn p-0" id="3">Походы</button></li>
+                            <li class="nav-item"><button class="tab-btn p-0" id="4">Сплавы</button></li>
+                            <li class="nav-item"><button class="tab-btn p-0" id="5">Велопрогулки</button></li>
                         </ul>
-                        <div class="snp-container-2-content-cards d-flex justify-content-center align-items-center">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-4 d-flex justify-content-center align-items-center p-0">
-                                    <div class="card " style="background-image: url('../media/ChooseYourTourCard/card tour photo-1.png')">
-                                        <div class="card-gradient d-flex">
-                                            <div class="card-body d-flex flex-column p-0">
-                                                <h3 class="card-title m-0">Путешествие в горы</h3>
-                                                <p class="card-text m-0">от 80 000 руб</p>
-                                                <div class="card-button d-flex justify-content-start align-items-end">
-                                                    <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
-                                                </div>
+                    </div>
+                    <div class="snp-container-2-content-cards d-flex justify-content-center align-items-center">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="snp-container-2-content-cards-col col-xxl-4 d-flex justify-content-center align-items-center p-0">
+                                <div class="card" style="background-image: url('../media/ChooseYourTourCard/card tour photo-1.png')">
+                                    <div class="card-gradient d-flex">
+                                        <div class="card-body d-flex flex-column p-0">
+                                            <div class="card-title d-flex flex-column m-0">
+                                                <h3 class="m-0">Путешествие в горы</h3>
+                                                <p class="m-0">от 80 000 руб</p>
+                                            </div>
+                                            <div class="card-button d-flex justify-content-start align-items-end">
+                                                <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center p-0">
-                                    <div class="card " style="background-image: url('../media/ChooseYourTourCard/card tour photo-2.png')">
-                                        <div class="card-gradient d-flex">
-                                            <div class="card-body d-flex flex-column p-0">
-                                                <h3 class="card-title m-0">Путешествие в горы</h3>
-                                                <p class="card-text m-0">от 80 000 руб</p>
-                                                <div class="card-button d-flex justify-content-start align-items-end">
-                                                    <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
-                                                </div>
+                            </div>
+                            <div class="snp-container-2-content-cards-col col-xxl-4 col-lg-6 d-flex justify-content-center align-items-center p-0">
+                                <div class="card" style="background-image: url('../media/ChooseYourTourCard/card tour photo-2.png')">
+                                    <div class="card-gradient d-flex">
+                                        <div class="card-body d-flex flex-column p-0">
+                                            <div class="card-title d-flex flex-column m-0">
+                                                <h3 class="m-0">Путешествие в горы</h3>
+                                                <p class="m-0">от 80 000 руб</p>
+                                            </div>
+                                            <div class="card-button d-flex justify-content-start align-items-end">
+                                                <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center p-0">
-                                    <div class="card " style="background-image: url('../media/ChooseYourTourCard/card tour photo-3.png')">
-                                        <div class="card-gradient d-flex">
-                                            <div class="card-body d-flex flex-column p-0">
-                                                <h3 class="card-title m-0">Путешествие в горы</h3>
-                                                <p class="card-text m-0">от 80 000 руб</p>
-                                                <div class="card-button d-flex justify-content-start align-items-end">
-                                                    <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
-                                                </div>
+                            </div>
+                            <div class="snp-container-2-content-cards-col col-xxl-4 col-lg-6 d-flex justify-content-center align-items-center p-0">
+                                <div class="card" style="background-image: url('../media/ChooseYourTourCard/card tour photo-3.png')">
+                                    <div class="card-gradient d-flex">
+                                        <div class="card-body d-flex flex-column p-0">
+                                            <div class="card-title d-flex flex-column m-0">
+                                                <h3 class="m-0">Путешествие в горы</h3>
+                                                <p class="m-0">от 80 000 руб</p>
+                                            </div>
+                                            <div class="card-button d-flex justify-content-start align-items-end">
+                                                <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center p-0">
-                                    <div class="card " style="background-image: url('../media/ChooseYourTourCard/card tour photo-4.png')">
-                                        <div class="card-gradient d-flex">
-                                            <div class="card-body d-flex flex-column p-0">
-                                                <h3 class="card-title m-0">Путешествие в горы</h3>
-                                                <p class="card-text m-0">от 80 000 руб</p>
-                                                <div class="card-button d-flex justify-content-start align-items-end">
-                                                    <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
-                                                </div>
+                            </div>
+                            <div class="snp-container-2-content-cards-col col-xxl-4 col-lg-6 d-flex justify-content-center align-items-center p-0">
+                                <div class="card" style="background-image: url('../media/ChooseYourTourCard/card tour photo-4.png')">
+                                    <div class="card-gradient d-flex">
+                                        <div class="card-body d-flex flex-column p-0">
+                                            <div class="card-title d-flex flex-column m-0">
+                                                <h3 class="m-0">Путешествие в горы</h3>
+                                                <p class="m-0">от 80 000 руб</p>
+                                            </div>
+                                            <div class="card-button d-flex justify-content-start align-items-end">
+                                                <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center p-0">
-                                    <div class="card " style="background-image: url('../media/ChooseYourTourCard/card tour photo-5.png')">
-                                        <div class="card-gradient d-flex">
-                                            <div class="card-body d-flex flex-column p-0">
-                                                <h3 class="card-title m-0">Путешествие в горы</h3>
-                                                <p class="card-text m-0">от 80 000 руб</p>
-                                                <div class="card-button d-flex justify-content-start align-items-end">
-                                                    <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
-                                                </div>
+                            </div>
+                            <div class="snp-container-2-content-cards-col col-xxl-4 col-lg-6 d-flex justify-content-center align-items-center p-0">
+                                <div class="card" style="background-image: url('../media/ChooseYourTourCard/card tour photo-5.png')">
+                                    <div class="card-gradient d-flex">
+                                        <div class="card-body d-flex flex-column p-0">
+                                            <div class="card-title d-flex flex-column m-0">
+                                                <h3 class="m-0">Путешествие в горы</h3>
+                                                <p class="m-0">от 80 000 руб</p>
+                                            </div>
+                                            <div class="card-button d-flex justify-content-start align-items-end">
+                                                <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex justify-content-center align-items-center p-0">
-                                    <div class="card " style="background-image: url('../media/ChooseYourTourCard/card tour photo-6.png')">
-                                        <div class="card-gradient d-flex">
-                                            <div class="card-body d-flex flex-column p-0">
-                                                <h3 class="card-title m-0">Путешествие в горы</h3>
-                                                <p class="card-text m-0">от 80 000 руб</p>
-                                                <div class="card-button d-flex justify-content-start align-items-end">
-                                                    <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
-                                                </div>
+                            </div>
+                            <div class="snp-container-2-content-cards-col col-xxl-4 col-lg-6 d-flex justify-content-center align-items-center p-0">
+                                <div class="card" style="background-image: url('../media/ChooseYourTourCard/card tour photo-6.png')">
+                                    <div class="card-gradient d-flex">
+                                        <div class="card-body d-flex flex-column p-0">
+                                            <div class="card-title d-flex flex-column m-0">
+                                                <h3 class="m-0">Путешествие в горы</h3>
+                                                <p class="m-0">от 80 000 руб</p>
+                                            </div>
+                                            <div class="card-button d-flex justify-content-start align-items-end">
+                                                <button class="p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
@@ -158,22 +170,22 @@
 
             <section class="snp-container-3 container-fluid p-0 d-flex justify-content-center align-items-center">
                 <div class="snp-container-3-content container px-0 d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-12 snp-container-3-content-nav p-0">
+                    <div class="row snp-container-3-content-row d-flex justify-content-center align-items-center">
+                        <div class="col-12 snp-container-3-content-nav d-flex flex-column p-0">
                             <h2 class="m-0">Соберите свой тур</h2>
                             <p class="m-0">Идейные соображения высшего порядка, <br> а также рамки и место обучения кадров</p>
                         </div>
                         <form action="" class="p-0">
                             <div class="col-12 snp-container-3-content-cards d-flex justify-content-center align-items-center p-0">
                                 <div class="card d-flex justify-content-center align-items-center">
-                                    <div class="card-body p-0">
+                                    <div class="card-body d-flex flex-column p-0">
                                         <div class="card-input d-flex justify-content-center align-items-center flex-column">
-                                            <div class="row">
-                                                <div class="col-6 snp-container-3-content-cards-col p-0">
+                                            <div class="row d-flex flex-row">
+                                                <div class="col snp-container-3-content-cards-col p-0">
                                                     <label for="FirstName" class="p-0">Имя</label>
                                                     <input name="FirstName" type="text" placeholder="Введите Ваше имя" required>
                                                 </div>
-                                                <div class="col-6 p-0">
+                                                <div class="col p-0">
                                                     <label for="Direction" class="p-0">Направление</label>
                                                     <select name="Direction" placeholder="Выберите пункт" required>
                                                         <option value="" disabled selected hidden>Выберите пункт</option>
@@ -183,27 +195,27 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-6 snp-container-3-content-cards-col p-0">
+                                            <div class="row d-flex flex-row">
+                                                <div class="col snp-container-3-content-cards-col p-0">
                                                     <label for="Email" class="p-0">Имя</label>
                                                     <input name="Email" type="email" placeholder="example@mail.com" required>
                                                 </div>
-                                                <div class="col-6 p-0">
+                                                <div class="col p-0">
                                                     <label for="Phone" class="p-0">Телефон</label>
                                                     <input name="Phone" type="text" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-6 snp-container-3-content-cards-col p-0">
+                                            <div class="row d-flex flex-row">
+                                                <div class="col snp-container-3-content-cards-col p-0">
                                                     <label for="DateFor" class="p-0">Дата от</label>
                                                     <input name="DateFor" type="text" id="datefor" placeholder="ДД.ММ.ГГГГ" required>
                                                 </div>
-                                                <div class="col-6 p-0">
+                                                <div class="col p-0">
                                                     <label for="DateUntil" class="p-0">Дата до</label>
                                                     <input name="DateUntil" type="text" id="dateuntil" placeholder="ДД.ММ.ГГГГ" required>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="row d-flex flex-row">
                                                 <div class="col-12 p-0">
                                                     <label for="Comment">Комментарий</label>
                                                     <input class="snp-container-3-content-cards-input-comment" name="Comment" type="text">
@@ -211,10 +223,10 @@
                                             </div>
                                         </div>
                                         <div class="card-button d-flex justify-content-center align-items-center flex-column">
-                                            <div class="row">
-                                                <div class="col-12 p-0">
+                                            <div class="row card-button-row d-flex flex-row">
+                                                <div class="col-12 padding-col-1 d-flex flex-column p-0">
                                                     <p class="p-0 m-0">Вам есть 18 лет?</p>
-                                                    <div class="col-12 d-flex p-0">
+                                                    <div class="col-12 padding-col-1-col d-flex p-0">
                                                         <div class="input-yes d-flex justify-content-center align-items-center">
                                                             <input name="radioBtn" id="Yes" type="radio" value="Yes" required>
                                                             <label for="Yes">Да</label>
@@ -225,11 +237,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 p-0 padding-col d-flex">
+                                                <div class="col-12 padding-col-2 d-flex flex-row p-0">
                                                     <input type="checkbox">
                                                     <p class="p-0 m-0">Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></p>
                                                 </div>
-                                                <div class="col-12 p-0 padding-col">
+                                                <div class="col-12 padding-col-3 d-flex flex-row p-0">
                                                     <button class="card-button-button-1">Найти тур</button>
                                                     <button class="card-button-button-2">Сбросить</button>
                                                 </div>
@@ -466,30 +478,29 @@
                 </div>
             </section>
 
-        </main>
-
-        <footer class="snp-footer-wrapper d-flex justify-content-center align-items-center">
-            <div class="snp-footer">
-                <div class="row">
-                    <div class="col snp-footer-col-1 d-flex justify-content-center align-items-center p-0">
-                        <p class="m-0">Наши социальные сети</p>
-                    </div>
-                    <div class="col d-flex justify-content-center align-items-center p-0">
-                        <div class="snp-footer-links d-flex">
-                            <div class="snp-footer-links-1">
-                                <img src="../media/icons/inst.svg" alt=""><a href="#" target="_self">instagram</a>
-                            </div>
-                            <div class="snp-footer-links-2">
-                                <img src="../media/icons/fb.svg" alt=""><a href="#" target="_self">facebook</a>
-                            </div>
-                            <div class="snp-footer-links-3">
-                                <img src="../media/icons/vk.svg" alt=""><a href="#" target="_self">vkontakte</a>
+            <footer class="snp-footer-wrapper d-flex justify-content-center align-items-center">
+                <div class="snp-footer">
+                    <div class="row">
+                        <div class="col snp-footer-col-1 d-flex justify-content-center align-items-center p-0">
+                            <p class="m-0">Наши социальные сети</p>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center p-0">
+                            <div class="snp-footer-links d-flex">
+                                <div class="snp-footer-links-1">
+                                    <img src="../media/icons/inst.svg" alt=""><a href="#" target="_self">instagram</a>
+                                </div>
+                                <div class="snp-footer-links-2">
+                                    <img src="../media/icons/fb.svg" alt=""><a href="#" target="_self">facebook</a>
+                                </div>
+                                <div class="snp-footer-links-3">
+                                    <img src="../media/icons/vk.svg" alt=""><a href="#" target="_self">vkontakte</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer> 
+        </main>
 
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
