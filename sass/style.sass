@@ -137,7 +137,7 @@ main
 
 .snp-container-2-content
     gap: 100px !important
-    margin: 0 375px !important
+    // margin: 0 375px !important
     color: var(--text-color-2)
     h2
         font-family: Roboto
@@ -202,6 +202,7 @@ main
             -o-transition: background-size 0.3s ease
             transition: background-size 0.3s ease
             color: var(--text-color-1)
+            cursor: pointer
         .card:hover
             background-size: 120% auto
             cursor: pointer
@@ -235,6 +236,7 @@ main
                 font-weight: 500
                 line-height: 42.7px
                 text-align: left
+                cursor: pointer
             p
                 font-family: Roboto
                 font-size: 17px
@@ -242,6 +244,7 @@ main
                 line-height: 24.14px
                 letter-spacing: -0.01em
                 text-align: left
+                cursor: pointer
             button
                 font-family: Roboto
                 font-size: 23px
@@ -258,421 +261,440 @@ main
                 transition: all 0.2s ease
                 padding: 7px 20px !important
                 // margin-top: 100%
-                margin: 0 50px 0 30px !important
+                margin: 0 0 0 30px !important
+                cursor: pointer
             img
                 padding-left: 15px
                 fill: var(--text-color-1)
             .card-button
                 width: 100%
                 flex: 1
-    
-.snp-container-3-content
-    margin: 0 375px !important
-    color: var(--text-color-2)
-    h2
-        font-family: Roboto
-        font-size: 59px
-        font-weight: 700
-        line-height: 73.16px
-        text-align: center
-    p
-        color: var(--text-color-3)
-        font-family: Roboto
-        font-size: 20px
-        font-weight: 400
-        line-height: 28.4px
-        text-align: center
-    .snp-container-3-content-row
-        gap: 100px !important
-    .row
-        width: 100%
-    .snp-container-3-content-nav
-        gap: 30px !important
-    .snp-container-3-content-cards
-        .card
-            color: var(--text-color-2)
-            width: 1170px
-            border: none
-            border-radius: 50px
-            padding: 70px !important
-            .card-body
-                gap: 33px !important
-                .card-input
-                    gap: 33px !important
-                    label
-                        font-family: Roboto
-                        font-size: 20px
-                        font-weight: 400
-                        line-height: 28.4px
-                        text-align: left
-                        color: var(--text-color-2)
-                    input
-                        font-family: Roboto
-                        font-size: 20px
-                        font-weight: 400
-                        line-height: 28.4px
-                        text-align: left
-                        width: 100%
-                        height: 68px
-                        background-color: var(--input-color-1)
-                        border-radius: 10px
-                        border: 1px solid var(--input-border-color-1)
-                        padding: 20px
-                    input::placeholder
-                        font-family: Roboto
-                        font-size: 20px
-                        font-weight: 400
-                        line-height: 28.4px
-                        text-align: left
-                        color: var(--text-color-3)
-                    input:hover
-                        border: 1px solid var(--input-border-color-1)
-                        background-color: var(--input-border-color-1)
-                        cursor: pointer
-                    input:focus
-                        outline: 1px solid var(--text-color-3)
-                    select
-                        font-family: Roboto
-                        font-size: 20px
-                        font-weight: 400
-                        line-height: 28.4px
-                        text-align: left
-                        width: 100%
-                        height: 68px
-                        background-color: var(--input-color-1)
-                        border-radius: 10px
-                        border: 1px solid var(--input-border-color-1)
-                        padding: 20px
-                    select:hover
-                        border: 1px solid var(--input-border-color-1)
-                        background-color: var(--input-border-color-1)
-                        cursor: pointer
-                        option
-                            background-color: var(--input-color-1)
-                    select:focus
-                        outline: 1px solid var(--text-color-3)
-                    select:invalid
-                        color: var(--text-color-3)
-                    option
-                        color: var(--text-color-2)
-                        font-family: Roboto
-                        font-size: 20px
-                        font-weight: 400
-                        line-height: 28.4px
-                        text-align: left
-                    .row
-                        gap: 0 30px !important
-                    .snp-container-3-content-cards-input-comment
-                        height: 152px
-                .card-button
-                    color: var(--text-color-2)
-                    input
-                        width: 26px
-                        height: 26px
-                        border: none
-                    input[type='radio']
-                        accent-color: var(--text-color-2)
-                    TODO:FIXME
-                    // input[type='checkbox']
-                    //     accent-color: var(--text-color-1)
-                    input:hover
-                        cursor: pointer
-                    label
-                        padding-left: 11px
-                    p
-                        color: var(--text-color-2)
-                        font-family: Roboto
-                        font-size: 20px
-                        font-weight: 400
-                        line-height: 28.4px
-                        text-align: left
-                        margin-bottom: 8px
-                    .card-button-row
-                        gap: 33px !important
-                        .padding-col-1
-                            gap: 8px !important
-                            .padding-col-1-col
-                                gap: 31px !important
-                        .padding-col-2
-                            gap: 19px !important
-                            p
-                                color: var(--text-color-2)
-                                font-family: Roboto
-                                font-size: 17px
-                                font-weight: 400
-                                line-height: 24.14px
-                                letter-spacing: -0.01em
-                                text-align: left
-                            span
-                                color: var(--text-color-2)
-                            span:hover
-                                text-decoration: underline var(--text-color-2)
-                                text-underline-offset: 2px
-                                text-decoration-skip-ink: none
-                                cursor: pointer
-                            span:active
-                                color: var(--text-color-4)
-                        .padding-col-3
-                            gap: 30px !important
-                            button
-                                font-family: Roboto
-                                font-size: 20px
-                                font-weight: 400
-                                line-height: 28.4px
-                                text-align: center
-                                width: 235px
-                                height: 58px
-                                border-radius: 10px
-                                border: none
-                                padding: 15px 30px 15px 30px !important
-                            .card-button-button-1
-                                background-color: var(--text-color-4)
-                                color: var(--text-color-1)
-                            .card-button-button-1:hover
-                                background-color: #3B7E7B
-                            .card-button-button-1:active
-                                background-color: #627F7E
-                            .card-button-button-2
-                                background-color: #E0F0E5
-                                color: var(--text-color-4)
-                            .card-button-button-2:hover
-                                background-color: #F1F3F2
-                            .card-button-button-2:active
-                                background-color: #D9DFDB
 
-.snp-container-4-content
-    margin: 0 375px !important
-    color: var(--text-color-2)
-    h2
+.snp-container-3
+    .snp-container-3-content
+        // margin: 0 375px !important
         color: var(--text-color-2)
-        font-family: Roboto
-        font-size: 59px
-        font-weight: 700
-        line-height: 73.16px
-        text-align: center
-    p
-        color: var(--text-color-3)
-        font-family: Roboto
-        font-size: 20px
-        font-weight: 400
-        line-height: 28.4px
-        text-align: center
-        padding-top: 30px !important
-    .snp-container-4-content-row-1
-        width: 100%
-
-.snp-container-4-content-cards
-    .card
-        color: var(--text-color-2)
-        width: 570px
-        height: 673px
-        background-color: var(--input-border-color-1)
-        border: none
-        border-radius: 50px
-        padding: 40px !important
-        margin-top: 100px !important
-        p
-            color: var(--text-color-2)
-            font-family: 'Roboto'
-            font-style: normal
+        h2
+            font-family: Roboto
+            font-size: 59px
             font-weight: 700
-            font-size: 23px
-            line-height: 122%
-            text-align: left
-            padding: 0 !important
-        h3
-            font-family: Roboto
-            font-size: 35px
-            font-weight: 500
-            line-height: 42.7px
-            text-align: left
-        .card-text
-            flex: 1
-            p
-                color: var(--text-color-3)
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 400
-                font-size: 17px
-                line-height: 142%
-                letter-spacing: -0.01em
-            img
-                width: 75px
-                height: 75px
-                border-radius: 100px
-    .snp-container-4-content-cards-col-1
-        padding-right: 15px !important
-    .snp-container-4-content-cards-col-2
-        padding-left: 15px !important
-
-.snp-container-5-content
-    width: 100%
-    color: var(--text-color-2)
-    h2
-        color: var(--text-color-2)
-        font-family: Roboto
-        font-size: 59px
-        font-weight: 700
-        line-height: 73.16px
-        text-align: center
-    p
-        color: var(--text-color-3)
-        font-family: Roboto
-        font-size: 20px
-        font-weight: 400
-        line-height: 28.4px
-        text-align: center
-        padding-top: 30px !important
-    .snp-container-5-content-images
-        padding: 30px !important
-        margin-top: 100px !important
-        gap: 30px !important
-        .row
-            width: 100%
-            min-height: 301px
-            height: auto
-            gap: 30px !important
-        img
-            max-width: 100%
-            width: 100%
-            height: auto
-            min-height: 301px
-            border-radius: 50px
-
-.snp-container-6-content
-    color: var(--text-color-2)
-    h2
-        color: var(--text-color-2)
-        font-family: Roboto
-        font-size: 59px
-        font-weight: 700
-        line-height: 73.16px
-        text-align: center
-    p
-        color: var(--text-color-3)
-        font-family: Roboto
-        font-size: 20px
-        font-weight: 400
-        line-height: 28.4px
-        text-align: center
-        padding-top: 30px !important
-    .snp-container-6-content-cards
-        margin-top: 100px !important
-        gap: 50px
-        .card
-            color: var(--text-color-1)
-            background-repeat: no-repeat
-            background-position: center center
-            -webkit-background-size: cover
-            -moz-background-size: cover
-            -o-background-size: cover
-            background-size: 100% 100%
-            border: none
-            border-radius: 50px
-            height: 567px
-            -webkit-transition: background-size 0.3s ease
-            -moz-transition: background-size 0.3s ease
-            -o-transition: background-size 0.3s ease
-            transition: background-size 0.3s ease
-            cursor: pointer
-        .card:hover
-            background-size: 120% 120%
-            cursor: pointer
-            button
-                background-color: var(--text-color-4)
-                -webkit-transition: .1s
-                -moz-transition: .1s
-                -o-transition: .1s
-                transition: .1s
-        .card:active
-            button
-                background-color: var(--orange-200)
-                -webkit-transition: .1s
-                -moz-transition: .1s
-                -o-transition: .1s
-                transition: .1s
-        button
-            font-family: Roboto
-            font-size: 23px
-            font-weight: 700
-            line-height: 28.06px
-            text-align: left
-            background: none
-            border: none
-            color: var(--text-color-1)
-            border-radius: 50px
-            -webkit-transition: all 0.2s ease
-            -moz-transition: all 0.2s ease
-            -o-transition: all 0.2s ease
-            transition: all 0.2s ease
-            padding: 7px 20px !important
-            margin: 0 0 0 40px !important
-        img
-            padding-left: 15px
-            fill: var(--text-color-1)
-        h3
-            font-family: Roboto
-            font-size: 35px
-            font-weight: 500
-            line-height: 42.7px
-            text-align: left
-            padding: 60px 0 0 60px !important
-            cursor: pointer
+            line-height: 73.16px
+            text-align: center
         p
-            color: var(--text-color-1)
-            font-family: Roboto
-            font-size: 20px
-            font-weight: 400
-            line-height: 28.4px
-            text-align: left
-            padding: 37px 0 0 60px !important
-            cursor: pointer
-        ul
-            padding: 0 0 0 80px !important
-            cursor: pointer
-        li
-            color: var(--text-color-1)
-            font-family: Roboto
-            font-size: 20px
-            font-weight: 400
-            line-height: 28.4px
-            text-align: left
-            cursor: pointer
-        a
-            color: var(--text-color-1)
+            color: var(--text-color-3)
             font-family: Roboto
             font-size: 20px
             font-weight: 400
             line-height: 28.4px
             text-align: center
-            text-decoration: none
-        a:hover
-            color: var(--text-color-1)
-            text-decoration: underline 1px var(--text-color-1)
-            text-underline-offset: 2px
-            text-decoration-skip-ink: none
-            cursor: pointer
-        a:active
-            color: var(--orange-200)
-            text-decoration: underline 1px var(--orange-200)
-            text-underline-offset: 2px
-            text-decoration-skip-ink: none
-            cursor: pointer
-        .card-gradient
-            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%)
-            border-radius: 50px
-            height: 100%
-            cursor: pointer
-            // padding: 60px
-            .card-button
-                padding-bottom: 60px !important
-                width: 100%
-                flex: 1
+        .snp-container-3-content-row
+            gap: 100px !important
+        .row
+            width: 100%
+        .snp-container-3-content-nav
+            gap: 30px !important
+        .snp-container-3-content-cards
+            .card
+                color: var(--text-color-2)
+                width: 1170px
+                border: none
+                border-radius: 50px
+                padding: 70px !important
+                .card-body
+                    gap: 33px !important
+                    .card-input
+                        gap: 33px !important
+                        label
+                            font-family: Roboto
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 28.4px
+                            text-align: left
+                            color: var(--text-color-2)
+                        input
+                            font-family: Roboto
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 28.4px
+                            text-align: left
+                            width: 100%
+                            height: 68px
+                            background-color: var(--input-color-1)
+                            border-radius: 10px
+                            border: 1px solid var(--input-border-color-1)
+                            padding: 20px
+                        input::placeholder
+                            font-family: Roboto
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 28.4px
+                            text-align: left
+                            color: var(--text-color-3)
+                        input:hover
+                            border: 1px solid var(--input-border-color-1)
+                            background-color: var(--input-border-color-1)
+                            cursor: pointer
+                        input:focus
+                            outline: 1px solid var(--text-color-3)
+                        select
+                            font-family: Roboto
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 28.4px
+                            text-align: left
+                            width: 100%
+                            height: 68px
+                            background-color: var(--input-color-1)
+                            border-radius: 10px
+                            border: 1px solid var(--input-border-color-1)
+                            padding: 20px
+                        select:hover
+                            border: 1px solid var(--input-border-color-1)
+                            background-color: var(--input-border-color-1)
+                            cursor: pointer
+                            option
+                                background-color: var(--input-color-1)
+                        select:focus
+                            outline: 1px solid var(--text-color-3)
+                        select:invalid
+                            color: var(--text-color-3)
+                        option
+                            color: var(--text-color-2)
+                            font-family: Roboto
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 28.4px
+                            text-align: left
+                        .row
+                            gap: 0 30px !important
+                        .snp-container-3-content-cards-input-comment
+                            height: 152px
+                    .card-button
+                        color: var(--text-color-2)
+                        input
+                            width: 26px
+                            height: 26px
+                            border: none
+                        input[type='radio']
+                            accent-color: var(--text-color-2)
+                        TODO:FIXME
+                        // input[type='checkbox']
+                        //     accent-color: var(--text-color-1)
+                        input:hover
+                            cursor: pointer
+                        label
+                            padding-left: 11px
+                        p
+                            color: var(--text-color-2)
+                            font-family: Roboto
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 28.4px
+                            text-align: left
+                            margin-bottom: 8px
+                        .card-button-row
+                            gap: 33px !important
+                            .padding-col-1
+                                gap: 8px !important
+                                .padding-col-1-col
+                                    gap: 31px !important
+                            .padding-col-2
+                                gap: 19px !important
+                                p
+                                    color: var(--text-color-2)
+                                    font-family: Roboto
+                                    font-size: 17px
+                                    font-weight: 400
+                                    line-height: 24.14px
+                                    letter-spacing: -0.01em
+                                    text-align: left
+                                span
+                                    color: var(--text-color-2)
+                                span:hover
+                                    text-decoration: underline var(--text-color-2)
+                                    text-underline-offset: 2px
+                                    text-decoration-skip-ink: none
+                                    cursor: pointer
+                                span:active
+                                    color: var(--text-color-4)
+                            .padding-col-3
+                                gap: 30px !important
+                                button
+                                    font-family: Roboto
+                                    font-size: 20px
+                                    font-weight: 400
+                                    line-height: 28.4px
+                                    text-align: center
+                                    width: 235px
+                                    height: 58px
+                                    border-radius: 10px
+                                    border: none
+                                    padding: 15px 30px 15px 30px !important
+                                .card-button-button-1
+                                    background-color: var(--text-color-4)
+                                    color: var(--text-color-1)
+                                .card-button-button-1:hover
+                                    background-color: #3B7E7B
+                                .card-button-button-1:active
+                                    background-color: #627F7E
+                                .card-button-button-2
+                                    background-color: #E0F0E5
+                                    color: var(--text-color-4)
+                                .card-button-button-2:hover
+                                    background-color: #F1F3F2
+                                .card-button-button-2:active
+                                    background-color: #D9DFDB
+
+.snp-container-4
+    .snp-container-4-content
+        // margin: 0 375px !important
+        color: var(--text-color-2)
+        h2
+            color: var(--text-color-2)
+            font-family: Roboto
+            font-size: 59px
+            font-weight: 700
+            line-height: 73.16px
+            text-align: center
+        p
+            color: var(--text-color-3)
+            font-family: Roboto
+            font-size: 20px
+            font-weight: 400
+            line-height: 28.4px
+            text-align: center
+        .snp-container-4-content-row-1
+            width: 100%
+            gap: 100px !important
+        .snp-container-4-content-col-1
+            gap: 30px !important
+        .snp-container-4-content-cards
+            .snp-container-4-content-cards-row-2
+                gap: 0 30px !important
+                .snp-container-4-content-cards-col
+                    width: 570px
+                    .card
+                        color: var(--text-color-2)
+                        height: 673px
+                        background-color: var(--input-border-color-1)
+                        border: none
+                        border-radius: 50px
+                        padding: 40px !important
+                        p
+                            color: var(--text-color-2)
+                            font-family: 'Roboto'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: 23px
+                            line-height: 122%
+                            text-align: left
+                            padding: 0 !important
+                        h3
+                            font-family: Roboto
+                            font-size: 35px
+                            font-weight: 500
+                            line-height: 42.7px
+                            text-align: left
+                        .card-text
+                            flex: 1
+                            p
+                                color: var(--text-color-3)
+                                font-family: 'Roboto'
+                                font-style: normal
+                                font-weight: 400
+                                font-size: 17px
+                                line-height: 142%
+                                letter-spacing: -0.01em
+                            img
+                                width: 75px
+                                height: 75px
+                                border-radius: 100px
+                            .card-text-text
+                                gap: 8px !important
+.snp-container-5
+    .snp-container-5-content
+        width: 100%
+        color: var(--text-color-2)
+        .snp-container-5-content-row
+            width: 100%
+            gap: 100px !important
+            .snp-container-5-content-col
+                gap: 30px !important
+                h2
+                    color: var(--text-color-2)
+                    font-family: Roboto
+                    font-size: 59px
+                    font-weight: 700
+                    line-height: 73.16px
+                    text-align: center
+                p
+                    color: var(--text-color-3)
+                    font-family: Roboto
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 28.4px
+                    text-align: center
+            .snp-container-5-content-images
+                padding: 30px !important
+                gap: 30px !important
                 .row
                     width: 100%
-                .card-button-col-2
-                    gap: 35px !important
-                    margin-right: 60px !important
+                    min-height: 301px
+                    height: auto
+                    gap: 30px !important
+                .col
+                    width: 100%
+                    min-height: 301px
+                    border-radius: 50px
+                    background-repeat: no-repeat
+                    background-position: center center
+                    -webkit-background-size: cover
+                    -moz-background-size: cover
+                    -o-background-size: cover
+                // img
+                //     width: 100%
+                //     height: auto
+                //     flex: 1
+                //     border-radius: 50px
+.snp-container-6
+    .snp-container-6-content
+        color: var(--text-color-2)
+        .snp-container-6-content-row
+            gap: 100px !important
+            .snp-container-6-content-col-1
+                gap: 30px !important
+                h2
+                    color: var(--text-color-2)
+                    font-family: Roboto
+                    font-size: 59px
+                    font-weight: 700
+                    line-height: 73.16px
+                    text-align: center
+                p
+                    color: var(--text-color-3)
+                    font-family: Roboto
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 28.4px
+                    text-align: center
+            .snp-container-6-content-cards
+                gap: 50px
+                .card
+                    color: var(--text-color-1)
+                    background-repeat: no-repeat
+                    background-position: center center
+                    -webkit-background-size: cover
+                    -moz-background-size: cover
+                    -o-background-size: cover
+                    background-size: 100% 100%
+                    border: none
+                    border-radius: 50px
+                    height: 567px
+                    -webkit-transition: background-size 0.3s ease
+                    -moz-transition: background-size 0.3s ease
+                    -o-transition: background-size 0.3s ease
+                    transition: background-size 0.3s ease
+                    cursor: pointer
+                .card:hover
+                    background-size: 120% 120%
+                    cursor: pointer
+                    button
+                        background-color: var(--text-color-4)
+                        -webkit-transition: .1s
+                        -moz-transition: .1s
+                        -o-transition: .1s
+                        transition: .1s
+                .card:active
+                    button
+                        background-color: var(--orange-200)
+                        -webkit-transition: .1s
+                        -moz-transition: .1s
+                        -o-transition: .1s
+                        transition: .1s
+                button
+                    font-family: Roboto
+                    font-size: 23px
+                    font-weight: 700
+                    line-height: 28.06px
+                    text-align: left
+                    background: none
+                    border: none
+                    color: var(--text-color-1)
+                    border-radius: 50px
+                    -webkit-transition: all 0.2s ease
+                    -moz-transition: all 0.2s ease
+                    -o-transition: all 0.2s ease
+                    transition: all 0.2s ease
+                    padding: 7px 20px !important
+                    margin: 0 0 0 40px !important
+                img
+                    padding-left: 15px
+                    fill: var(--text-color-1)
+                .card-gradient
+                    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%)
+                    border-radius: 50px
+                    height: 100%
+                    cursor: pointer
+                    .card-body
+                        .card-title
+                            padding: 60px 60px 0 60px !important
+                            h3
+                                font-family: Roboto
+                                font-size: 35px
+                                font-weight: 500
+                                line-height: 42.7px
+                                text-align: left
+                                // padding: 60px 0 0 60px !important
+                                cursor: pointer
+                            p
+                                color: var(--text-color-1)
+                                font-family: Roboto
+                                font-size: 20px
+                                font-weight: 400
+                                line-height: 28.4px
+                                text-align: left
+                                // padding: 37px 0 0 60px !important
+                                cursor: pointer
+                            ul
+                                padding: 0 0 0 17px !important
+                                cursor: pointer
+                            li
+                                color: var(--text-color-1)
+                                font-family: Roboto
+                                font-size: 20px
+                                font-weight: 400
+                                line-height: 28.4px
+                                text-align: left
+                                cursor: pointer
+                        .card-button
+                            padding-bottom: 60px !important
+                            width: 100%
+                            flex: 1
+                            .row
+                                width: 100%
+                                a
+                                    color: var(--text-color-1)
+                                    font-family: Roboto
+                                    font-size: 20px
+                                    font-weight: 400
+                                    line-height: 28.4px
+                                    text-align: center
+                                    text-decoration: none
+                                a:hover
+                                    color: var(--text-color-1)
+                                    text-decoration: underline 1px var(--text-color-1)
+                                    text-underline-offset: 2px
+                                    text-decoration-skip-ink: none
+                                    cursor: pointer
+                                a:active
+                                    color: var(--orange-200)
+                                    text-decoration: underline 1px var(--orange-200)
+                                    text-underline-offset: 2px
+                                    text-decoration-skip-ink: none
+                                    cursor: pointer
+                                .card-button-col-2
+                                    gap: 35px !important
+                                    margin-right: 60px !important
 
 .snp-container-footer-content
     margin: 0 375px !important
@@ -723,8 +745,12 @@ main
             //     text-underline-offset: 1px
             //     text-decoration-skip-ink: none
             //     cursor: pointer
+            .card-body
+                padding-top: 104px !important
+            .snp-container-footer-row
+                gap: 30px !important
             .card-title
-                margin: 104px 0 0 30px !important
+                gap: 20px !important
 
 .snp-footer-wrapper
     height: 88px
@@ -750,7 +776,7 @@ main
             text-decoration: none
         a:hover
             color: var(--text-color-2)
-            text-decoration: underline 2px var(--text-color-2)
+            text-decoration: underline 1px var(--text-color-2)
             text-underline-offset: 4px
             text-decoration-skip-ink: none
             cursor: pointer
@@ -796,3 +822,30 @@ main
                         .card-button-row
                             .padding-col-2
                                 gap: 11px !important
+
+    .snp-container-4
+        .snp-container-4-content
+            margin: 0 !important
+            .snp-container-4-content-cards
+                .snp-container-4-content-cards-row-2
+                    gap: 0 18px !important
+                    .snp-container-4-content-cards-col
+                        width: 450px
+                        .card
+                            height: 841px
+
+    .snp-container-5
+        .snp-container-5-content
+            .snp-container-5-content-row
+                .snp-container-5-content-images
+                    .row-1-photo-2
+                        display: none !important
+                    .row-2-photo-3
+                        display: none !important
+                    .row-3-photo-4
+                        display: none !important
+
+    .snp-footer-wrapper
+        .snp-footer
+            .snp-footer-col-1
+                margin-right: 277px !important

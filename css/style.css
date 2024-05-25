@@ -149,7 +149,6 @@ main {
 
 .snp-container-2-content {
   gap: 100px !important;
-  margin: 0 375px !important;
   color: var(--text-color-2);
 }
 .snp-container-2-content h2 {
@@ -227,6 +226,7 @@ main {
   -webkit-transition: background-size 0.3s ease;
   transition: background-size 0.3s ease;
   color: var(--text-color-1);
+  cursor: pointer;
 }
 .snp-container-2-content .snp-container-2-content-cards .card:hover {
   background-size: 120% auto;
@@ -259,6 +259,7 @@ main {
   font-weight: 500;
   line-height: 42.7px;
   text-align: left;
+  cursor: pointer;
 }
 .snp-container-2-content .snp-container-2-content-cards .card-body p {
   font-family: Roboto;
@@ -267,6 +268,7 @@ main {
   line-height: 24.14px;
   letter-spacing: -0.01em;
   text-align: left;
+  cursor: pointer;
 }
 .snp-container-2-content .snp-container-2-content-cards .card-body button {
   font-family: Roboto;
@@ -281,7 +283,8 @@ main {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   padding: 7px 20px !important;
-  margin: 0 50px 0 30px !important;
+  margin: 0 0 0 30px !important;
+  cursor: pointer;
 }
 .snp-container-2-content .snp-container-2-content-cards .card-body img {
   padding-left: 15px;
@@ -294,18 +297,17 @@ main {
           flex: 1;
 }
 
-.snp-container-3-content {
-  margin: 0 375px !important;
+.snp-container-3 .snp-container-3-content {
   color: var(--text-color-2);
 }
-.snp-container-3-content h2 {
+.snp-container-3 .snp-container-3-content h2 {
   font-family: Roboto;
   font-size: 59px;
   font-weight: 700;
   line-height: 73.16px;
   text-align: center;
 }
-.snp-container-3-content p {
+.snp-container-3 .snp-container-3-content p {
   color: var(--text-color-3);
   font-family: Roboto;
   font-size: 20px;
@@ -313,29 +315,29 @@ main {
   line-height: 28.4px;
   text-align: center;
 }
-.snp-container-3-content .snp-container-3-content-row {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-row {
   gap: 100px !important;
 }
-.snp-container-3-content .row {
+.snp-container-3 .snp-container-3-content .row {
   width: 100%;
 }
-.snp-container-3-content .snp-container-3-content-nav {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-nav {
   gap: 30px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card {
   color: var(--text-color-2);
   width: 1170px;
   border: none;
   border-radius: 50px;
   padding: 70px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body {
   gap: 33px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input {
   gap: 33px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input label {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input label {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -343,7 +345,7 @@ main {
   text-align: left;
   color: var(--text-color-2);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -356,7 +358,7 @@ main {
   border: 1px solid var(--input-border-color-1);
   padding: 20px;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-webkit-input-placeholder {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-webkit-input-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -364,7 +366,7 @@ main {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-moz-placeholder {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-moz-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -372,7 +374,7 @@ main {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:-ms-input-placeholder {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:-ms-input-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -380,7 +382,7 @@ main {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-ms-input-placeholder {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::-ms-input-placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -388,7 +390,7 @@ main {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::placeholder {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input::placeholder {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -396,15 +398,15 @@ main {
   text-align: left;
   color: var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:hover {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:hover {
   border: 1px solid var(--input-border-color-1);
   background-color: var(--input-border-color-1);
   cursor: pointer;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:focus {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input input:focus {
   outline: 1px solid var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -417,21 +419,21 @@ main {
   border: 1px solid var(--input-border-color-1);
   padding: 20px;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:hover {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:hover {
   border: 1px solid var(--input-border-color-1);
   background-color: var(--input-border-color-1);
   cursor: pointer;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:hover option {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:hover option {
   background-color: var(--input-color-1);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:focus {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:focus {
   outline: 1px solid var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:invalid {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input select:invalid {
   color: var(--text-color-3);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input option {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input option {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 20px;
@@ -439,30 +441,30 @@ main {
   line-height: 28.4px;
   text-align: left;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row {
   gap: 0 30px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .snp-container-3-content-cards-input-comment {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .snp-container-3-content-cards-input-comment {
   height: 152px;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button {
   color: var(--text-color-2);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input {
   width: 26px;
   height: 26px;
   border: none;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input[type=radio] {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input[type=radio] {
   accent-color: var(--text-color-2);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input:hover {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button input:hover {
   cursor: pointer;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button label {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button label {
   padding-left: 11px;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button p {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button p {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 20px;
@@ -471,19 +473,19 @@ main {
   text-align: left;
   margin-bottom: 8px;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row {
   gap: 33px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 {
   gap: 8px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col {
   gap: 31px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 {
   gap: 19px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 p {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 p {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 17px;
@@ -492,10 +494,10 @@ main {
   letter-spacing: -0.01em;
   text-align: left;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span {
   color: var(--text-color-2);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span:hover {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span:hover {
   -webkit-text-decoration: underline var(--text-color-2);
           text-decoration: underline var(--text-color-2);
   text-underline-offset: 2px;
@@ -503,13 +505,13 @@ main {
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span:active {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span:active {
   color: var(--text-color-4);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 {
   gap: 30px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 button {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 button {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -521,32 +523,31 @@ main {
   border: none;
   padding: 15px 30px 15px 30px !important;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1 {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1 {
   background-color: var(--text-color-4);
   color: var(--text-color-1);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:hover {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:hover {
   background-color: #3B7E7B;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:active {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:active {
   background-color: #627F7E;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2 {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2 {
   background-color: #E0F0E5;
   color: var(--text-color-4);
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:hover {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:hover {
   background-color: #F1F3F2;
 }
-.snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:active {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:active {
   background-color: #D9DFDB;
 }
 
-.snp-container-4-content {
-  margin: 0 375px !important;
+.snp-container-4 .snp-container-4-content {
   color: var(--text-color-2);
 }
-.snp-container-4-content h2 {
+.snp-container-4 .snp-container-4-content h2 {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 59px;
@@ -554,30 +555,36 @@ main {
   line-height: 73.16px;
   text-align: center;
 }
-.snp-container-4-content p {
+.snp-container-4 .snp-container-4-content p {
   color: var(--text-color-3);
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
   line-height: 28.4px;
   text-align: center;
-  padding-top: 30px !important;
 }
-.snp-container-4-content .snp-container-4-content-row-1 {
+.snp-container-4 .snp-container-4-content .snp-container-4-content-row-1 {
   width: 100%;
+  gap: 100px !important;
 }
-
-.snp-container-4-content-cards .card {
-  color: var(--text-color-2);
+.snp-container-4 .snp-container-4-content .snp-container-4-content-col-1 {
+  gap: 30px !important;
+}
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 {
+  gap: 0 30px !important;
+}
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col {
   width: 570px;
+}
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card {
+  color: var(--text-color-2);
   height: 673px;
   background-color: var(--input-border-color-1);
   border: none;
   border-radius: 50px;
   padding: 40px !important;
-  margin-top: 100px !important;
 }
-.snp-container-4-content-cards .card p {
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card p {
   color: var(--text-color-2);
   font-family: "Roboto";
   font-style: normal;
@@ -587,19 +594,19 @@ main {
   text-align: left;
   padding: 0 !important;
 }
-.snp-container-4-content-cards .card h3 {
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card h3 {
   font-family: Roboto;
   font-size: 35px;
   font-weight: 500;
   line-height: 42.7px;
   text-align: left;
 }
-.snp-container-4-content-cards .card .card-text {
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.snp-container-4-content-cards .card .card-text p {
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-text p {
   color: var(--text-color-3);
   font-family: "Roboto";
   font-style: normal;
@@ -608,23 +615,27 @@ main {
   line-height: 142%;
   letter-spacing: -0.01em;
 }
-.snp-container-4-content-cards .card .card-text img {
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-text img {
   width: 75px;
   height: 75px;
   border-radius: 100px;
 }
-.snp-container-4-content-cards .snp-container-4-content-cards-col-1 {
-  padding-right: 15px !important;
-}
-.snp-container-4-content-cards .snp-container-4-content-cards-col-2 {
-  padding-left: 15px !important;
+.snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-text .card-text-text {
+  gap: 8px !important;
 }
 
-.snp-container-5-content {
+.snp-container-5 .snp-container-5-content {
   width: 100%;
   color: var(--text-color-2);
 }
-.snp-container-5-content h2 {
+.snp-container-5 .snp-container-5-content .snp-container-5-content-row {
+  width: 100%;
+  gap: 100px !important;
+}
+.snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-col {
+  gap: 30px !important;
+}
+.snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-col h2 {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 59px;
@@ -632,38 +643,45 @@ main {
   line-height: 73.16px;
   text-align: center;
 }
-.snp-container-5-content p {
+.snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-col p {
   color: var(--text-color-3);
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
   line-height: 28.4px;
   text-align: center;
-  padding-top: 30px !important;
 }
-.snp-container-5-content .snp-container-5-content-images {
+.snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-images {
   padding: 30px !important;
-  margin-top: 100px !important;
   gap: 30px !important;
 }
-.snp-container-5-content .snp-container-5-content-images .row {
+.snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-images .row {
   width: 100%;
   min-height: 301px;
   height: auto;
   gap: 30px !important;
 }
-.snp-container-5-content .snp-container-5-content-images img {
-  max-width: 100%;
+.snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-images .col {
   width: 100%;
-  height: auto;
   min-height: 301px;
   border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-.snp-container-6-content {
+.snp-container-6 .snp-container-6-content {
   color: var(--text-color-2);
 }
-.snp-container-6-content h2 {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row {
+  gap: 100px !important;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-1 {
+  gap: 30px !important;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-1 h2 {
   color: var(--text-color-2);
   font-family: Roboto;
   font-size: 59px;
@@ -671,20 +689,18 @@ main {
   line-height: 73.16px;
   text-align: center;
 }
-.snp-container-6-content p {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-1 p {
   color: var(--text-color-3);
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
   line-height: 28.4px;
   text-align: center;
-  padding-top: 30px !important;
 }
-.snp-container-6-content .snp-container-6-content-cards {
-  margin-top: 100px !important;
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards {
   gap: 50px;
 }
-.snp-container-6-content .snp-container-6-content-cards .card {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card {
   color: var(--text-color-1);
   background-repeat: no-repeat;
   background-position: center center;
@@ -696,21 +712,21 @@ main {
   transition: background-size 0.3s ease;
   cursor: pointer;
 }
-.snp-container-6-content .snp-container-6-content-cards .card:hover {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
   background-size: 120% 120%;
   cursor: pointer;
 }
-.snp-container-6-content .snp-container-6-content-cards .card:hover button {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover button {
   background-color: var(--text-color-4);
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-.snp-container-6-content .snp-container-6-content-cards .card:active button {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:active button {
   background-color: var(--orange-200);
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-.snp-container-6-content .snp-container-6-content-cards button {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards button {
   font-family: Roboto;
   font-size: 23px;
   font-weight: 700;
@@ -725,34 +741,29 @@ main {
   padding: 7px 20px !important;
   margin: 0 0 0 40px !important;
 }
-.snp-container-6-content .snp-container-6-content-cards img {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards img {
   padding-left: 15px;
   fill: var(--text-color-1);
 }
-.snp-container-6-content .snp-container-6-content-cards h3 {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient {
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.01%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+  border-radius: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-title {
+  padding: 60px 60px 0 60px !important;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-title h3 {
   font-family: Roboto;
   font-size: 35px;
   font-weight: 500;
   line-height: 42.7px;
   text-align: left;
-  padding: 60px 0 0 60px !important;
   cursor: pointer;
 }
-.snp-container-6-content .snp-container-6-content-cards p {
-  color: var(--text-color-1);
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28.4px;
-  text-align: left;
-  padding: 37px 0 0 60px !important;
-  cursor: pointer;
-}
-.snp-container-6-content .snp-container-6-content-cards ul {
-  padding: 0 0 0 80px !important;
-  cursor: pointer;
-}
-.snp-container-6-content .snp-container-6-content-cards li {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-title p {
   color: var(--text-color-1);
   font-family: Roboto;
   font-size: 20px;
@@ -761,7 +772,30 @@ main {
   text-align: left;
   cursor: pointer;
 }
-.snp-container-6-content .snp-container-6-content-cards a {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-title ul {
+  padding: 0 0 0 17px !important;
+  cursor: pointer;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-title li {
+  color: var(--text-color-1);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+  text-align: left;
+  cursor: pointer;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-button {
+  padding-bottom: 60px !important;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-button .row {
+  width: 100%;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-button .row a {
   color: var(--text-color-1);
   font-family: Roboto;
   font-size: 20px;
@@ -770,7 +804,7 @@ main {
   text-align: center;
   text-decoration: none;
 }
-.snp-container-6-content .snp-container-6-content-cards a:hover {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-button .row a:hover {
   color: var(--text-color-1);
   -webkit-text-decoration: underline 1px var(--text-color-1);
           text-decoration: underline 1px var(--text-color-1);
@@ -779,7 +813,7 @@ main {
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
-.snp-container-6-content .snp-container-6-content-cards a:active {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-button .row a:active {
   color: var(--orange-200);
   -webkit-text-decoration: underline 1px var(--orange-200);
           text-decoration: underline 1px var(--orange-200);
@@ -788,24 +822,7 @@ main {
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
-.snp-container-6-content .snp-container-6-content-cards .card-gradient {
-  background: -webkit-gradient(linear, right top, left top, color-stop(0.01%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
-  border-radius: 50px;
-  height: 100%;
-  cursor: pointer;
-}
-.snp-container-6-content .snp-container-6-content-cards .card-gradient .card-button {
-  padding-bottom: 60px !important;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-.snp-container-6-content .snp-container-6-content-cards .card-gradient .card-button .row {
-  width: 100%;
-}
-.snp-container-6-content .snp-container-6-content-cards .card-gradient .card-button .card-button-col-2 {
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card-gradient .card-body .card-button .row .card-button-col-2 {
   gap: 35px !important;
   margin-right: 60px !important;
 }
@@ -861,8 +878,14 @@ main {
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
+.snp-container-footer-content .snp-container-footer-content-cards .card .card-body {
+  padding-top: 104px !important;
+}
+.snp-container-footer-content .snp-container-footer-content-cards .card .snp-container-footer-row {
+  gap: 30px !important;
+}
 .snp-container-footer-content .snp-container-footer-content-cards .card .card-title {
-  margin: 104px 0 0 30px !important;
+  gap: 20px !important;
 }
 
 .snp-footer-wrapper {
@@ -893,8 +916,8 @@ main {
 }
 .snp-footer-wrapper .snp-footer a:hover {
   color: var(--text-color-2);
-  -webkit-text-decoration: underline 2px var(--text-color-2);
-          text-decoration: underline 2px var(--text-color-2);
+  -webkit-text-decoration: underline 1px var(--text-color-2);
+          text-decoration: underline 1px var(--text-color-2);
   text-underline-offset: 4px;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -943,5 +966,29 @@ main {
   }
   .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 {
     gap: 11px !important;
+  }
+  .snp-container-4 .snp-container-4-content {
+    margin: 0 !important;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 {
+    gap: 0 18px !important;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col {
+    width: 450px;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card {
+    height: 841px;
+  }
+  .snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-images .row-1-photo-2 {
+    display: none !important;
+  }
+  .snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-images .row-2-photo-3 {
+    display: none !important;
+  }
+  .snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-images .row-3-photo-4 {
+    display: none !important;
+  }
+  .snp-footer-wrapper .snp-footer .snp-footer-col-1 {
+    margin-right: 277px !important;
   }
 }
