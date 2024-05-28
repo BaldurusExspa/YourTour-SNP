@@ -468,68 +468,71 @@ main
     .snp-container-4-content
         // margin: 0 375px !important
         color: var(--text-color-2)
-        h2
-            color: var(--text-color-2)
-            font-family: Roboto
-            font-size: 59px
-            font-weight: 700
-            line-height: 73.16px
-            text-align: center
-        p
-            color: var(--text-color-3)
-            font-family: Roboto
-            font-size: 20px
-            font-weight: 400
-            line-height: 28.4px
-            text-align: center
         .snp-container-4-content-row-1
             width: 100%
             gap: 100px !important
-        .snp-container-4-content-col-1
-            gap: 30px !important
-        .snp-container-4-content-cards
-            .snp-container-4-content-cards-row-2
-                gap: 0 30px !important
-                .snp-container-4-content-cards-col
-                    width: 570px
-                    .card
-                        color: var(--text-color-2)
-                        height: 673px
-                        background-color: var(--input-border-color-1)
-                        border: none
-                        border-radius: 50px
-                        padding: 40px !important
-                        p
+            .snp-container-4-content-col-1
+                h2
+                    color: var(--text-color-2)
+                    font-family: Roboto
+                    font-size: 59px
+                    font-weight: 700
+                    line-height: 73.16px
+                    text-align: center
+                p
+                    color: var(--text-color-3)
+                    font-family: Roboto
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 28.4px
+                    text-align: center
+                gap: 30px !important
+            .snp-container-4-content-cards
+                .snp-container-4-content-cards-row-2
+                    gap: 0 30px !important
+                    .snp-container-4-content-cards-col
+                        width: 570px
+                        .card
                             color: var(--text-color-2)
-                            font-family: 'Roboto'
-                            font-style: normal
-                            font-weight: 700
-                            font-size: 23px
-                            line-height: 122%
-                            text-align: left
-                            padding: 0 !important
-                        h3
-                            font-family: Roboto
-                            font-size: 35px
-                            font-weight: 500
-                            line-height: 42.7px
-                            text-align: left
-                        .card-text
-                            flex: 1
-                            p
-                                color: var(--text-color-3)
-                                font-family: 'Roboto'
-                                font-style: normal
-                                font-weight: 400
-                                font-size: 17px
-                                line-height: 142%
-                                letter-spacing: -0.01em
-                            img
-                                width: 75px
-                                height: 75px
-                                border-radius: 100px
-                            .card-text-text
-                                gap: 8px !important
+                            height: 673px
+                            background-color: var(--input-border-color-1)
+                            border: none
+                            border-radius: 50px
+                            padding: 40px !important
+                            .card-body
+                                .card-title
+                                    p
+                                        color: var(--text-color-2)
+                                        font-family: 'Roboto'
+                                        font-style: normal
+                                        font-weight: 700
+                                        font-size: 23px
+                                        line-height: 122%
+                                        text-align: left
+                                        padding: 0 !important
+                                .card-text
+                                    flex: 1
+                                    .card-text-text
+                                        gap: 8px !important
+                                        h3
+                                            font-family: Roboto
+                                            font-size: 35px
+                                            font-weight: 500
+                                            line-height: 42.7px
+                                            text-align: left
+                                        p
+                                            color: var(--text-color-3)
+                                            font-family: 'Roboto'
+                                            font-style: normal
+                                            font-weight: 400
+                                            font-size: 17px
+                                            line-height: 142%
+                                            letter-spacing: -0.01em
+                                    img
+                                        width: 75px
+                                        height: 75px
+                                        border-radius: 100px
+                                    
 .snp-container-5
     .snp-container-5-content
         width: 100%
@@ -558,29 +561,29 @@ main
                 gap: 30px !important
                 .row
                     width: 100%
-                    min-height: 301px
                     height: auto
                     gap: 30px !important
-                .col
-                    width: 100%
-                    min-height: 301px
-                    border-radius: 50px
-                    background-repeat: no-repeat
-                    background-position: center center
-                    -webkit-background-size: cover
-                    -moz-background-size: cover
-                    -o-background-size: cover
-                    background-size: cover //100% 100%
-                // img
-                //     width: 100%
-                //     height: auto
-                //     flex: 1
-                //     border-radius: 50px
+                    .col
+                        width: 100%
+                        min-height: 301px
+                        border-radius: 50px
+                        background-repeat: no-repeat
+                        background-position: center center
+                        -webkit-background-size: cover
+                        -moz-background-size: cover
+                        -o-background-size: cover
+                        background-size: cover //100% 100%
+                    // img
+                    //     width: 100%
+                    //     height: auto
+                    //     flex: 1
+                    //     border-radius: 50px
 .snp-container-6
     padding: 0 53px !important
     .snp-container-6-content
         color: var(--text-color-2)
         .snp-container-6-content-row
+            width: 100%
             gap: 100px !important
             .snp-container-6-content-col-1
                 gap: 30px !important
@@ -869,13 +872,15 @@ main
         padding: 0 53px !important
         .snp-container-4-content
             margin: 0 !important
-            .snp-container-4-content-cards
-                .snp-container-4-content-cards-row-2
-                    gap: 0 18px !important
-                    .snp-container-4-content-cards-col
-                        width: 450px
-                        .card
-                            height: 841px
+            .snp-container-4-content-row-1
+                width: 100%
+                .snp-container-4-content-cards
+                    .snp-container-4-content-cards-row-2
+                        gap: 0 18px !important
+                        .snp-container-4-content-cards-col
+                            width: 450px
+                            .card
+                                height: 841px !important
 
     .snp-container-5
         .snp-container-5-content
@@ -1146,3 +1151,124 @@ main
                                         line-height: 142%
                                         text-align: center
                                         padding: 12px 29.5px !important
+
+    .snp-container-4
+        padding: 0 21px !important
+        .snp-container-4-content
+            .snp-container-4-content-row-1
+                gap: 50px !important
+                .snp-container-4-content-col-1
+                    h2
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 34px
+                        line-height: 112%
+                        text-align: center
+                        letter-spacing: 0.02em
+                    p
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 142%
+                        text-align: center
+                    gap: 20px !important
+                .snp-container-4-content-cards
+                    .snp-container-4-content-cards-row-2
+                        width: 100%
+                        gap: 18px !important
+                        .snp-container-4-content-cards-col
+                            width: 318px
+                            .snp-container-4-content-card-1
+                                height: 408px !important
+                            .snp-container-4-content-card-2
+                                height: 592px !important
+                            .card
+                                border-radius: 20px
+                                padding: 20px !important
+                                .card-body
+                                    .card-title
+                                        p
+                                            font-family: 'Roboto'
+                                            font-style: normal
+                                            font-weight: 700
+                                            font-size: 16px
+                                            line-height: 142%
+                                            text-align: left
+                                    .card-text
+                                        .card-text-text
+                                            h3
+                                                font-family: 'Roboto'
+                                                font-style: normal
+                                                font-weight: 700
+                                                font-size: 23px
+                                                line-height: 120%
+                                                letter-spacing: 0.04em
+                                            p
+                                                font-family: 'Roboto'
+                                                font-style: normal
+                                                font-weight: 400
+                                                font-size: 16px
+                                                line-height: 142%
+                                                letter-spacing: -0.01em
+
+    .snp-container-5
+        padding: 0 21px !important
+        .snp-container-5-content
+            .snp-container-5-content-row
+                gap: 50px !important
+                .snp-container-5-content-col
+                    h2
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 34px
+                        line-height: 112%
+                        text-align: center
+                        letter-spacing: 0.02em
+                    p
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 142%
+                        text-align: center
+                    gap: 20px !important
+                .snp-container-5-content-images
+                    padding: 0 !important
+                    gap: 18px !important
+                    .row
+                        gap: 18px !important
+                        .col
+                            min-height: 110px
+                            border-radius: 20px 
+                        .row-1-photo-3
+                            display: none !important
+                        .row-2-photo-2
+                            display: none !important
+                        .row-3-photo-3
+                            display: none !important
+
+    .snp-container-6
+        padding: 0 21px !important
+        .snp-container-6-content
+            .snp-container-6-content-row
+                gap: 50px !important
+                .snp-container-6-content-col-1
+                    h2
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 34px
+                        line-height: 112%
+                        text-align: center
+                        letter-spacing: 0.02em
+                    p
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 142%
+                        text-align: center
+                    gap: 20px !important
