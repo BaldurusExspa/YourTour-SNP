@@ -195,19 +195,25 @@ main
                         -o-background-size: 100%*1.2 100%*1.2
                         background-size: 100%*1.2 100%*1.2
                         cursor: pointer
-                        .card-btn
-                            background-color: var(--text-color-4)
-                            -webkit-transition: .1s ease
-                            -moz-transition: .1s ease
-                            -o-transition: .1s ease
-                            transition: .1s ease
+                        .card-gradient
+                            .card-body
+                                .card-button
+                                    button
+                                        background-color: var(--text-color-4)
+                                        -webkit-transition: .1s ease
+                                        -moz-transition: .1s ease
+                                        -o-transition: .1s ease
+                                        transition: .1s ease
                     .card:active
-                        .card-btn
-                            background-color: #EFA501
-                            -webkit-transition: .1s ease
-                            -moz-transition: .1s ease
-                            -o-transition: .1s ease
-                            transition: .1s ease
+                        .card-gradient
+                            .card-body
+                                .card-button
+                                    button
+                                        background-color: #EFA501
+                                        -webkit-transition: .1s ease
+                                        -moz-transition: .1s ease
+                                        -o-transition: .1s ease
+                                        transition: .1s ease
                     .card-gradient
                         background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important
                         border-radius: 50px
