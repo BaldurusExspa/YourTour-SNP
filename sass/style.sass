@@ -35,24 +35,21 @@ main
     width: 100%
     height: 88px
     .snp-header
-        color: var(--text-color-1) !important
-        a, p
-            font-family: Roboto
-            font-size: 20px
-            font-weight: 400
-            line-height: 28.4px
-            text-align: left
-            text-decoration: none
-            color: var(--text-color-1)
-        a:hover
-            text-decoration: underline var(--text-color-1)
-            text-underline-offset: 7px
-        h2, img
-            margin-right: 182px !important
-        p
-            margin-left: 182px !important
-        .nav
-            gap: 50px !important
+        .col-12
+            gap: 182px !important
+            color: var(--text-color-1) !important
+            a, p
+                font-size: 20px
+                
+                line-height: 28.4px
+                text-align: left
+                text-decoration: none
+                color: var(--text-color-1)
+            a:hover
+                text-decoration: underline var(--text-color-1)
+                text-underline-offset: 7px
+            .nav
+                gap: 50px !important
 
 .fixed-snp-header-wrapper
     position: fixed
@@ -74,8 +71,6 @@ main
         text-decoration-skip-ink: none
     h2
         color: var(--text-color-2) !important
-    img
-        fill: var(--text-color-2) !important
     p
         color: var(--text-color-2) !important
 
@@ -94,7 +89,6 @@ main
     text-underline-offset: 10px
     text-decoration-skip-ink: none
 
-
 .snp-container-1
     background-image: url(../media/header.png)
     background-repeat: no-repeat
@@ -105,72 +99,65 @@ main
     height: 90vh
     padding: 119px+88px 0 119px 0 !important
     .snp-container-1-content
-        color: var(--text-color-1) !important
-        h1
-            font-family: Roboto
-            font-size: 96px   //stable - 96px
-            font-weight: 700
-            line-height: 104.64px
-            letter-spacing: 0.02em
-            text-align: center
-        p
-            font-family: Roboto
-            font-size: 20px
-            font-weight: 400
-            line-height: 28.4px
-            text-align: center
-        button
-            font-family: Roboto
-            font-size: 17px
-            font-weight: 400
-            line-height: 24.14px
-            letter-spacing: -0.01em
-            text-align: left
-            white-space: nowrap
-            border: none
-            border-radius: 10px
-            width: 118px
-            height: 34px
-            padding: 5px 20px 5px 20px !important
-            opacity: 0px
-        button:hover
-            background-color: var(--orange-200)
-            color: var(--text-color-1)
-        @media screen and (min-width: 1025px)
-            button:active
-                background-color: #F8E6BE
-                color: var(--text-color-2)
         .snp-container-1-content-row-1
-            gap: 50px !important
-        .snp-container-1-content-high-br
-            display: block
-        .snp-container-1-content-middle-br
-            display: none
-        .snp-container-1-content-mobile-br
-            display: none
+            width: 100%
+            .snp-container-1-content-row-2
+                width: 100%
+                gap: 50px !important
+                color: var(--text-color-1) !important
+                h1
+                    font-size: 96px   //stable - 96px
+                    font-weight: 700
+                    line-height: 104.64px
+                    letter-spacing: 0.02em
+                    text-align: center
+                p
+                    font-size: 20px
+                    line-height: 28.4px
+                    text-align: center
+                button
+                    font-size: 17px
+                    line-height: 24.14px
+                    letter-spacing: -0.01em
+                    text-align: left
+                    white-space: nowrap
+                    border: none
+                    border-radius: 10px
+                    width: 118px
+                    height: 34px
+                    padding: 5px 20px 5px 20px !important
+                    opacity: 0px
+                button:hover
+                    background-color: var(--orange-200)
+                    color: var(--text-color-1)
+                @media screen and (min-width: 1025px)
+                    button:active
+                        background-color: #F8E6BE
+                        color: var(--text-color-2)
+                .snp-container-1-content-high-br
+                    display: block
+                .snp-container-1-content-middle-br
+                    display: none
+                .snp-container-1-content-mobile-br
+                    display: none
 
 .snp-container-2
     .snp-container-2-content
         gap: 100px !important
-        // margin: 0 375px !important
         color: var(--text-color-2)
-        h2
-            font-family: Roboto
-            font-size: 59px
-            font-weight: 700
-            line-height: 73.16px
-            text-align: center
-        .row
-            width: 100%
         .snp-container-2-content-nav
             gap: 35px !important
+            h2
+                font-size: 59px
+                font-weight: 700
+                line-height: 73.16px
+                text-align: center
             .nav
                 gap: 30px !important
                 button
                     color: var(--text-color-2)
                     background: none
                     border: none
-                    font-family: Roboto
                     font-size: 23px
                     font-weight: 700
                     line-height: 28.06px
@@ -180,116 +167,108 @@ main
                     text-decoration: underline 2px var(--text-color-2)
                     text-underline-offset: 10px
                     text-decoration-skip-ink: none
-                @media screen and (min-width: 1025px)
-                    button:active
-                        color: var(--orange-200)
-                        text-decoration: underline 2px var(--orange-200)
-                        text-underline-offset: 10px
-                        text-decoration-skip-ink: none
         .snp-container-2-content-cards
             .row
                 gap: 30px 30px !important
-            .snp-container-2-content-cards-col
-                width: 370px
-            .card
-                background-repeat: no-repeat
-                background-position: center center
-                -webkit-background-size: 100% 100%
-                -moz-background-size: 100% 100%
-                -o-background-size: 100% 100%
-                background-size: 100% 100%
-                width: 100%
-                height: 531px
-                border-radius: 50px
-                border: none
-                -webkit-transition: background-size 0.3s ease
-                -moz-transition: background-size 0.3s ease
-                -o-transition: background-size 0.3s ease
-                transition: background-size 0.3s ease
-                color: var(--text-color-1)
-                cursor: pointer
-            @media screen and (min-width: 1025px)
-                .card:hover
-                    background-size: 120% 120%
-                    cursor: pointer
-                    button
-                        background-color: var(--text-color-4)
-                        -webkit-transition: .1s
-                        -moz-transition: .1s
-                        -o-transition: .1s
-                        transition: .1s
-                .card:active
-                    button
-                        background-color: #EFA501
-                        -webkit-transition: .1s
-                        -moz-transition: .1s
-                        -o-transition: .1s
-                        transition: .1s
-            .card-gradient
-                background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important
-                border-radius: 50px
-                height: 100%
-                // Card padding
-                // padding: 50px
-                padding-bottom: 43px !important
-            .card-body
-                .card-title
-                    gap: 16px
-                    margin: 50px 50px 0px 50px !important
-                h3
-                    font-family: Roboto
-                    font-size: 35px
-                    font-weight: 500
-                    line-height: 42.7px
-                    text-align: left
-                    cursor: pointer
-                p
-                    font-family: Roboto
-                    font-size: 17px
-                    font-weight: 400
-                    line-height: 24.14px
-                    letter-spacing: -0.01em
-                    text-align: left
-                    cursor: pointer
-                button
-                    font-family: Roboto
-                    font-size: 23px
-                    font-weight: 700
-                    line-height: 28.06px
-                    text-align: left
-                    background: none
-                    border: none
-                    color: var(--text-color-1)
-                    border-radius: 50px
-                    -webkit-transition: all 0.2s ease
-                    -moz-transition: all 0.2s ease
-                    -o-transition: all 0.2s ease
-                    transition: all 0.2s ease
-                    padding: 7px 20px !important
-                    margin: 0 0 0 30px !important
-                    cursor: pointer
-                img
-                    padding-left: 15px
-                    fill: var(--text-color-1)
-                .card-button
-                    width: 100%
-                    flex: 1
+                .snp-container-2-content-cards-col
+                    width: 370px
+                    .card
+                        background-repeat: no-repeat
+                        background-position: center center
+                        -webkit-background-size: 100% 100%
+                        -moz-background-size: 100% 100%
+                        -o-background-size: 100% 100%
+                        background-size: 100% 100%
+                        width: 100%
+                        height: 531px
+                        border-radius: 50px
+                        border: none
+                        -webkit-transition: background-size 0.3s ease
+                        -moz-transition: background-size 0.3s ease
+                        -o-transition: background-size 0.3s ease
+                        transition: background-size 0.3s ease
+                        color: var(--text-color-1)
+                        cursor: pointer
+                    .card:hover
+                        -webkit-background-size: 100%*1.2 100%*1.2
+                        -moz-background-size: 100%*1.2 100%*1.2
+                        -o-background-size: 100%*1.2 100%*1.2
+                        background-size: 100%*1.2 100%*1.2
+                        cursor: pointer
+                        .card-btn
+                            background-color: var(--text-color-4)
+                            -webkit-transition: .1s ease
+                            -moz-transition: .1s ease
+                            -o-transition: .1s ease
+                            transition: .1s ease
+                    .card:active
+                        .card-btn
+                            background-color: #EFA501
+                            -webkit-transition: .1s ease
+                            -moz-transition: .1s ease
+                            -o-transition: .1s ease
+                            transition: .1s ease
+                    .card-gradient
+                        background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important
+                        border-radius: 50px
+                        height: 100%
+                        // Card padding
+                        // padding: 50px
+                        padding-bottom: 43px !important
+                        .card-body
+                            .card-title
+                                gap: 16px
+                                margin: 50px 50px 0px 50px !important
+                                h3
+                                    font-size: 35px
+                                    font-weight: 500
+                                    line-height: 42.7px
+                                    text-align: left
+                                    cursor: pointer
+                                p
+                                    font-size: 17px
+                                    line-height: 24.14px
+                                    letter-spacing: -0.01em
+                                    text-align: left
+                                    cursor: pointer                            
+                            .card-button
+                                width: 100%
+                                flex: 1
+                                button
+                                    font-size: 23px
+                                    font-weight: 700
+                                    line-height: 28.06px
+                                    text-align: left
+                                    background: none
+                                    border: none
+                                    color: var(--text-color-1)
+                                    border-radius: 50px
+                                    -webkit-transition: all 0.2s ease
+                                    -moz-transition: all 0.2s ease
+                                    -o-transition: all 0.2s ease
+                                    transition: all 0.2s ease
+                                    padding: 7px 20px !important
+                                    margin: 0 0 0 30px !important
+                                    cursor: pointer
+                                img
+                                    padding-left: 15px
+                                    fill: var(--text-color-1)
 
 .snp-container-3
     padding: 0 !important
     .snp-container-3-content
         color: var(--text-color-2)
         h2
-            font-family: Roboto
+            
             font-size: 59px
             font-weight: 700
             line-height: 73.16px
             text-align: center
         p
             color: var(--text-color-3)
-            font-family: Roboto
+            
             font-size: 20px
-            font-weight: 400
+            
             line-height: 28.4px
             text-align: center
         .snp-container-3-content-row
@@ -317,16 +296,12 @@ main
                                 position: relative
                                 gap: 8px !important
                             label
-                                font-family: Roboto
                                 font-size: 20px
-                                font-weight: 400
                                 line-height: 28.4px
                                 text-align: left
                                 color: var(--text-color-2)
                             input
-                                font-family: Roboto
                                 font-size: 20px
-                                font-weight: 400
                                 line-height: 28.4px
                                 text-align: left
                                 width: 100%
@@ -340,9 +315,7 @@ main
                             input:focus
                                 outline: 1px solid var(--text-color-3)
                             select
-                                font-family: Roboto
                                 font-size: 20px
-                                font-weight: 400
                                 line-height: 28.4px
                                 text-align: left
                                 width: 100%
@@ -352,26 +325,34 @@ main
                                 border: 1px solid var(--input-border-color-1)
                                 padding: 20px
                                 appearance: none
-                            @media screen and (min-width: 1025px)
-                                input:hover
-                                    border: 1px solid var(--input-border-color-1)
-                                    background-color: var(--input-border-color-1)
-                                    cursor: pointer
-                                select:hover
-                                    border: 1px solid var(--input-border-color-1)
-                                    background-color: var(--input-border-color-1)
-                                    cursor: pointer
-                                    option
-                                        background-color: var(--input-color-1)
+                            input:hover
+                                border: 1px solid var(--input-border-color-1)
+                                background-color: var(--input-border-color-1)
+                                cursor: pointer
+                            // input[type='checkbox']
+                            //     appearance: none
+                            //     background-color: #fff
+                            //     margin: 0
+                            //     font: inherit
+                            //     color: currentColor
+                            //     width: 1.15em
+                            //     height: 1.15em
+                            //     border: 0.15em solid currentColor
+                            //     border-radius: 0.15em
+                            //     transform: translateY(-0.075em)
+                            select:hover
+                                border: 1px solid var(--input-border-color-1)
+                                background-color: var(--input-border-color-1)
+                                cursor: pointer
+                                option
+                                    background-color: var(--input-color-1)
                             select:focus
                                 outline: 1px solid var(--text-color-3)
                             select:invalid
                                 color: var(--text-color-3)
                             option
                                 color: var(--text-color-2)
-                                font-family: Roboto
                                 font-size: 20px
-                                font-weight: 400
                                 line-height: 28.4px
                                 text-align: left
                             .card-input-select-box-img
@@ -396,9 +377,7 @@ main
                                 gap: 8px !important
                                 p, label
                                     color: var(--text-color-2)
-                                    font-family: Roboto
                                     font-size: 20px
-                                    font-weight: 400
                                     line-height: 28.4px
                                     text-align: left
                                 .padding-col-1-col
@@ -407,18 +386,13 @@ main
                                         gap: 11px !important
                                         input[type='radio']
                                             accent-color: var(--text-color-2)
-                                        // TODO:FIXME
-                                        // input[type='checkbox']
-                                        //     accent-color: var(--text-color-1)
                                         input:hover
                                             cursor: pointer
                             .padding-col-2
                                 gap: 19px !important
                                 p
                                     color: var(--text-color-3)
-                                    font-family: Roboto
                                     font-size: 17px
-                                    font-weight: 400
                                     line-height: 24.14px
                                     letter-spacing: -0.01em
                                     text-align: left
@@ -437,9 +411,7 @@ main
                             .padding-col-3
                                 gap: 30px !important
                                 button
-                                    font-family: Roboto
                                     font-size: 20px
-                                    font-weight: 400
                                     line-height: 28.4px
                                     text-align: center
                                     width: 235px
@@ -474,16 +446,16 @@ main
             .snp-container-4-content-col-1
                 h2
                     color: var(--text-color-2)
-                    font-family: Roboto
+                    
                     font-size: 59px
                     font-weight: 700
                     line-height: 73.16px
                     text-align: center
                 p
                     color: var(--text-color-3)
-                    font-family: Roboto
+                    
                     font-size: 20px
-                    font-weight: 400
+                    
                     line-height: 28.4px
                     text-align: center
                 gap: 30px !important
@@ -503,8 +475,6 @@ main
                                 .card-title
                                     p
                                         color: var(--text-color-2)
-                                        font-family: 'Roboto'
-                                        font-style: normal
                                         font-weight: 700
                                         font-size: 23px
                                         line-height: 122%
@@ -515,16 +485,12 @@ main
                                     .card-text-text
                                         gap: 8px !important
                                         h3
-                                            font-family: Roboto
                                             font-size: 35px
                                             font-weight: 500
                                             line-height: 42.7px
                                             text-align: left
                                         p
                                             color: var(--text-color-3)
-                                            font-family: 'Roboto'
-                                            font-style: normal
-                                            font-weight: 400
                                             font-size: 17px
                                             line-height: 142%
                                             letter-spacing: -0.01em
@@ -534,6 +500,7 @@ main
                                         border-radius: 100px
                                     
 .snp-container-5
+    padding: 0 !important
     .snp-container-5-content
         width: 100%
         color: var(--text-color-2)
@@ -544,16 +511,13 @@ main
                 gap: 30px !important
                 h2
                     color: var(--text-color-2)
-                    font-family: Roboto
                     font-size: 59px
                     font-weight: 700
                     line-height: 73.16px
                     text-align: center
                 p
                     color: var(--text-color-3)
-                    font-family: Roboto
                     font-size: 20px
-                    font-weight: 400
                     line-height: 28.4px
                     text-align: center
             .snp-container-5-content-images
@@ -573,11 +537,6 @@ main
                         -moz-background-size: cover
                         -o-background-size: cover
                         background-size: cover //100% 100%
-                    // img
-                    //     width: 100%
-                    //     height: auto
-                    //     flex: 1
-                    //     border-radius: 50px
 .snp-container-6
     padding: 0 53px !important
     .snp-container-6-content
@@ -589,21 +548,19 @@ main
                 gap: 30px !important
                 h2
                     color: var(--text-color-2)
-                    font-family: Roboto
                     font-size: 59px
                     font-weight: 700
                     line-height: 73.16px
                     text-align: center
                 p
                     color: var(--text-color-3)
-                    font-family: Roboto
                     font-size: 20px
-                    font-weight: 400
                     line-height: 28.4px
                     text-align: center
             .snp-container-6-content-cards
                 gap: 50px
                 .card
+                    position: relative
                     color: var(--text-color-1)
                     background-repeat: no-repeat
                     background-position: center center
@@ -621,7 +578,10 @@ main
                     transition: background-size 0.3s ease
                     cursor: pointer
                 .card:hover
-                    background-size: 120% 120%
+                    -webkit-background-size: 100%*1.2 100%*1.2
+                    -moz-background-size: 100%*1.2 100%*1.2
+                    -o-background-size: 100%*1.2 100%*1.2
+                    background-size: 100%*1.2 100%*1.2
                     cursor: pointer
                     button
                         background-color: var(--text-color-4)
@@ -629,16 +589,7 @@ main
                         -moz-transition: .1s
                         -o-transition: .1s
                         transition: .1s
-                @media screen and (min-width: 1025px)
-                    .card:active
-                        button
-                            background-color: var(--orange-200)
-                            -webkit-transition: .1s
-                            -moz-transition: .1s
-                            -o-transition: .1s
-                            transition: .1s
                 button
-                    font-family: Roboto
                     font-size: 23px
                     font-weight: 700
                     line-height: 28.06px
@@ -652,7 +603,6 @@ main
                     -o-transition: all 0.2s ease
                     transition: all 0.2s ease
                     padding: 7px 20px !important
-                    margin: 0 0 0 40px !important
                 img
                     padding-left: 15px
                     fill: var(--text-color-1)
@@ -662,21 +612,18 @@ main
                     height: 100%
                     cursor: pointer
                     .card-body
+                        width: 100%
                         .card-title
                             padding: 60px 60px 0 60px !important
                             gap: 37px !important
                             h3
-                                font-family: Roboto
                                 font-size: 35px
                                 font-weight: 500
                                 line-height: 42.7px
                                 text-align: left
-                                // padding: 60px 0 0 60px !important
                                 cursor: pointer
                             p
                                 color: var(--text-color-1)
-                                font-family: Roboto
-                                font-style: normal
                                 font-weight: 300
                                 font-size: 20px
                                 line-height: 142%
@@ -687,23 +634,19 @@ main
                                 cursor: pointer
                             li
                                 color: var(--text-color-1)
-                                font-family: Roboto
                                 font-size: 20px
-                                font-weight: 400
                                 line-height: 28.4px
                                 text-align: left
                                 cursor: pointer
                         .card-button
-                            padding-bottom: 60px !important
+                            padding: 0 60px 60px 40px !important
                             width: 100%
                             flex: 1
                             .row
                                 width: 100%
                                 a
                                     color: var(--text-color-1)
-                                    font-family: Roboto
                                     font-size: 20px
-                                    font-weight: 400
                                     line-height: 28.4px
                                     text-align: center
                                     text-decoration: none
@@ -722,98 +665,84 @@ main
                                         cursor: pointer
                                 .card-button-col-2
                                     gap: 35px !important
-                                    margin-right: 60px !important
 
-.snp-container-footer-content
-    margin: 0 375px !important
-    color: var(--text-color-2)
-    .snp-container-footer-content-cards
-        .card
-            width: 771px
-            border-radius: 50px !important
-            border: none
-            background-color: var(--input-color-1)
-            white-space: nowrap
-            img
-                width: 370px
-                height: 370px
+.snp-container-footer
+        .snp-container-footer-content
+        color: var(--text-color-2)
+        .snp-container-footer-content-cards
+            .card
+                width: 771px
                 border-radius: 50px !important
-            h3
-                font-family: Roboto
-                font-size: 35px
-                font-weight: 500
-                line-height: 42.7px
-                text-align: left
-            p
-                color: var(--text-color-3)
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 400
-                font-size: 20px
-                line-height: 142%
-                text-align: left
-            .card-body
-                padding-top: 104px !important
-            .snp-container-footer-row
-                gap: 30px !important
-                .card-title
-                    gap: 20px !important
-                    a
-                        color: var(--text-color-2) !important
-                        font-family: Roboto
-                        font-size: 20px
-                        font-weight: 400
-                        line-height: 28.4px
-                        text-align: center
-                        text-decoration: none
-                    a:hover
-                        color: var(--text-color-2) !important
-                        text-decoration: underline 2px var(--text-color-2)
-                        text-underline-offset: 1px
-                        text-decoration-skip-ink: none
-                        cursor: pointer
-                    @media screen and (min-width: 1025px)
-                        a:active
-                            color: var(--text-color-4) !important
-                            text-decoration: underline 2px var(--text-color-4) !important
-                            text-underline-offset: 1px
-                            text-decoration-skip-ink: none
-                            cursor: pointer
+                border: none
+                background-color: var(--input-color-1)
+                white-space: nowrap
+                img
+                    width: 370px
+                    height: 370px
+                    border-radius: 50px !important
+                h3
+                    font-size: 35px
+                    font-weight: 500
+                    line-height: 42.7px
+                    text-align: left
+                p
+                    color: var(--text-color-3)
+                    font-size: 20px
+                    line-height: 142%
+                    text-align: left
+                .snp-container-footer-row
+                    gap: 30px !important
+                    .card-body
+                        padding: 104px 0 0 0 !important
+                        .card-title
+                            gap: 20px !important
+                            a
+                                color: var(--text-color-2) !important
+                                font-size: 20px
+                                line-height: 28.4px
+                                text-align: center
+                                text-decoration: none
+                            a:hover
+                                color: var(--text-color-2) !important
+                                text-decoration: underline 2px var(--text-color-2)
+                                text-underline-offset: 1px
+                                text-decoration-skip-ink: none
+                                cursor: pointer
+                            a:active
+                                color: var(--text-color-4) !important
+                                text-decoration: underline 2px var(--text-color-4) !important
+                                text-underline-offset: 1px
+                                text-decoration-skip-ink: none
+                                cursor: pointer
 
 .snp-footer-wrapper
     height: 88px
     background-color: var(--input-border-color-1)
     .snp-footer
-        white-space: nowrap
-        p
-            color: var(--text-color-3)
-            font-family: 'Roboto'
-            font-style: normal
-            font-weight: 400
-            font-size: 20px
-            line-height: 142%
-            text-align: left
-        a
-            color: var(--text-color-2)
-            font-family: 'Roboto'
-            font-style: normal
-            font-weight: 400
-            font-size: 20px
-            line-height: 142%
-            text-align: left
-            text-decoration: none
-        a:hover
-            color: var(--text-color-2)
-            text-decoration: underline 1px var(--text-color-2)
-            text-underline-offset: 4px
-            text-decoration-skip-ink: none
-            cursor: pointer
-        img
-            padding-right: 10px !important
-        .snp-footer-links
-            gap: 25px !important
-        .snp-footer-col-1
-            margin-right: 527px !important
+        .row
+            gap: 527px !important
+            .snp-footer-col-1
+                p
+                    color: var(--text-color-3)
+                    font-size: 20px
+                    line-height: 142%
+                    text-align: left
+            .snp-footer-links
+                gap: 25px !important
+                a
+                    color: var(--text-color-2)
+                    font-size: 20px
+                    line-height: 142%
+                    text-align: left
+                    text-decoration: none
+                a:hover
+                    color: var(--text-color-2)
+                    text-decoration: underline 1px var(--text-color-2)
+                    text-underline-offset: 4px
+                    text-decoration-skip-ink: none
+                    cursor: pointer
+                .snp-footer-links-text
+                    gap: 10px !important
 
 @media screen and (max-width: 1025px)
     main
@@ -821,24 +750,22 @@ main
 
     .snp-header-wrapper
         .snp-header
-            h2, img
-                margin-right: 82px !important
-            p
-                margin-left: 82px !important
-            .nav
-                gap: 30px !important
+            .col-12
+                gap: 82px !important
+                .nav
+                    gap: 30px !important
     
     .snp-container-1
-        width: 100%
         .snp-container-1-content
-            .snp-container-1-content-high-br
-                display: none
-            .snp-container-1-content-middle-br
-                display: block
-            .snp-container-1-content-mobile-br
-                display: none
             .snp-container-1-content-row-1
-                gap: 50px !important
+                .snp-container-1-content-row-2
+                    gap: 50px !important
+                    .snp-container-1-content-high-br
+                        display: none
+                    .snp-container-1-content-middle-br
+                        display: block
+                    .snp-container-1-content-mobile-br
+                        display: none
 
     .snp-container-2
         padding: 0 53px !important
@@ -849,6 +776,16 @@ main
                     gap: 18px 18px !important
                 .snp-container-2-content-cards-col
                     width: 450px
+                    .card
+                        -webkit-background-size: 110% 120%
+                        -moz-background-size: 110% 120%
+                        -o-background-size: 110% 120%
+                        background-size: 110% 120%
+                    .card:hover
+                        -webkit-background-size: 110%*1.2 120%*1.2
+                        -moz-background-size: 110%*1.2 120%*1.2
+                        -o-background-size: 110%*1.2 120%*1.2
+                        background-size: 110%*1.2 120%*1.2
 
     .snp-container-3
         padding: 0 53px !important
@@ -909,15 +846,15 @@ main
                         -o-background-size: 100% 100%
                         background-size: 120% 100%
                     .card:hover
-                        -webkit-background-size: 140% 120%
-                        -moz-background-size: 140% 120%
-                        -o-background-size: 140% 120%
-                        background-size: 140% 120%
+                        -webkit-background-size: 100%*1.2 100%*1.2
+                        -moz-background-size: 100%*1.2 100%*1.2
+                        -o-background-size: 100%*1.2 100%*1.2
+                        background-size: 120%*1.2 100%*1.2
 
     .snp-footer-wrapper
         .snp-footer
-            .snp-footer-col-1
-                margin-right: 277px !important
+            .row
+                gap: 277px !important
 
 @media screen and (max-width: 560px)
     main
@@ -925,17 +862,18 @@ main
 
     .snp-header-wrapper
         .snp-header
-            h2, img
-                margin-right: 32px !important
-            p
-                margin-left: 0px !important
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 400
-                font-size: 16px
-                line-height: 142%
-            .nav
-                display: none !important
+            .col-12
+                gap: 63px !important
+                img
+                    margin-right: 32px !important
+                    width: 133px
+                    height: 22px
+                p
+                    margin-left: 0px !important
+                    font-size: 16px
+                    line-height: 142%
+                .nav
+                    display: none !important
 
     .button-choosed
         text-underline-offset: 4px !important
@@ -947,61 +885,53 @@ main
         text-decoration-skip-ink: none
 
     .snp-container-1
+        padding: 88px+52px 0 52px 0 !important
         height: 488px
         .snp-container-1-content
-            width: 100%
-            color: var(--text-color-1) !important
-            h1
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 700
-                font-size: 34px
-                line-height: 112%
-                text-align: center
-            p
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 400
-                font-size: 16px
-                line-height: 142%
-                text-align: center
-            button
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 400
-                font-size: 16px
-                line-height: 142%
-                letter-spacing: -0.01em
-                width: 114px
-                height: 33px
-            .snp-container-1-content-high-br
-                display: none
-            .snp-container-1-content-middle-br
-                display: none
-            .snp-container-1-content-mobile-br
-                display: block
+            height: 100%
             .snp-container-1-content-row-1
-                gap: 40px !important
+                .snp-container-1-content-row-2
+                    width: 100%
+                    gap: 40px !important
+                    h1
+                        font-weight: 700
+                        font-size: 34px
+                        line-height: 112%
+                        text-align: center
+                        letter-spacing: 0.02em
+                    p
+                        font-size: 16px
+                        line-height: 142%
+                        text-align: center
+                    button
+                        font-size: 16px
+                        line-height: 142%
+                        letter-spacing: -0.01em
+                        width: 114px
+                        height: 33px
+                    .snp-container-1-content-high-br
+                        display: none
+                    .snp-container-1-content-middle-br
+                        display: none
+                    .snp-container-1-content-mobile-br
+                        display: block
+
 
     .snp-container-2
         padding: 0 21px !important
         .snp-container-2-content
             gap: 50px !important
-            h2
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 700
-                font-size: 34px
-                line-height: 112%
-                text-align: center
-                letter-spacing: 0.02em
             .snp-container-2-content-nav
                 gap: 30px !important
+                h2
+                    font-weight: 700
+                    font-size: 34px
+                    line-height: 112%
+                    text-align: center
+                    letter-spacing: 0.02em
                 .nav
                     gap: 10px !important
                     button
-                        font-family: 'Roboto'
-                        font-style: normal
                         font-weight: 700
                         font-size: 16px
                         line-height: 142%
@@ -1011,56 +941,57 @@ main
             .snp-container-2-content-cards
                 .row
                     gap: 18px !important
-                .snp-container-2-content-cards-col
-                    width: 318px
-                .card
-                    height: 318px
-                    border-radius: 20px
-                    .card-gradient
-                        border-radius: 20px
-                        padding-bottom: 25px !important
-                    .card-body
-                        .card-title
-                            gap: 13px
-                            margin: 20px 20px 0px 20px !important
-                        h3
-                            font-family: 'Roboto'
-                            font-style: normal
-                            font-weight: 700
-                            font-size: 23px
-                            line-height: 120%
-                            letter-spacing: 0.04em
-                        p
-                            font-family: 'Roboto'
-                            font-style: normal
-                            font-weight: 400
-                            font-size: 16px
-                            line-height: 142%
-                            letter-spacing: -0.01em
-                        button
-                            font-family: 'Roboto'
-                            font-style: normal
-                            font-weight: 700
-                            font-size: 16px
-                            line-height: 142%
+                    .snp-container-2-content-cards-col
+                        width: 318px
+                        .card
+                            -webkit-background-size: 105% 145%
+                            -moz-background-size: 105% 145%
+                            -o-background-size: 105% 145%
+                            background-size: 105% 145%
+                            border-radius: 20px
+                            height: 318px
+                        .card:hover
+                            -webkit-background-size: 105%*1.2 145%*1.2
+                            -moz-background-size: 105%*1.2 145%*1.2
+                            -o-background-size: 105%*1.2 145%*1.2
+                            background-size: 105%*1.2 145%*1.2
+                            .card-btn
+                                background-color: #00000000
+                        .card-gradient
                             padding: 0 !important
-                            margin: 0 0 0 25px !important
+                            border-radius: 20px
+                            .card-body
+                                padding: 25px !important
+                                .card-title
+                                    gap: 13px
+                                    margin: 0 !important
+                                    h3
+                                        font-weight: 700
+                                        font-size: 23px
+                                        line-height: 120%
+                                        letter-spacing: 0.04em
+                                    p
+                                        font-size: 16px
+                                        line-height: 142%
+                                        letter-spacing: -0.01em
+                                .card-button
+                                    button
+                                        font-weight: 700
+                                        font-size: 16px
+                                        line-height: 142%
+                                        padding: 0 !important
+                                        margin: 0 !important
 
     .snp-container-3
         padding: 0 !important
         .snp-container-3-content
             h2
-                font-family: 'Roboto'
-                font-style: normal
                 font-weight: 700
                 font-size: 34px
                 line-height: 112%
                 text-align: center
                 letter-spacing: 0.02em
             p
-                font-family: 'Roboto'
-                font-style: normal
-                font-weight: 400
                 font-size: 16px
                 line-height: 142%
                 text-align: center
@@ -1081,16 +1012,10 @@ main
                                 gap: 30px !important
                                 flex-direction: column !important
                                 label
-                                    font-family: 'Roboto'
-                                    font-style: normal
-                                    font-weight: 400
                                     font-size: 16px
                                     line-height: 142%
                                     text-align: left
                                 input
-                                    font-family: 'Roboto'
-                                    font-style: normal
-                                    font-weight: 400
                                     font-size: 16px
                                     line-height: 142%
                                     text-align: left
@@ -1099,18 +1024,13 @@ main
                                 input::placeholder
                                     color: var(--text-color-3)
                                 select
-                                    font-family: 'Roboto'
-                                    font-style: normal
-                                    font-weight: 400
                                     font-size: 16px
                                     line-height: 142%
                                     text-align: left
                                     height: 46px 
                                     padding: 10px !important
                                 option
-                                    font-family: Roboto
                                     font-size: 20px
-                                    font-weight: 400
                                     line-height: 28.4px
                                     text-align: left
                                 .card-input-select-box-img
@@ -1126,9 +1046,6 @@ main
                                     width: 20px
                                     height: 20px
                                 p, label, span
-                                    font-family: 'Roboto'
-                                    font-style: normal
-                                    font-weight: 400
                                     font-size: 16px
                                     line-height: 142%
                                     text-align: left
@@ -1144,9 +1061,6 @@ main
                                 .padding-col-3
                                     gap: 10px !important
                                     button
-                                        font-family: 'Roboto'
-                                        font-style: normal
-                                        font-weight: 400
                                         font-size: 16px
                                         line-height: 142%
                                         text-align: center
@@ -1159,17 +1073,12 @@ main
                 gap: 50px !important
                 .snp-container-4-content-col-1
                     h2
-                        font-family: 'Roboto'
-                        font-style: normal
                         font-weight: 700
                         font-size: 34px
                         line-height: 112%
                         text-align: center
                         letter-spacing: 0.02em
                     p
-                        font-family: 'Roboto'
-                        font-style: normal
-                        font-weight: 400
                         font-size: 16px
                         line-height: 142%
                         text-align: center
@@ -1190,8 +1099,6 @@ main
                                 .card-body
                                     .card-title
                                         p
-                                            font-family: 'Roboto'
-                                            font-style: normal
                                             font-weight: 700
                                             font-size: 16px
                                             line-height: 142%
@@ -1199,16 +1106,11 @@ main
                                     .card-text
                                         .card-text-text
                                             h3
-                                                font-family: 'Roboto'
-                                                font-style: normal
                                                 font-weight: 700
                                                 font-size: 23px
                                                 line-height: 120%
                                                 letter-spacing: 0.04em
                                             p
-                                                font-family: 'Roboto'
-                                                font-style: normal
-                                                font-weight: 400
                                                 font-size: 16px
                                                 line-height: 142%
                                                 letter-spacing: -0.01em
@@ -1220,17 +1122,12 @@ main
                 gap: 50px !important
                 .snp-container-5-content-col
                     h2
-                        font-family: 'Roboto'
-                        font-style: normal
                         font-weight: 700
                         font-size: 34px
                         line-height: 112%
                         text-align: center
                         letter-spacing: 0.02em
                     p
-                        font-family: 'Roboto'
-                        font-style: normal
-                        font-weight: 400
                         font-size: 16px
                         line-height: 142%
                         text-align: center
@@ -1257,18 +1154,108 @@ main
                 gap: 50px !important
                 .snp-container-6-content-col-1
                     h2
-                        font-family: 'Roboto'
-                        font-style: normal
                         font-weight: 700
                         font-size: 34px
                         line-height: 112%
                         text-align: center
                         letter-spacing: 0.02em
                     p
-                        font-family: 'Roboto'
-                        font-style: normal
-                        font-weight: 400
                         font-size: 16px
                         line-height: 142%
                         text-align: center
                     gap: 20px !important
+                .snp-container-6-content-col-2
+                    .snp-container-6-content-cards
+                        gap: 20px !important
+                        .card
+                            -webkit-background-size: 300% 100%
+                            -moz-background-size: 300% 100%
+                            -o-background-size: 300% 100%
+                            background-size: 300% 100%
+                            width: 318px
+                            height: 455px
+                            border-radius: 20px
+                            .card-gradient
+                                border-radius: 20px
+                                .card-body
+                                    .card-title
+                                        padding: 30px 25px 0 30px !important
+                                        gap: 20px !important
+                                        h3
+                                            font-weight: 700
+                                            font-size: 23px
+                                            line-height: 120%
+                                            letter-spacing: 0.04em
+                                        p, li
+                                            font-size: 16px
+                                            line-height: 142%
+                                        .snp-container-6-content-mobile-br
+                                            display: none
+                                    .card-button
+                                        padding: 0 0 31.5px 25px !important
+                                        .row
+                                            button
+                                                font-weight: 700
+                                                font-size: 16px
+                                                line-height: 142%
+                                                margin: 0 !important
+                                                padding: 0 !important
+                                            .card-button-col-2
+                                                display: none !important
+                        .card:hover
+                            -webkit-background-size: 300%*1.2 100%*1.2
+                            -moz-background-size: 300%*1.2 100%*1.2
+                            -o-background-size: 300%*1.2 100%*1.2
+                            background-size: 300%*1.2 100%*1.2
+                            button
+                                background-color: #00000000
+    .snp-container-footer
+        padding: 0 34.5px !important
+        .snp-container-footer-content
+            margin: 0 !important
+            .snp-container-footer-content-cards
+                .card
+                    width: 291px
+                    .snp-container-footer-row
+                        flex-direction: column !important
+                        img
+                            width: 130px
+                            height: 133px
+                            border-radius: 20px !important
+                        .card-body
+                            width: 100%
+                            padding: 0 !important
+                            .card-title
+                                h3
+                                    font-weight: 700
+                                    font-size: 23px
+                                    line-height: 120%
+                                    text-align: center
+                                    letter-spacing: 0.04em
+                                p, a
+                                    font-size: 16px
+                                    line-height: 142%
+                                    text-align: center
+
+    .snp-footer-wrapper
+        height: 95px
+        padding: 21px 21.5px !important
+        .snp-footer
+            .row
+                width: 100%
+                gap: 7px !important
+                .snp-footer-col-1
+                    margin: 0 !important
+                    p
+                        font-size: 16px
+                        line-height: 142%
+                .snp-footer-links
+                    gap: 15px !important
+                    .snp-footer-links-text
+                        gap: 5px !important
+                        img
+                            width: 20px
+                            height: 20px
+                        a
+                            font-size: 16px
+                            line-height: 142%
