@@ -925,14 +925,14 @@ main {
   .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row {
     gap: 18px 18px !important;
   }
-  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .snp-container-2-content-cards-col {
-    width: 450px;
+  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col {
+    width: 450px !important;
   }
-  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .snp-container-2-content-cards-col .card {
-    background-size: 110% 120%;
+  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card {
+    background-size: 100% 120%;
   }
-  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .snp-container-2-content-cards-col .card:hover {
-    background-size: 132% 144%;
+  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card:hover {
+    background-size: 120% 144%;
   }
   .snp-container-3 {
     padding: 0 53px !important;
