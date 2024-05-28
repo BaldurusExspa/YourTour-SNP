@@ -968,8 +968,18 @@ main
                             -moz-background-size: 105%*1.2 145%*1.2
                             -o-background-size: 105%*1.2 145%*1.2
                             background-size: 105%*1.2 145%*1.2
-                            .card-btn
-                                background-color: #00000000
+                            .card-gradient
+                                .card-body
+                                    .card-button
+                                        button
+                                            background-color: #00000000
+                        .card:active
+                            .card-gradient
+                                .card-body
+                                    .card-button
+                                        button
+                                            background-color: #00000000
+
                         .card-gradient
                             padding: 0 !important
                             border-radius: 20px

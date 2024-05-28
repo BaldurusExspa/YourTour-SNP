@@ -1115,7 +1115,10 @@ main {
   .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card:hover {
     background-size: 126% 174%;
   }
-  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card:hover .card-btn {
+  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card:hover .card-gradient .card-body .card-button button {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card:active .card-gradient .card-body .card-button button {
     background-color: rgba(0, 0, 0, 0);
   }
   .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card-gradient {
