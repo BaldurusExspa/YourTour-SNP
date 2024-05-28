@@ -234,7 +234,7 @@ main {
   transition: 0.1s ease;
 }
 .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card:active .card-gradient .card-body .card-button button {
-  background-color: #EFA501;
+  background-color: var(--orange-200);
   -webkit-transition: 0.1s ease;
   transition: 0.1s ease;
 }
@@ -690,6 +690,11 @@ main {
 }
 .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover button {
   background-color: var(--text-color-4);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:active button {
+  background-color: var(--orange-200);
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }

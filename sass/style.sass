@@ -209,7 +209,7 @@ main
                             .card-body
                                 .card-button
                                     button
-                                        background-color: #EFA501
+                                        background-color: var(--orange-200)
                                         -webkit-transition: .1s ease
                                         -moz-transition: .1s ease
                                         -o-transition: .1s ease
@@ -591,6 +591,13 @@ main
                     cursor: pointer
                     button
                         background-color: var(--text-color-4)
+                        -webkit-transition: .1s
+                        -moz-transition: .1s
+                        -o-transition: .1s
+                        transition: .1s
+                .card:active
+                    button
+                        background-color: var(--orange-200)
                         -webkit-transition: .1s
                         -moz-transition: .1s
                         -o-transition: .1s
