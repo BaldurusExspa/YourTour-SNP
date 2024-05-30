@@ -926,7 +926,7 @@ main {
     gap: 18px 18px !important;
   }
   .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col {
-    width: 450px !important;
+    width: 450px;
   }
   .snp-container-2 .snp-container-2-content .snp-container-2-content-cards .row .snp-container-2-content-cards-col .card {
     background-size: 100% 120%;
