@@ -12,3 +12,7 @@ Website YourTour from snp
 - 1.920px
 - 1.024px
 - 360px
+### Проверено в браузерах
+- Yandex
+- Chrome
+- Firefox
