@@ -115,18 +115,15 @@ main {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
   width: 100% !important;
-  height: 90vh;
+  min-height: 75vh;
 }
 .snp-container-1 .snp-container-1-content {
-  height: 100%;
+  min-height: 75vh;
 }
 .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 100%;
+  gap: 119px !important;
   padding-bottom: 119px !important;
 }
 .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 {
@@ -1006,8 +1003,11 @@ main {
   .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
     background-size: 144% 120%;
   }
+  .snp-footer-wrapper .snp-footer .row {
+    gap: 277px !important;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   main {
     gap: 135px;
   }
@@ -1103,14 +1103,11 @@ main {
     padding: 0 53px !important;
   }
   .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card {
-    width: 918px;
+    width: 100%;
     background-size: 120% 100%;
   }
   .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
     background-size: 144% 120%;
-  }
-  .snp-footer-wrapper .snp-footer .row {
-    gap: 277px !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1127,7 +1124,51 @@ main {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 769px) {
+  .snp-header-wrapper .snp-header .col-12 {
+    gap: 75px !important;
+  }
+  .snp-header-wrapper .snp-header .col-12 .nav {
+    display: none !important;
+  }
+  .snp-container-footer {
+    padding: 0 34.5px !important;
+  }
+  .snp-container-footer .snp-container-footer-content {
+    margin: 0 !important;
+  }
+  .snp-container-footer .snp-container-footer-content .snp-container-footer-content-cards .card .snp-container-footer-row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .snp-container-footer .snp-container-footer-content .snp-container-footer-content-cards .card .snp-container-footer-row .card-body {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .snp-container-footer .snp-container-footer-content .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title h3 {
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+  .snp-container-footer .snp-container-footer-content .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title p, .snp-container-footer .snp-container-footer-content .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title a {
+    line-height: 142%;
+    text-align: center;
+  }
+  .snp-footer-wrapper {
+    height: 95px;
+  }
+  .snp-footer-wrapper .snp-footer .row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    gap: 10px !important;
+  }
+}
+@media screen and (max-width: 361px) {
   main {
     gap: 75px;
   }
@@ -1146,9 +1187,6 @@ main {
     font-size: 16px;
     line-height: 142%;
   }
-  .snp-header-wrapper .snp-header .col-12 .nav {
-    display: none !important;
-  }
   .button-choosed {
     text-underline-offset: 4px !important;
     -webkit-text-decoration-skip-ink: none;
@@ -1163,13 +1201,15 @@ main {
             text-decoration-skip-ink: none;
   }
   .snp-container-1 {
-    padding: 140px 0 52px 0 !important;
     height: 488px;
   }
   .snp-container-1 .snp-container-1-content {
     height: 100%;
+    min-height: 488px;
   }
   .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
+    width: 100vw;
+    gap: 52px !important;
     padding-bottom: 52px !important;
   }
   .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 {
