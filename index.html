@@ -12,38 +12,40 @@
     </head>
     <body>
 
-        <header class="snp-header-wrapper d-flex justify-content-center align-items-center" id="snp-header-wrapper">
-            <div class="snp-header" id="snp-header">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center align-items-center p-0">
-                        <!-- <h2 class="m-0">YourTour</h2> -->
-                        <img src="../media/icons/YourTour_wh.svg" alt="YoyrTour" id="snp-header-img">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" target="_self">Туры</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_self">Содзать тур</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_self">Отзывы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" target="_self">Истории</a>
-                            </li>
-                        </ul>
-                        <p class="m-0">+7 999 999 99 99</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-
         <main class="d-flex flex-column">
-            <section class="snp-container-1 container-fluid d-flex justify-content-center align-items-center flex-column">
+            <section class="snp-container-1 container-fluid d-flex justify-content-center align-items-center flex-column p-0" id="snp-container-1">
                 <!-- <img src="../media/header.png" alt="" class="snp-container-1-img"> -->
-                <div class="snp-container-1-content container d-flex justify-content-center align-items-center px-0">
+                <div class="snp-container-1-content container d-flex justify-content-center align-items-start px-0">
                     <div class="row snp-container-1-content-row-1">
-                        <div class="col-12 d-flex justify-content-center align-items-center flex-column p-0">
+                        <header class="snp-header-wrapper d-flex justify-content-center align-items-center p-0" id="snp-header-wrapper">
+                            <div class="snp-header" id="snp-header">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center p-0">
+                                        <a href="#snp-container-1">
+                                            <img src="../media/icons/YourTour_wh.svg" alt="YoyrTour" id="snp-header-img">
+                                        </a>
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <a href="#snp-container-2">Туры</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#snp-container-3">Содзать тур</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#snp-container-4">Отзывы</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#snp-container-6">Истории</a>
+                                            </li>
+                                        </ul>
+                                        <a href="tel:">
+                                            <p class="m-0">+7 999 999 99 99</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="col-12 snp-container-1-content-col-1 d-flex justify-content-center align-items-center flex-column p-0">
                             <div class="row snp-container-1-content-row-2 d-flex justify-content-center align-items-center">
                                 <div class="col-12 d-flex justify-content-center align-items-center p-0">
                                     <h1 class="m-0">Идеальные <br> путешествия <br> существуют</h1>
@@ -52,7 +54,7 @@
                                     <p class="m-0">Идейные соображения высшего <br class="snp-container-1-content-mobile-br"> порядка, а <br class="snp-container-1-content-middle-br"> также рамки и <br class="snp-container-1-content-high-br"> место <br class="snp-container-1-content-mobile-br"> обучения кадров</p>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center align-items-center p-0">
-                                    <button>Найти тур</button>
+                                    <button type="button" type="button">Найти тур</button>
                                 </div>
                             </div>
                         </div>
@@ -60,16 +62,16 @@
                 </div>
             </section>
 
-            <section class="snp-container-2 container-fluid d-flex justify-content-center align-items-center">
+            <section class="snp-container-2 container-fluid d-flex justify-content-center align-items-center" id="snp-container-2">
                 <div class="snp-container-2-content container px-0 d-flex justify-content-center align-items-center flex-column">
                     <div class="snp-container-2-content-nav d-flex flex-column">
                         <h2 class="m-0">Выбери свой тур</h2>
                         <ul class="nav d-flex justify-content-center align-items-center">
-                            <li class="nav-item"><button class="tab-btn button-choosed p-0" id="1">Популярные</button></li>
-                            <li class="nav-item"><button class="tab-btn p-0" id="2">Авторские</button></li>
-                            <li class="nav-item"><button class="tab-btn p-0" id="3">Походы</button></li>
-                            <li class="nav-item"><button class="tab-btn p-0" id="4">Сплавы</button></li>
-                            <li class="nav-item"><button class="tab-btn p-0" id="5">Велопрогулки</button></li>
+                            <li class="nav-item"><button type="button" type="button" class="tab-btn button-choosed p-0" id="1">Популярные</button></li>
+                            <li class="nav-item"><button type="button" type="button" class="tab-btn p-0" id="2">Авторские</button></li>
+                            <li class="nav-item"><button type="button" type="button" class="tab-btn p-0" id="3">Походы</button></li>
+                            <li class="nav-item"><button type="button" type="button" class="tab-btn p-0" id="4">Сплавы</button></li>
+                            <li class="nav-item"><button type="button" type="button" class="tab-btn p-0" id="5">Велопрогулки</button></li>
                         </ul>
                     </div>
                     <div class="snp-container-2-content-cards d-flex justify-content-center align-items-center">
@@ -83,7 +85,7 @@
                                                 <p class="m-0">от 80 000 руб</p>
                                             </div>
                                             <div class="card-button d-flex justify-content-start align-items-end">
-                                                <button class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                <button type="button" type="button" class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
@@ -98,7 +100,7 @@
                                                 <p class="m-0">от 80 000 руб</p>
                                             </div>
                                             <div class="card-button d-flex justify-content-start align-items-end">
-                                                <button class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                <button type="button" type="button" class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
@@ -113,7 +115,7 @@
                                                 <p class="m-0">от 80 000 руб</p>
                                             </div>
                                             <div class="card-button d-flex justify-content-start align-items-end">
-                                                <button class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                <button type="button" type="button" class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
@@ -128,7 +130,7 @@
                                                 <p class="m-0">от 80 000 руб</p>
                                             </div>
                                             <div class="card-button d-flex justify-content-start align-items-end">
-                                                <button class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                <button type="button" type="button" class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +145,7 @@
                                                 <p class="m-0">от 80 000 руб</p>
                                             </div>
                                             <div class="card-button d-flex justify-content-start align-items-end">
-                                                <button class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                <button type="button" type="button" class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
@@ -158,7 +160,7 @@
                                                 <p class="m-0">от 80 000 руб</p>
                                             </div>
                                             <div class="card-button d-flex justify-content-start align-items-end">
-                                                <button class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                <button type="button" type="button" class="card-btn p-0">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                             </div>
                                         </div>
                                     </div>
@@ -169,7 +171,7 @@
                 </div>
             </section>
 
-            <section class="snp-container-3 container-fluid d-flex justify-content-center align-items-center">
+            <section class="snp-container-3 container-fluid d-flex justify-content-center align-items-center" id="snp-container-3">
                 <div class="snp-container-3-content container px-0 d-flex justify-content-center align-items-center">
                     <div class="row snp-container-3-content-row d-flex justify-content-center align-items-center">
                         <div class="col-12 snp-container-3-content-nav d-flex flex-column p-0">
@@ -224,7 +226,7 @@
                                             <div class="row d-flex flex-row">
                                                 <div class="col snp-container-3-content-cards-col d-flex flex-column p-0">
                                                     <label for="Comment">Комментарий</label>
-                                                    <input class="snp-container-3-content-cards-input-comment" name="Comment" type="text" form="make-your-tour-form" required>
+                                                    <textarea class="snp-container-3-content-cards-comment" name="Comment" form="make-your-tour-form" required></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -234,18 +236,27 @@
                                                     <p class="p-0 m-0">Вам есть 18 лет?</p>
                                                     <div class="col-12 padding-col-1-col d-flex p-0">
                                                         <div class="input d-flex justify-content-center align-items-center">
-                                                            <input name="radioBtn" id="Yes" type="radio" value="Yes" form="make-your-tour-form" required>
-                                                            <label class="m-0" for="Yes">Да</label>
+                                                            <label class="radio-label">
+                                                                <input name="radioBtn" id="Yes" type="radio" value="Yes" form="make-your-tour-form" required>
+                                                                <span class="radio d-flex justify-content-center align-items-center"></span>
+                                                                <label class="radio-text m-0" for="Yes">Да</label>
+                                                            </label>
                                                         </div>
                                                         <div class="input d-flex justify-content-center align-items-center">
-                                                            <input name="radioBtn" id="No" type="radio" value="No" form="make-your-tour-form" required>
-                                                            <label class="m-0" for="No">Нет</label>
+                                                            <label class="radio-label">
+                                                                <input name="radioBtn" id="No" type="radio" value="No" form="make-your-tour-form" required>
+                                                                <span class="radio d-flex justify-content-center align-items-center"></span>
+                                                                <label class="radio-text m-0" for="No">Нет</label>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 padding-col-2 d-flex flex-row align-items-center p-0">
-                                                    <input type="checkbox" class="m-0">
-                                                    <p class="p-0 m-0">Нажимая кнопку, я принимаю <br class="card-button-br-1"> условия <span>Лицензионного <br class="card-button-br-2"> договора</span></p>
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" class="m-0">
+                                                        <span class="checkbox d-flex justify-content-center align-items-center"></span>
+                                                        <p class="p-0 m-0">Нажимая кнопку, я принимаю <br class="card-button-br-1"> условия <span>Лицензионного <br class="card-button-br-2"> договора</span></p>
+                                                    </label>
                                                 </div>
                                                 <div class="col-12 padding-col-3 d-flex flex-row p-0">
                                                     <button class="card-button-button-1">Найти тур</button>
@@ -261,7 +272,7 @@
                 </div>
             </section>
 
-            <section class="snp-container-4 container-fluid d-flex justify-content-center align-items-center">
+            <section class="snp-container-4 container-fluid d-flex justify-content-center align-items-center" id="snp-container-4">
                 <div class="snp-container-4-content container px-0 d-flex justify-content-center align-items-center">
                     <div class="row snp-container-4-content-row-1 d-flex flex-column">
                         <div class="col-12 snp-container-4-content-col-1 d-flex flex-column p-0">
@@ -375,7 +386,7 @@
                 </div>
             </section>
 
-            <section class="snp-container-6 container-fluid d-flex justify-content-center align-items-center">
+            <section class="snp-container-6 container-fluid d-flex justify-content-center align-items-center" id="snp-container-6">
                 <div class="snp-container-6-content container d-flex justify-content-center align-items-center px-0 m-0">
                     <div class="row snp-container-6-content-row d-flex justify-content-center align-items-center">
                         <div class="col-12 snp-container-6-content-col-1 d-flex flex-column p-0">
@@ -399,7 +410,7 @@
                                             <div class="card-button d-flex flex-column justify-content-end align-items-center">
                                                 <div class="row d-flex flex-row">
                                                     <div class="col d-flex align-items-center p-0">
-                                                        <button>Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                        <button type="button">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                                     </div>
                                                     <div class="col card-button-col-2 d-flex justify-content-end align-items-center p-0">
                                                         <a href="#" target="_self">instagram</a>
@@ -421,7 +432,7 @@
                                             <div class="card-button d-flex flex-column justify-content-end align-items-center">
                                                 <div class="row d-flex flex-row">
                                                     <div class="col d-flex align-items-center p-0">
-                                                        <button>Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                        <button type="button">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                                     </div>
                                                     <div class="col card-button-col-2 d-flex justify-content-end align-items-center p-0">
                                                         <a href="#" target="_self">instagram</a>
@@ -442,7 +453,7 @@
                                             <div class="card-button d-flex flex-column justify-content-end align-items-center">
                                                 <div class="row d-flex flex-row">
                                                     <div class="col d-flex align-items-center p-0">
-                                                        <button>Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
+                                                        <button type="button">Подробнее<img src="../media/icons/Vector.svg" alt="Стрелка вправо"></button>
                                                     </div>
                                                     <div class="col card-button-col-2 d-flex justify-content-end align-items-center p-0">
                                                         <a href="#" target="_self">instagram</a>
@@ -494,13 +505,13 @@
                         <div class="col d-flex justify-content-center align-items-center p-0">
                             <div class="snp-footer-links d-flex">
                                 <div class="snp-footer-links-text d-flex flex-row">
-                                    <img src="../media/icons/inst.svg" alt=""><a href="#" target="_self">instagram</a>
+                                    <a href="#" target="_self" class="d-flex flex-row"><img src="../media/icons/inst.svg" alt="">instagram</a>
                                 </div>
                                 <div class="snp-footer-links-text d-flex flex-row">
-                                    <img src="../media/icons/fb.svg" alt=""><a href="#" target="_self">facebook</a>
+                                    <a href="#" target="_self" class="d-flex flex-row"><img src="../media/icons/fb.svg" alt="">facebook</a>
                                 </div>
                                 <div class="snp-footer-links-text d-flex flex-row">
-                                    <img src="../media/icons/vk.svg" alt=""><a href="#" target="_self">vkontakte</a>
+                                    <a href="#" target="_self" class="d-flex flex-row"><img src="../media/icons/vk.svg" alt="">vkontakte</a>
                                 </div>
                             </div>
                         </div>
@@ -515,6 +526,4 @@
     <script src="../js/inputPhoneMask.js"></script>
     <script src="../js/inputDateMask.js"></script>
     <script src="../js/tabsActiveState.js"></script>
-    <!-- <script src="../js/mediaChangeImg.js"></script> -->
-    <!-- <script src="../js/selectImg.js"></script> -->
 </html>

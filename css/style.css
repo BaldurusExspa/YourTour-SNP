@@ -10,7 +10,6 @@
 }
 
 * {
-  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -29,7 +28,6 @@ main {
 }
 
 .snp-header-wrapper {
-  position: absolute;
   z-index: 500;
   top: 0;
   left: 0;
@@ -104,24 +102,32 @@ main {
 
 .button-choosed:hover {
   color: var(--orange-200) !important;
-  -webkit-text-decoration: underline 2px var(--orange-200);
-          text-decoration: underline 2px var(--orange-200);
+  -webkit-text-decoration: underline 2px var(--orange-200) !important;
+          text-decoration: underline 2px var(--orange-200) !important;
   text-underline-offset: 10px;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
 
 .snp-container-1 {
+  z-index: 500;
   background-image: url(../media/header.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100% !important;
   height: 90vh;
-  padding: 207px 0 119px 0 !important;
+}
+.snp-container-1 .snp-container-1-content {
+  height: 100%;
 }
 .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
   width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  padding-bottom: 119px !important;
 }
 .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 {
   width: 100%;
@@ -374,6 +380,28 @@ main {
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row input:focus {
   outline: 1px solid var(--text-color-3);
 }
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row input:hover {
+  border: 1px solid var(--input-border-color-1);
+  background-color: var(--input-border-color-1);
+  cursor: pointer;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row textarea {
+  font-size: 20px;
+  line-height: 28.4px;
+  text-align: left;
+  background-color: var(--input-color-1);
+  border-radius: 10px;
+  border: 1px solid var(--input-border-color-1);
+  padding: 20px !important;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row textarea:focus {
+  outline: 1px solid var(--text-color-3);
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row textarea:hover {
+  border: 1px solid var(--input-border-color-1);
+  background-color: var(--input-border-color-1);
+  cursor: pointer;
+}
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row select {
   font-size: 20px;
   line-height: 28.4px;
@@ -387,11 +415,6 @@ main {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row input:hover {
-  border: 1px solid var(--input-border-color-1);
-  background-color: var(--input-border-color-1);
-  cursor: pointer;
 }
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row select:hover {
   border: 1px solid var(--input-border-color-1);
@@ -423,7 +446,7 @@ main {
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row .card-input-select-img {
   margin-top: 57.4px !important;
 }
-.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row .snp-container-3-content-cards-input-comment {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row .snp-container-3-content-cards-comment {
   height: 152px;
 }
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button {
@@ -449,14 +472,45 @@ main {
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col {
   gap: 31px !important;
 }
-.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input {
-  gap: 11px !important;
-}
-.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input input[type=radio] {
-  accent-color: var(--text-color-2);
-}
-.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input input:hover {
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input .radio-label {
+  display: block;
+  position: relative;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input .radio-label .radio-text {
+  margin-left: 37px !important;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input .radio-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input .radio-label .radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  border: 2px solid var(--text-color-2);
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input .radio-label input:checked ~ .radio {
+  background-color: #FFFFFF;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input .radio:after {
+  content: url("../media/icons/Ellipse 2.svg");
+  position: absolute;
+  display: none;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-1 .padding-col-1-col .input .radio-label input:checked ~ .radio:after {
+  display: block;
 }
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 {
   gap: 19px !important;
@@ -467,6 +521,7 @@ main {
   line-height: 24.14px;
   letter-spacing: -0.01em;
   text-align: left;
+  margin-left: 45px !important;
 }
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span {
   color: var(--text-color-2);
@@ -482,7 +537,45 @@ main {
 @media screen and (min-width: 1025px) {
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 span:active {
     color: var(--text-color-4);
+    -webkit-text-decoration: underline var(--text-color-4);
+            text-decoration: underline var(--text-color-4);
   }
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .checkbox-label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .checkbox-label .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--text-color-2);
+  border-radius: 5px;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .checkbox-label input:checked ~ .checkbox {
+  background-color: #FFFFFF;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .checkbox:after {
+  content: url("../media/icons/Rectangle 36 (Stroke).svg");
+  position: absolute;
+  display: none;
+}
+.snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .checkbox-label input:checked ~ .checkbox:after {
+  display: block;
 }
 .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .card-button-br-1, .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 .card-button-br-2 {
   display: none;
@@ -876,6 +969,7 @@ main {
   gap: 25px !important;
 }
 .snp-footer-wrapper .snp-footer .row .snp-footer-links a {
+  gap: 10px !important;
   color: var(--text-color-2);
   font-size: 20px;
   line-height: 142%;
@@ -891,11 +985,29 @@ main {
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
-.snp-footer-wrapper .snp-footer .row .snp-footer-links .snp-footer-links-text {
-  gap: 10px !important;
-}
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
+  .snp-header-wrapper .snp-header .col-12 {
+    gap: 62px !important;
+  }
+  .snp-header-wrapper .snp-header .col-12 .nav {
+    gap: 40px !important;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-row-1 .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-body .card-title p {
+    font-size: 21px;
+  }
+  .snp-container-6 {
+    padding: 0 53px !important;
+  }
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card {
+    width: 975px;
+    background-size: 120% 100%;
+  }
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
+    background-size: 144% 120%;
+  }
+}
+@media screen and (max-width: 1024px) {
   main {
     gap: 135px;
   }
@@ -904,9 +1016,6 @@ main {
   }
   .snp-header-wrapper .snp-header .col-12 .nav {
     gap: 30px !important;
-  }
-  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 {
-    gap: 50px !important;
   }
   .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 .snp-container-1-content-high-br {
     display: none;
@@ -952,6 +1061,9 @@ main {
   }
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 {
     gap: 11px !important;
+  }
+  .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-2 p {
+    margin-left: 37px !important;
   }
   .snp-container-4 {
     padding: 0 53px !important;
@@ -1001,15 +1113,31 @@ main {
     gap: 277px !important;
   }
 }
+@media screen and (max-width: 992px) {
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-row-1 .snp-container-4-content-cards {
+    width: 100%;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-row-1 .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-body .card-title p {
+    font-size: 18px;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-row-1 .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-body .card-text .card-text-text h3 {
+    font-size: 20px;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-row-1 .snp-container-4-content-cards .snp-container-4-content-cards-row-2 .snp-container-4-content-cards-col .card .card-body .card-text .card-text-text p {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 560px) {
   main {
     gap: 75px;
+  }
+  .snp-header-wrapper {
+    padding: 0 20px !important;
   }
   .snp-header-wrapper .snp-header .col-12 {
     gap: 63px !important;
   }
   .snp-header-wrapper .snp-header .col-12 img {
-    margin-right: 32px !important;
     width: 133px;
     height: 22px;
   }
@@ -1040,6 +1168,9 @@ main {
   }
   .snp-container-1 .snp-container-1-content {
     height: 100%;
+  }
+  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
+    padding-bottom: 52px !important;
   }
   .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 {
     width: 100%;
@@ -1190,7 +1321,7 @@ main {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
-  .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row label {
+  .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row .radio-text {
     font-size: 16px;
     line-height: 142%;
     text-align: left;
@@ -1235,7 +1366,7 @@ main {
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row .card-input-select-img {
     margin-top: 40.71px !important;
   }
-  .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row .snp-container-3-content-cards-input-comment {
+  .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row .snp-container-3-content-cards-comment {
     height: 132px;
   }
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-button .card-button-row {
@@ -1490,14 +1621,12 @@ main {
   .snp-footer-wrapper .snp-footer .row .snp-footer-links {
     gap: 15px !important;
   }
-  .snp-footer-wrapper .snp-footer .row .snp-footer-links .snp-footer-links-text {
-    gap: 5px !important;
-  }
   .snp-footer-wrapper .snp-footer .row .snp-footer-links .snp-footer-links-text img {
     width: 20px;
     height: 20px;
   }
   .snp-footer-wrapper .snp-footer .row .snp-footer-links .snp-footer-links-text a {
+    gap: 5px !important;
     font-size: 16px;
     line-height: 142%;
   }

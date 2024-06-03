@@ -13,7 +13,7 @@
     --orange-200: #EFA501
 
 * 
-    overflow-x: hidden
+    // overflow-x: hidden
     font-family: "Roboto", sans-serif
     font-weight: 400
     font-style: normal
@@ -28,7 +28,7 @@ main
     gap: 135px
 
 .snp-header-wrapper
-    position: absolute
+    // position: absolute
     z-index: 500
     top: 0
     left: 0
@@ -84,11 +84,12 @@ main
 
 .button-choosed:hover
     color: var(--orange-200) !important
-    text-decoration: underline 2px var(--orange-200)
+    text-decoration: underline 2px var(--orange-200) !important
     text-underline-offset: 10px
     text-decoration-skip-ink: none
 
 .snp-container-1
+    z-index: 500
     background-image: url(../media/header.png)
     background-repeat: no-repeat
     background-position: center center
@@ -96,10 +97,13 @@ main
     width: 100% !important
     // height: 823px
     height: 90vh
-    padding: 119px+88px 0 119px 0 !important
     .snp-container-1-content
+        height: 100%
         .snp-container-1-content-row-1
             width: 100%
+            flex: 1
+            height: 100%
+            padding-bottom: 119px !important
             .snp-container-1-content-row-2
                 width: 100%
                 gap: 50px !important
@@ -319,6 +323,24 @@ main
                                 color: var(--text-color-3)
                             input:focus
                                 outline: 1px solid var(--text-color-3)
+                            input:hover
+                                border: 1px solid var(--input-border-color-1)
+                                background-color: var(--input-border-color-1)
+                                cursor: pointer
+                            textarea
+                                font-size: 20px
+                                line-height: 28.4px
+                                text-align: left
+                                background-color: var(--input-color-1)
+                                border-radius: 10px
+                                border: 1px solid var(--input-border-color-1)
+                                padding: 20px !important
+                            textarea:focus
+                                outline: 1px solid var(--text-color-3)
+                            textarea:hover
+                                border: 1px solid var(--input-border-color-1)
+                                background-color: var(--input-border-color-1)
+                                cursor: pointer
                             select
                                 font-size: 20px
                                 line-height: 28.4px
@@ -330,21 +352,6 @@ main
                                 border: 1px solid var(--input-border-color-1)
                                 padding: 20px
                                 appearance: none
-                            input:hover
-                                border: 1px solid var(--input-border-color-1)
-                                background-color: var(--input-border-color-1)
-                                cursor: pointer
-                            // input[type='checkbox']
-                            //     appearance: none
-                            //     background-color: #fff
-                            //     margin: 0
-                            //     font: inherit
-                            //     color: currentColor
-                            //     width: 1.15em
-                            //     height: 1.15em
-                            //     border: 0.15em solid currentColor
-                            //     border-radius: 0.15em
-                            //     transform: translateY(-0.075em)
                             select:hover
                                 border: 1px solid var(--input-border-color-1)
                                 background-color: var(--input-border-color-1)
@@ -368,7 +375,7 @@ main
                                 padding: 0 20px !important
                             .card-input-select-img
                                 margin-top: 36.4px+21px !important
-                            .snp-container-3-content-cards-input-comment
+                            .snp-container-3-content-cards-comment
                                 height: 152px
                     .card-button
                         color: var(--text-color-2)
@@ -388,11 +395,39 @@ main
                                 .padding-col-1-col
                                     gap: 31px !important
                                     .input
-                                        gap: 11px !important
-                                        input[type='radio']
-                                            accent-color: var(--text-color-2)
-                                        input:hover
+                                        .radio-label
+                                            display: block
+                                            position: relative
                                             cursor: pointer
+                                            -webkit-user-select: none
+                                            -moz-user-select: none
+                                            -ms-user-select: none
+                                            user-select: none
+                                            .radio-text
+                                                margin-left: 11px+26px !important
+                                            input
+                                                position: absolute
+                                                opacity: 0
+                                                cursor: pointer
+                                                height: 0
+                                                width: 0
+                                            .radio
+                                                position: absolute
+                                                top: 0
+                                                left: 0
+                                                cursor: pointer
+                                                width: 26px
+                                                height: 26px
+                                                border-radius: 50px
+                                                border: 2px solid var(--text-color-2)
+                                        .radio-label input:checked ~ .radio
+                                            background-color: #FFFFFF
+                                        .radio:after
+                                            content: url('../media/icons/Ellipse 2.svg')
+                                            position: absolute
+                                            display: none
+                                        .radio-label input:checked ~ .radio:after
+                                            display: block
                             .padding-col-2
                                 gap: 19px !important
                                 p
@@ -401,6 +436,7 @@ main
                                     line-height: 24.14px
                                     letter-spacing: -0.01em
                                     text-align: left
+                                    margin-left: 26px+19px !important
                                 span
                                     color: var(--text-color-2)
                                 span:hover
@@ -411,6 +447,38 @@ main
                                 @media screen and (min-width: 1025px)
                                     span:active
                                         color: var(--text-color-4)
+                                        text-decoration: underline var(--text-color-4)
+                                .checkbox-label
+                                    display: block
+                                    position: relative
+                                    cursor: pointer
+                                    -webkit-user-select: none
+                                    -moz-user-select: none
+                                    -ms-user-select: none
+                                    user-select: none
+                                    input
+                                        position: absolute
+                                        opacity: 0
+                                        cursor: pointer
+                                        height: 0
+                                        width: 0
+                                    .checkbox
+                                        // padding: 0 5.5px !important
+                                        position: absolute
+                                        top: 0
+                                        left: 0
+                                        width: 26px
+                                        height: 26px
+                                        border: 2px solid var(--text-color-2)
+                                        border-radius: 5px
+                                .checkbox-label input:checked ~ .checkbox
+                                    background-color: #FFFFFF
+                                .checkbox:after
+                                    content: url('../media/icons/Rectangle 36 (Stroke).svg')
+                                    position: absolute
+                                    display: none
+                                .checkbox-label input:checked ~ .checkbox:after
+                                    display: block
                                 .card-button-br-1, .card-button-br-2
                                     display: none
                             .padding-col-3
@@ -742,6 +810,7 @@ main
             .snp-footer-links
                 gap: 25px !important
                 a
+                    gap: 10px !important
                     color: var(--text-color-2)
                     font-size: 20px
                     line-height: 142%
@@ -753,10 +822,45 @@ main
                     text-underline-offset: 4px
                     text-decoration-skip-ink: none
                     cursor: pointer
-                .snp-footer-links-text
-                    gap: 10px !important
 
-@media screen and (max-width: 1025px)
+@media screen and (max-width: 1200px)
+    .snp-header-wrapper
+        .snp-header
+            .col-12
+                gap: 62px !important
+                .nav
+                    gap: 40px !important
+
+    .snp-container-4
+        .snp-container-4-content
+            .snp-container-4-content-row-1
+                .snp-container-4-content-cards
+                    .snp-container-4-content-cards-row-2
+                        .snp-container-4-content-cards-col
+                            .card
+                                .card-body
+                                    .card-title
+                                        p
+                                            font-size: 21px
+
+    .snp-container-6
+        padding: 0 53px !important
+        .snp-container-6-content
+            .snp-container-6-content-row
+                .snp-container-6-content-cards
+                    .card
+                        width: 975px
+                        -webkit-background-size: 120% 100%
+                        -moz-background-size: 120% 100%
+                        -o-background-size: 120% 100%
+                        background-size: 120% 100%
+                    .card:hover
+                        -webkit-background-size: 120%*1.2 100%*1.2
+                        -moz-background-size: 120%*1.2 100%*1.2
+                        -o-background-size: 120%*1.2 100%*1.2
+                        background-size: 120%*1.2 100%*1.2
+
+@media screen and (max-width: 1024px)
     main
         gap: 135px
 
@@ -771,7 +875,6 @@ main
         .snp-container-1-content
             .snp-container-1-content-row-1
                 .snp-container-1-content-row-2
-                    gap: 50px !important
                     .snp-container-1-content-high-br
                         display: none
                     .snp-container-1-content-middle-br
@@ -816,6 +919,8 @@ main
                             .card-button-row
                                 .padding-col-2
                                     gap: 11px !important
+                                    p
+                                        margin-left: 26px+11px !important
 
     .snp-container-4
         padding: 0 53px !important
@@ -853,14 +958,14 @@ main
                 .snp-container-6-content-cards
                     .card
                         width: 918px
-                        -webkit-background-size: 100% 100%
-                        -moz-background-size: 100% 100%
-                        -o-background-size: 100% 100%
+                        -webkit-background-size: 120% 100%
+                        -moz-background-size: 120% 100%
+                        -o-background-size: 120% 100%
                         background-size: 120% 100%
                     .card:hover
-                        -webkit-background-size: 100%*1.2 100%*1.2
-                        -moz-background-size: 100%*1.2 100%*1.2
-                        -o-background-size: 100%*1.2 100%*1.2
+                        -webkit-background-size: 120%*1.2 100%*1.2
+                        -moz-background-size: 120%*1.2 100%*1.2
+                        -o-background-size: 120%*1.2 100%*1.2
                         background-size: 120%*1.2 100%*1.2
 
     .snp-footer-wrapper
@@ -868,16 +973,36 @@ main
             .row
                 gap: 277px !important
 
+@media screen and (max-width: 992px)
+    .snp-container-4
+        .snp-container-4-content
+            .snp-container-4-content-row-1
+                .snp-container-4-content-cards
+                    width: 100%
+                    .snp-container-4-content-cards-row-2
+                        .snp-container-4-content-cards-col
+                            .card
+                                .card-body
+                                    .card-title
+                                        p
+                                            font-size: 18px
+                                    .card-text
+                                        .card-text-text
+                                            h3
+                                                font-size: 20px
+                                            p
+                                                font-size: 18px
+
 @media screen and (max-width: 560px)
     main
         gap: 75px
 
     .snp-header-wrapper
+        padding: 0 20px !important
         .snp-header
             .col-12
                 gap: 63px !important
                 img
-                    margin-right: 32px !important
                     width: 133px
                     height: 22px
                 p
@@ -902,6 +1027,7 @@ main
         .snp-container-1-content
             height: 100%
             .snp-container-1-content-row-1
+                padding-bottom: 52px !important
                 .snp-container-1-content-row-2
                     width: 100%
                     gap: 40px !important
@@ -1033,7 +1159,7 @@ main
                             .row
                                 gap: 30px !important
                                 flex-direction: column !important
-                                label
+                                .radio-text
                                     font-size: 16px
                                     line-height: 142%
                                     text-align: left
@@ -1059,7 +1185,7 @@ main
                                     padding: 0 10px !important
                                 .card-input-select-img
                                     margin-top: 30.71px+10px !important
-                                .snp-container-3-content-cards-input-comment
+                                .snp-container-3-content-cards-comment
                                     height: 132px
                         .card-button
                             .card-button-row
@@ -1274,10 +1400,10 @@ main
                 .snp-footer-links
                     gap: 15px !important
                     .snp-footer-links-text
-                        gap: 5px !important
                         img
                             width: 20px
                             height: 20px
                         a
+                            gap: 5px !important
                             font-size: 16px
                             line-height: 142%
