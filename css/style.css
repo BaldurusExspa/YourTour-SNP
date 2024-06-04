@@ -16,7 +16,12 @@
   z-index: 499;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x: hidden;
   background-color: var(--input-color-1) !important;
 }
 body p, body h1, body h2, body h3 {
