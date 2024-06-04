@@ -19,7 +19,11 @@
     font-style: normal
     z-index: 499
 
+html
+    // overflow-x: hidden
+
 body
+    // overflow-x: hidden
     background-color: var(--input-color-1) !important
     p, h1, h2, h3
         cursor: default
@@ -973,8 +977,20 @@ main
                         background-size: 120%*1.2 100%*1.2
 
 @media screen and (max-width: 992px)
+
+    .snp-header-wrapper
+        .snp-header
+            .col-12
+                a, p
+                    font-size: 16px                                       
+
+    .snp-container-3
+        .snp-container-3-content
+            min-width: 100% !important
+
     .snp-container-4
         .snp-container-4-content
+            min-width: 100% !important
             .snp-container-4-content-row-1
                 .snp-container-4-content-cards
                     width: 100%
@@ -992,13 +1008,34 @@ main
                                             p
                                                 font-size: 18px
 
+    .snp-container-6
+        .snp-container-6-content
+            min-width: 100% !important
+
 @media screen and (max-width: 769px)
     .snp-header-wrapper
         .snp-header
             .col-12
-                gap: 75px !important
+                gap: 80px !important
                 .nav
                     display: none !important
+
+    .snp-container-6
+        .snp-container-6-content
+            width: 100%
+            .snp-container-6-content-row
+                .snp-container-6-content-cards
+                    .card
+                        width: 100%
+                        -webkit-background-size: 150% 100%
+                        -moz-background-size: 150% 100%
+                        -o-background-size: 150% 100%
+                        background-size: 150% 100%
+                    .card:hover
+                        -webkit-background-size: 150%*1.2 100%*1.2
+                        -moz-background-size: 150%*1.2 100%*1.2
+                        -o-background-size: 150%*1.2 100%*1.2
+                        background-size: 150%*1.2 100%*1.2
 
     .snp-container-footer
         padding: 0 34.5px !important
@@ -1028,7 +1065,7 @@ main
                 flex-direction: column !important
                 gap: 10px !important
 
-@media screen and (max-width: 361px)
+@media screen and (max-width: 426px)
     main
         gap: 75px
 
@@ -1055,7 +1092,7 @@ main
         text-decoration-skip-ink: none
 
     .snp-container-1
-        // padding: 88px+52px 0 52px 0 !important
+        min-height: 488px
         height: 488px
         .snp-container-1-content
             height: 100%
