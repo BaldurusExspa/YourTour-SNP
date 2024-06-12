@@ -104,8 +104,12 @@ main
     .snp-container-1-content
         min-height: 75vh
         .snp-container-1-content-row-1
+            flex: 1
+            width: 100%
             gap: 119px !important
             padding-bottom: 119px !important
+            .snp-container-1-content-col-1
+                flex: 1
             .snp-container-1-content-row-2
                 width: 100%
                 gap: 50px !important
@@ -173,7 +177,9 @@ main
                     text-underline-offset: 10px
                     text-decoration-skip-ink: none
         .snp-container-2-content-cards
+            width: 100%
             .row
+                width: 100%
                 gap: 30px 30px !important
                 .snp-container-2-content-cards-col
                     width: 370px
@@ -494,6 +500,7 @@ main
                                     border-radius: 10px
                                     border: none
                                     padding: 15px 30px !important
+                                    white-space: nowrap
                                 .card-button-button-1
                                     background-color: var(--text-color-4)
                                     color: var(--text-color-1)
@@ -559,6 +566,8 @@ main
                                     flex: 1
                                     .card-text-text
                                         gap: 8px !important
+                                        br
+                                            display: none
                                         h3
                                             font-size: 35px
                                             font-weight: 500
@@ -874,7 +883,6 @@ main
     .snp-header-wrapper
         .snp-header
             .col-12
-                gap: 82px !important
                 .nav
                     gap: 30px !important
     
@@ -941,7 +949,7 @@ main
                         .snp-container-4-content-cards-col
                             width: 450px
                             .card
-                                height: 841px !important
+                                height: 841px
 
     .snp-container-5
         .snp-container-5-content
@@ -982,7 +990,17 @@ main
         .snp-header
             .col-12
                 a, p
-                    font-size: 16px                                       
+                    font-size: 20px     
+                .nav-item-2
+                    display: none                                  
+
+    .snp-container-1
+        .snp-container-1-content
+            .snp-container-1-content-row-1
+                .snp-container-1-content-row-2
+                    h1
+                        font-size: 56px
+                        line-height: 112%
 
     .snp-container-3
         .snp-container-3-content
@@ -1012,13 +1030,91 @@ main
         .snp-container-6-content
             min-width: 100% !important
 
+    .snp-footer-wrapper
+        .snp-footer
+            .row
+                gap: 100px !important
+
 @media screen and (max-width: 769px)
     .snp-header-wrapper
         .snp-header
             .col-12
-                gap: 80px !important
+                gap: 75px !important
                 .nav
                     display: none !important
+
+    .snp-container-3
+        .snp-container-3-content
+            .snp-container-3-content-row
+                .snp-container-3-content-cards
+                    .card
+                        .card-body
+                            .card-input
+                                .row
+                                    flex-direction: column !important
+                                    gap: 33px !important
+                            @media screen and (max-width: 571px)
+                                .card-button
+                                    .card-button-row
+                                        .padding-col-3
+                                            gap: 10px !important
+                                            flex-direction: column !important
+
+    @media screen and (max-width: 571px)
+        .snp-container-3
+            .snp-container-3-content
+                .snp-container-3-content-row
+                    .snp-container-3-content-cards
+                        .card
+                            border-radius: 30px
+                            .card-body
+                                .card-button
+                                    .card-button-row
+                                        .padding-col-3
+                                            gap: 10px !important
+                                            flex-direction: column !important
+
+    @media screen and (max-width: 701px)
+        .snp-container-4
+            .snp-container-4-content
+                .snp-container-4-content-row-1
+                    .snp-container-4-content-cards
+                        .snp-container-4-content-cards-row-2
+                            width: 100%
+                            flex-direction: column !important
+                            gap: 18px !important
+                            .snp-container-4-content-cards-col
+                                .card
+                                    .card-body
+                                        .card-text
+                                            .card-text-text
+                                                br
+                                                    display: block
+
+    @media screen and (max-width: 601px)
+        .snp-container-4
+            .snp-container-4-content
+                .snp-container-4-content-row-1
+                    .snp-container-4-content-cards
+                        .snp-container-4-content-cards-row-2
+                            .snp-container-4-content-cards-col
+                                .snp-container-4-content-card-1
+                                    height: 600px
+
+        .snp-container-5
+            .snp-container-5-content
+                .snp-container-5-content-row
+                    .snp-container-5-content-images
+                        .row
+                            .col
+                                border-radius: 30px
+                                min-height: 200px
+                            .row-1-photo-3
+                                display: none !important
+                            .row-2-photo-2
+                                display: none !important
+                            .row-3-photo-3
+                                display: none !important
 
     .snp-container-6
         .snp-container-6-content
@@ -1036,6 +1132,39 @@ main
                         -moz-background-size: 150%*1.2 100%*1.2
                         -o-background-size: 150%*1.2 100%*1.2
                         background-size: 150%*1.2 100%*1.2
+
+    @media screen and (max-width: 723px)
+        .snp-container-6
+            .snp-container-6-content
+                .snp-container-6-content-row
+                    .snp-container-6-content-col-2
+                        .snp-container-6-content-cards
+                            .card
+                                .card-body
+                                    .card-title
+                                        // padding: 30px 25px 0 30px !important
+                                        // gap: 20px !important
+                                        h3
+                                            font-weight: 700
+                                            font-size: 23px
+                                            line-height: 120%
+                                            letter-spacing: 0.04em
+                                        p, li
+                                            font-size: 16px
+                                            line-height: 142%
+                                        .snp-container-6-content-mobile-br
+                                            display: none
+                                    .card-button
+                                        padding-left: 60px !important 
+                                        .row
+                                            button
+                                                font-weight: 700
+                                                font-size: 16px
+                                                line-height: 142%
+                                                margin: 0 !important
+                                                padding: 0 !important
+                                            .card-button-col-2
+                                                display: none !important
 
     .snp-container-footer
         padding: 0 34.5px !important
@@ -1105,7 +1234,6 @@ main
                     width: 100%
                     gap: 40px !important
                     h1
-                        font-weight: 700
                         font-size: 34px
                         line-height: 112%
                         text-align: center
@@ -1306,8 +1434,8 @@ main
                     gap: 20px !important
                 .snp-container-4-content-cards
                     .snp-container-4-content-cards-row-2
+                        flex-direction: column !important
                         width: 100%
-                        gap: 18px !important
                         .snp-container-4-content-cards-col
                             width: 318px
                             .snp-container-4-content-card-1
