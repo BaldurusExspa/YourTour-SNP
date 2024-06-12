@@ -100,9 +100,9 @@ main
     background-size: cover
     position: relative
     width: 100% !important
-    min-height: 75vh
+    min-height: 84vh
     .snp-container-1-content
-        min-height: 75vh
+        min-height: 84vh
         .snp-container-1-content-row-1
             flex: 1
             width: 100%
@@ -594,6 +594,7 @@ main
             .snp-container-5-content-col
                 gap: 30px !important
                 h2
+                    padding: 0 10px !important
                     color: var(--text-color-2)
                     font-size: 59px
                     font-weight: 700
@@ -661,25 +662,26 @@ main
                     -o-transition: background-size 0.3s ease
                     transition: background-size 0.3s ease
                     cursor: pointer
-                .card:hover
-                    -webkit-background-size: 100%*1.2 100%*1.2
-                    -moz-background-size: 100%*1.2 100%*1.2
-                    -o-background-size: 100%*1.2 100%*1.2
-                    background-size: 100%*1.2 100%*1.2
-                    cursor: pointer
-                    button
-                        background-color: var(--text-color-4)
-                        -webkit-transition: .1s
-                        -moz-transition: .1s
-                        -o-transition: .1s
-                        transition: .1s
-                .card:active
-                    button
-                        background-color: var(--orange-200)
-                        -webkit-transition: .1s
-                        -moz-transition: .1s
-                        -o-transition: .1s
-                        transition: .1s
+                @media screen and (min-width: 769px)
+                    .card:hover
+                        -webkit-background-size: 100%*1.2 100%*1.2
+                        -moz-background-size: 100%*1.2 100%*1.2
+                        -o-background-size: 100%*1.2 100%*1.2
+                        background-size: 100%*1.2 100%*1.2
+                        cursor: pointer
+                        button
+                            background-color: var(--text-color-4)
+                            -webkit-transition: .1s
+                            -moz-transition: .1s
+                            -o-transition: .1s
+                            transition: .1s
+                    .card:active
+                        button
+                            background-color: var(--orange-200)
+                            -webkit-transition: .1s
+                            -moz-transition: .1s
+                            -o-transition: .1s
+                            transition: .1s
                 button
                     font-size: 23px
                     font-weight: 700
@@ -997,10 +999,7 @@ main
     .snp-container-1
         .snp-container-1-content
             .snp-container-1-content-row-1
-                .snp-container-1-content-row-2
-                    h1
-                        font-size: 56px
-                        line-height: 112%
+                gap: 0 !important
 
     .snp-container-3
         .snp-container-3-content
@@ -1043,6 +1042,13 @@ main
                 .nav
                     display: none !important
 
+    .snp-container-1
+        .snp-container-1-content
+            .snp-container-1-content-row-1
+                .snp-container-1-content-row-2
+                    h1
+                        font-size: 80px
+
     .snp-container-3
         .snp-container-3-content
             .snp-container-3-content-row
@@ -1060,19 +1066,27 @@ main
                                             gap: 10px !important
                                             flex-direction: column !important
 
-    @media screen and (max-width: 571px)
-        .snp-container-3
-            .snp-container-3-content
-                .snp-container-3-content-row
-                    .snp-container-3-content-cards
-                        .card
-                            border-radius: 30px
-                            .card-body
-                                .card-button
-                                    .card-button-row
-                                        .padding-col-3
-                                            gap: 10px !important
-                                            flex-direction: column !important
+        .snp-container-6
+            .snp-container-6-content
+                .snp-container-6-content-row
+                    .snp-container-6-content-col-2
+                        .snp-container-6-content-cards
+                            .card 
+                                -webkit-background-size: 250% 100%
+                                -moz-background-size: 250% 100%
+                                -o-background-size: 250% 100%
+                                background-size: 250% 100%
+                                .card-gradient
+                                    .card-body
+                                        .card-title
+                                            padding: 40px 40px 0 40px !important
+                                        .card-button
+                                            padding: 0 40px 40px 40px !important
+                            .card:hover
+                                -webkit-background-size: 250%*1.2 100%*1.2
+                                -moz-background-size: 250%*1.2 100%*1.2
+                                -o-background-size: 250%*1.2 100%*1.2
+                                background-size: 250%*1.2 100%*1.2
 
     @media screen and (max-width: 701px)
         .snp-container-4
@@ -1123,6 +1137,7 @@ main
                 .snp-container-6-content-cards
                     .card
                         width: 100%
+                        max-height: 567px
                         -webkit-background-size: 150% 100%
                         -moz-background-size: 150% 100%
                         -o-background-size: 150% 100%
@@ -1132,6 +1147,19 @@ main
                         -moz-background-size: 150%*1.2 100%*1.2
                         -o-background-size: 150%*1.2 100%*1.2
                         background-size: 150%*1.2 100%*1.2
+
+    @media screen and (max-width: 746px)
+        .snp-container-6
+            .snp-container-6-content
+                .snp-container-6-content-row
+                    .snp-container-6-content-col-2
+                        .snp-container-6-content-cards
+                            .card
+                                .card-body
+                                    .card-button
+                                        .row
+                                            .card-button-col-2
+                                                display: none !important
 
     @media screen and (max-width: 723px)
         .snp-container-6
@@ -1163,8 +1191,6 @@ main
                                                 line-height: 142%
                                                 margin: 0 !important
                                                 padding: 0 !important
-                                            .card-button-col-2
-                                                display: none !important
 
     .snp-container-footer
         padding: 0 34.5px !important
@@ -1193,6 +1219,64 @@ main
             .row
                 flex-direction: column !important
                 gap: 10px !important
+    
+@media screen and (max-width: 571px)
+    .snp-container-1
+        .snp-container-1-content
+            .snp-container-1-content-row-1
+                .snp-container-1-content-row-2
+                    gap: 65px !important
+                    h1
+                        font-size: 70px
+                        line-height: 112%
+
+    .snp-container-2
+        .snp-container-2-content
+            .snp-container-2-content-nav
+                h2
+                    font-size: 40px
+                    line-height: 120%
+
+    .snp-container-3
+        .snp-container-3-content
+            .snp-container-3-content-row
+                .snp-container-3-content-nav
+                    h2
+                        font-size: 40px
+                        line-height: 120%
+                .snp-container-3-content-cards
+                    .card
+                        border-radius: 30px
+                        padding: 20px !important
+                        .card-body
+                            .card-button
+                                .card-button-row
+                                    .padding-col-3
+                                        gap: 10px !important
+                                        flex-direction: column !important
+
+    .snp-container-4
+        .snp-container-4-content
+            .snp-container-4-content-row-1
+                .snp-container-4-content-col-1
+                    h2
+                        font-size: 40px
+                        line-height: 120%
+
+    .snp-container-6
+        .snp-container-6-content
+            .snp-container-6-content-row
+                .snp-container-6-content-cards
+                    .card   
+                        -webkit-background-size: 250% 100%
+                        -moz-background-size: 250% 100%
+                        -o-background-size: 250% 100%
+                        background-size: 250% 100%
+                    .card:hover
+                        -webkit-background-size: 250%*1.2 100%*1.2
+                        -moz-background-size: 250%*1.2 100%*1.2
+                        -o-background-size: 250%*1.2 100%*1.2
+                        background-size: 250%*1.2 100%*1.2
 
 @media screen and (max-width: 426px)
     main
@@ -1239,6 +1323,7 @@ main
                         text-align: center
                         letter-spacing: 0.02em
                     p
+                        font-weight: normal
                         font-size: 16px
                         line-height: 142%
                         text-align: center
@@ -1351,8 +1436,6 @@ main
             .snp-container-3-content-cards
                 .card
                     width: 318px
-                    border-radius: 30px
-                    padding: 20px !important
                     .card-body
                         gap: 30px !important
                         .card-input
@@ -1372,6 +1455,11 @@ main
                                     padding: 10px !important
                                 input::placeholder
                                     color: var(--text-color-3)
+                                textarea
+                                    font-size: 16px
+                                    line-height: 142%
+                                    text-align: left
+                                    padding: 10px !important
                                 select
                                     font-size: 16px
                                     line-height: 142%

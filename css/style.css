@@ -122,10 +122,10 @@ main {
   background-size: cover;
   position: relative;
   width: 100% !important;
-  min-height: 75vh;
+  min-height: 84vh;
 }
 .snp-container-1 .snp-container-1-content {
-  min-height: 75vh;
+  min-height: 84vh;
 }
 .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
   -webkit-box-flex: 1;
@@ -724,6 +724,7 @@ main {
   gap: 30px !important;
 }
 .snp-container-5 .snp-container-5-content .snp-container-5-content-row .snp-container-5-content-col h2 {
+  padding: 0 10px !important;
   color: var(--text-color-2);
   font-size: 59px;
   font-weight: 700;
@@ -797,19 +798,21 @@ main {
   transition: background-size 0.3s ease;
   cursor: pointer;
 }
-.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
-  background-size: 120% 120%;
-  cursor: pointer;
-}
-.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover button {
-  background-color: var(--text-color-4);
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-.snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:active button {
-  background-color: var(--orange-200);
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+@media screen and (min-width: 769px) {
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
+    background-size: 120% 120%;
+    cursor: pointer;
+  }
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover button {
+    background-color: var(--text-color-4);
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:active button {
+    background-color: var(--orange-200);
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
 }
 .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards button {
   font-size: 23px;
@@ -1136,9 +1139,8 @@ main {
   .snp-header-wrapper .snp-header .col-12 .nav-item-2 {
     display: none;
   }
-  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 h1 {
-    font-size: 56px;
-    line-height: 112%;
+  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
+    gap: 0 !important;
   }
   .snp-container-3 .snp-container-3-content {
     min-width: 100% !important;
@@ -1172,6 +1174,9 @@ main {
   .snp-header-wrapper .snp-header .col-12 .nav {
     display: none !important;
   }
+  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 h1 {
+    font-size: 80px;
+  }
   .snp-container-3 .snp-container-3-content .snp-container-3-content-row .snp-container-3-content-cards .card .card-body .card-input .row {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -1189,16 +1194,18 @@ main {
             flex-direction: column !important;
   }
 }
-@media screen and (max-width: 769px) and (max-width: 571px) {
-  .snp-container-3 .snp-container-3-content .snp-container-3-content-row .snp-container-3-content-cards .card {
-    border-radius: 30px;
+@media screen and (max-width: 769px) {
+  .snp-container-3 .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-2 .snp-container-6-content-cards .card {
+    background-size: 250% 100%;
   }
-  .snp-container-3 .snp-container-3-content .snp-container-3-content-row .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 {
-    gap: 10px !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+  .snp-container-3 .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-2 .snp-container-6-content-cards .card .card-gradient .card-body .card-title {
+    padding: 40px 40px 0 40px !important;
+  }
+  .snp-container-3 .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-2 .snp-container-6-content-cards .card .card-gradient .card-body .card-button {
+    padding: 0 40px 40px 40px !important;
+  }
+  .snp-container-3 .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-2 .snp-container-6-content-cards .card:hover {
+    background-size: 300% 120%;
   }
 }
 @media screen and (max-width: 769px) and (max-width: 701px) {
@@ -1238,10 +1245,16 @@ main {
   }
   .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card {
     width: 100%;
+    max-height: 567px;
     background-size: 150% 100%;
   }
   .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
     background-size: 180% 120%;
+  }
+}
+@media screen and (max-width: 769px) and (max-width: 746px) {
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-2 .snp-container-6-content-cards .card .card-body .card-button .row .card-button-col-2 {
+    display: none !important;
   }
 }
 @media screen and (max-width: 769px) and (max-width: 723px) {
@@ -1267,9 +1280,6 @@ main {
     line-height: 142%;
     margin: 0 !important;
     padding: 0 !important;
-  }
-  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-col-2 .snp-container-6-content-cards .card .card-body .card-button .row .card-button-col-2 {
-    display: none !important;
   }
 }
 @media screen and (max-width: 769px) {
@@ -1308,6 +1318,44 @@ main {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     gap: 10px !important;
+  }
+}
+@media screen and (max-width: 571px) {
+  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 {
+    gap: 65px !important;
+  }
+  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 h1 {
+    font-size: 70px;
+    line-height: 112%;
+  }
+  .snp-container-2 .snp-container-2-content .snp-container-2-content-nav h2 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .snp-container-3 .snp-container-3-content .snp-container-3-content-row .snp-container-3-content-nav h2 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .snp-container-3 .snp-container-3-content .snp-container-3-content-row .snp-container-3-content-cards .card {
+    border-radius: 30px;
+    padding: 20px !important;
+  }
+  .snp-container-3 .snp-container-3-content .snp-container-3-content-row .snp-container-3-content-cards .card .card-body .card-button .card-button-row .padding-col-3 {
+    gap: 10px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .snp-container-4 .snp-container-4-content .snp-container-4-content-row-1 .snp-container-4-content-col-1 h2 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card {
+    background-size: 250% 100%;
+  }
+  .snp-container-6 .snp-container-6-content .snp-container-6-content-row .snp-container-6-content-cards .card:hover {
+    background-size: 300% 120%;
   }
 }
 @media screen and (max-width: 426px) {
@@ -1366,6 +1414,7 @@ main {
     letter-spacing: 0.02em;
   }
   .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 .snp-container-1-content-row-2 p {
+    font-weight: normal;
     font-size: 16px;
     line-height: 142%;
     text-align: center;
@@ -1487,8 +1536,6 @@ main {
   }
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card {
     width: 318px;
-    border-radius: 30px;
-    padding: 20px !important;
   }
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body {
     gap: 30px !important;
@@ -1529,6 +1576,12 @@ main {
   }
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row input::placeholder {
     color: var(--text-color-3);
+  }
+  .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row textarea {
+    font-size: 16px;
+    line-height: 142%;
+    text-align: left;
+    padding: 10px !important;
   }
   .snp-container-3 .snp-container-3-content .snp-container-3-content-cards .card .card-body .card-input .row select {
     font-size: 16px;
