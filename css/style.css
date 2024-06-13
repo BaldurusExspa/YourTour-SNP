@@ -122,10 +122,10 @@ main {
   background-size: cover;
   position: relative;
   width: 100% !important;
-  min-height: 84vh;
+  height: 831px;
 }
 .snp-container-1 .snp-container-1-content {
-  min-height: 84vh;
+  height: 100%;
 }
 .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
   -webkit-box-flex: 1;
@@ -1139,9 +1139,6 @@ main {
   .snp-header-wrapper .snp-header .col-12 .nav-item-2 {
     display: none;
   }
-  .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
-    gap: 0 !important;
-  }
   .snp-container-3 .snp-container-3-content {
     min-width: 100% !important;
   }
@@ -1391,12 +1388,10 @@ main {
             text-decoration-skip-ink: none;
   }
   .snp-container-1 {
-    min-height: 488px;
     height: 488px;
   }
   .snp-container-1 .snp-container-1-content {
     height: 100%;
-    min-height: 488px;
   }
   .snp-container-1 .snp-container-1-content .snp-container-1-content-row-1 {
     width: 100vw;
