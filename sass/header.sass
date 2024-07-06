@@ -1,0 +1,46 @@
+@import root.css
+
+.snp-header-wrapper
+    // position: absolute
+    z-index: 500
+    top: 0
+    left: 0
+    width: 100%
+    height: 88px
+    .snp-header
+        .col-12
+            gap: 182px !important
+            color: var(--text-color-1) !important
+            a,
+            p
+                text-align: left
+                text-decoration: none
+                color: var(--text-color-1)
+            a:hover
+                text-decoration: underline var(--text-color-1)
+                text-underline-offset: 7px
+            .nav
+                gap: 50px !important
+
+.fixed-snp-header-wrapper
+    position: fixed
+    z-index: 500
+    top: 0
+    left: 0
+    width: 100%
+    height: 88px
+    background: rgba(243, 239, 232, 0.6)
+    backdrop-filter: blur(10px)
+
+.fixed-snp-header
+    color: var(--text-color-2) !important
+    a, p
+        color: var(--text-color-2) !important
+    a:hover
+        text-decoration: underline var(--text-color-2) !important
+        text-underline-offset: 7px
+        text-decoration-skip-ink: none
+    h2
+        color: var(--text-color-2) !important
+    p
+        color: var(--text-color-2) !important

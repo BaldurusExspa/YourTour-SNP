@@ -1,0 +1,34 @@
+@import "root.css";
+.snp-footer-wrapper {
+  height: 88px;
+  background-color: var(--input-border-color-1);
+}
+.snp-footer-wrapper .snp-footer .row {
+  gap: 527px !important;
+}
+.snp-footer-wrapper .snp-footer .row .snp-footer-col-1 p {
+  color: var(--text-color-3);
+  font-size: 20px;
+  line-height: 142%;
+  text-align: left;
+}
+.snp-footer-wrapper .snp-footer .row .snp-footer-links {
+  gap: 25px !important;
+}
+.snp-footer-wrapper .snp-footer .row .snp-footer-links a {
+  gap: 10px !important;
+  color: var(--text-color-2);
+  font-size: 20px;
+  line-height: 142%;
+  text-align: left;
+  text-decoration: none;
+}
+.snp-footer-wrapper .snp-footer .row .snp-footer-links a:hover {
+  color: var(--text-color-2);
+  -webkit-text-decoration: underline 1px var(--text-color-2);
+          text-decoration: underline 1px var(--text-color-2);
+  text-underline-offset: 4px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}

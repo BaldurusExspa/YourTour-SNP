@@ -1,0 +1,62 @@
+@import "root.css";
+.snp-container-footer {
+  color: var(--text-color-2);
+}
+.snp-container-footer .snp-container-footer-content-cards .card {
+  width: 771px;
+  border-radius: 50px !important;
+  border: none;
+  background-color: var(--input-color-1);
+  white-space: nowrap;
+}
+.snp-container-footer .snp-container-footer-content-cards .card img {
+  width: 370px;
+  height: 370px;
+  border-radius: 50px !important;
+}
+.snp-container-footer .snp-container-footer-content-cards .card h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42.7px;
+  text-align: left;
+}
+.snp-container-footer .snp-container-footer-content-cards .card p {
+  color: var(--text-color-3);
+  font-size: 20px;
+  line-height: 142%;
+  text-align: left;
+}
+.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row {
+  gap: 30px !important;
+}
+.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body {
+  padding: 104px 0 0 0 !important;
+}
+.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title {
+  gap: 20px !important;
+}
+.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title a {
+  color: var(--text-color-2) !important;
+  font-size: 20px;
+  line-height: 28.4px;
+  text-align: center;
+  text-decoration: none;
+}
+.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title a:hover {
+  color: var(--text-color-2) !important;
+  -webkit-text-decoration: underline 2px var(--text-color-2);
+          text-decoration: underline 2px var(--text-color-2);
+  text-underline-offset: 1px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title a:active {
+  color: var(--text-color-4) !important;
+  -webkit-text-decoration: underline 2px var(--text-color-4) !important;
+          text-decoration: underline 2px var(--text-color-4) !important;
+  text-underline-offset: 1px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
