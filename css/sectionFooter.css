@@ -1,49 +1,86 @@
 @import "root.css";
-.snp-container-footer {
+.snp-container-footer .snp-container-content {
   color: var(--text-color-2);
 }
-.snp-container-footer .snp-container-footer-content-cards .card {
+.snp-container-footer .snp-container-content .snp-container-content-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card {
   width: 771px;
-  border-radius: 50px !important;
+  border-radius: 50px;
   border: none;
   background-color: var(--input-color-1);
   white-space: nowrap;
 }
-.snp-container-footer .snp-container-footer-content-cards .card img {
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-1 img {
   width: 370px;
   height: 370px;
-  border-radius: 50px !important;
+  border-radius: 50px;
 }
-.snp-container-footer .snp-container-footer-content-cards .card h3 {
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 42.7px;
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+}
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body {
+  padding: 0;
+}
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title p,
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title h3 {
   text-align: left;
+  white-space: nowrap;
 }
-.snp-container-footer .snp-container-footer-content-cards .card p {
-  color: var(--text-color-3);
-  font-size: 20px;
-  line-height: 142%;
-  text-align: left;
-}
-.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row {
-  gap: 30px !important;
-}
-.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body {
-  padding: 104px 0 0 0 !important;
-}
-.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title {
-  gap: 20px !important;
-}
-.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title a {
-  color: var(--text-color-2) !important;
-  font-size: 20px;
-  line-height: 28.4px;
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title a {
+  color: var(--text-color-2);
   text-align: center;
   text-decoration: none;
 }
-.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title a:hover {
-  color: var(--text-color-2) !important;
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title a:hover {
   -webkit-text-decoration: underline 2px var(--text-color-2);
           text-decoration: underline 2px var(--text-color-2);
   text-underline-offset: 1px;
@@ -51,8 +88,8 @@
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
-.snp-container-footer .snp-container-footer-content-cards .card .snp-container-footer-row .card-body .card-title a:active {
-  color: var(--text-color-4) !important;
+.snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title a:active {
+  color: var(--text-color-4);
   -webkit-text-decoration: underline 2px var(--text-color-4) !important;
           text-decoration: underline 2px var(--text-color-4) !important;
   text-underline-offset: 1px;

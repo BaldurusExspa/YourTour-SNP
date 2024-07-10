@@ -1,43 +1,66 @@
 @import root.css
 
 .snp-container-4
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
     .snp-container-content
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
         .snp-container-content-row
+            display: flex
+            flex-direction: column
+            .snp-container-content-nav
+                display: flex
+                flex-direction: column
+                padding: 0
             .snp-container-content-cards
+                display: flex
+                justify-content: center
+                padding: 0
                 .snp-container-content-cards-row
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: row
                     .snp-container-content-cards-col
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        padding: 0
                         .card
+                            display: flex
                             color: var(--text-color-2)
                             height: 673px
                             background-color: var(--input-border-color-1)
                             border: none
                             border-radius: 50px
-                            padding: 40px !important
+                            padding: 40px
                             .card-body
+                                display: flex
+                                flex-direction: column
+                                padding: 0
                                 .card-title
                                     p
-                                        color: var(--text-color-2)
-                                        font-weight: 700
-                                        font-size: 23px
-                                        line-height: 122%
                                         text-align: left
-                                        padding: 0 !important
                                 .card-text
+                                    display: flex
+                                    justify-content: space-between
+                                    align-items: flex-end
                                     flex: 1
                                     .card-text-text
+                                        display: flex
+                                        flex-direction: column
                                         gap: 8px
                                         br
                                             display: none
                                         h3
-                                            font-size: 35px
-                                            font-weight: 500
-                                            line-height: 42.7px
                                             text-align: left
                                         p
                                             color: var(--text-color-3)
-                                            font-size: 17px
-                                            line-height: 142%
-                                            letter-spacing: -0.01em
                                     img
                                         width: 75px
                                         height: 75px

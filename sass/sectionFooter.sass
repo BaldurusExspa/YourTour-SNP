@@ -1,50 +1,58 @@
 @import root.css
 
 .snp-container-footer
-        .snp-container-footer-content
-        color: var(--text-color-2)
-        .snp-container-footer-content-cards
-            .card
-                width: 771px
-                border-radius: 50px !important
-                border: none
-                background-color: var(--input-color-1)
-                white-space: nowrap
-                img
-                    width: 370px
-                    height: 370px
-                    border-radius: 50px !important
-                h3
-                    font-size: 35px
-                    font-weight: 500
-                    line-height: 42.7px
-                    text-align: left
-                p
-                    color: var(--text-color-3)
-                    font-size: 20px
-                    line-height: 142%
-                    text-align: left
-                .snp-container-footer-row
-                    gap: 30px !important
-                    .card-body
-                        padding: 104px 0 0 0 !important
-                        .card-title
-                            gap: 20px !important
-                            a
-                                color: var(--text-color-2) !important
-                                font-size: 20px
-                                line-height: 28.4px
-                                text-align: center
-                                text-decoration: none
-                            a:hover
-                                color: var(--text-color-2) !important
-                                text-decoration: underline 2px var(--text-color-2)
-                                text-underline-offset: 1px
-                                text-decoration-skip-ink: none
-                                cursor: pointer
-                            a:active
-                                color: var(--text-color-4) !important
-                                text-decoration: underline 2px var(--text-color-4) !important
-                                text-underline-offset: 1px
-                                text-decoration-skip-ink: none
-                                cursor: pointer
+        .snp-container-content
+            color: var(--text-color-2)
+            .snp-container-content-row
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                .snp-container-content-cards
+                    .card
+                        width: 771px
+                        border-radius: 50px
+                        border: none
+                        background-color: var(--input-color-1)
+                        white-space: nowrap
+                        .snp-container-footer-row
+                            display: flex
+                            flex-direction: row
+                            gap: 30px
+                            .snp-container-footer-col-1
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                padding: 0
+                                img
+                                    width: 370px
+                                    height: 370px
+                                    border-radius: 50px
+                            .snp-container-footer-col-2
+                                display: flex
+                                justify-content: flex-end
+                                padding: 0
+                                .card-body
+                                    padding: 0
+                                    .card-title
+                                        display: flex
+                                        flex-direction: column
+                                        gap: 20px
+                                        p,
+                                        h3
+                                            text-align: left
+                                            white-space: nowrap
+                                        a
+                                            color: var(--text-color-2)
+                                            text-align: center
+                                            text-decoration: none
+                                        a:hover
+                                            text-decoration: underline 2px var(--text-color-2)
+                                            text-underline-offset: 1px
+                                            text-decoration-skip-ink: none
+                                            cursor: pointer
+                                        a:active
+                                            color: var(--text-color-4)
+                                            text-decoration: underline 2px var(--text-color-4) !important
+                                            text-underline-offset: 1px
+                                            text-decoration-skip-ink: none
+                                            cursor: pointer

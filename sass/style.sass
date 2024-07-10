@@ -1,4 +1,14 @@
 @import root.sass
+@import header.css
+@import section.css
+@import section1.css
+@import section2.css
+@import section3.css
+@import section4.css
+@import section5.css
+@import section6.css
+@import sectionFooter.css
+@import footer.css
 
 .snp-sectionList
     display: flex
@@ -21,24 +31,12 @@
     .snp-header-wrapper
         .snp-header
             .col-12
-                gap: 62px !important
+                gap: 62px
                 .nav
-                    gap: 40px !important
-
-    .snp-container-4
-        .snp-container-4-content
-            .snp-container-4-content-row-1
-                .snp-container-4-content-cards
-                    .snp-container-4-content-cards-row-2
-                        .snp-container-4-content-cards-col
-                            .card
-                                .card-body
-                                    .card-title
-                                        p
-                                            font-size: 21px
+                    gap: 40px
 
     .snp-container-6
-        padding: 0 53px !important
+        padding: 0 53px
         .snp-container-6-content
             .snp-container-6-content-row
                 .snp-container-6-content-cards
@@ -57,17 +55,17 @@
     .snp-footer-wrapper
         .snp-footer
             .row
-                gap: 277px !important
+                gap: 277px
 
 @media screen and (max-width: 1025px)
-    main
+    .snp-sectionList
         gap: 135px
 
     .snp-header-wrapper
         .snp-header
             .col-12
                 .nav
-                    gap: 30px !important
+                    gap: 30px
     
     .snp-container-1
         .snp-container-1-content
@@ -81,12 +79,12 @@
                         display: none
 
     .snp-container-2
-        padding: 0 53px !important
+        padding: 0 53px
         .snp-container-2-content
-            margin: 0 !important
+            margin: 0
             .snp-container-2-content-cards
                 .row
-                    gap: 18px 18px !important
+                    gap: 18px 18px
                     .snp-container-2-content-cards-col
                         width: 450px
                         .card
@@ -101,34 +99,34 @@
                             background-size: 100%*1.2 120%*1.2
 
     .snp-container-3
-        padding: 0 53px !important
+        padding: 0 53px
         .snp-container-3-content
-            margin: 0 !important
+            margin: 0
             .snp-container-3-content-cards
                 .card
-                    padding: 60px !important
+                    padding: 60px
                     .card-body
                         .card-input
                             .row
-                                gap: 0 20px !important
+                                gap: 0 20px
                             .col
-                                gap: 8px !important
+                                gap: 8px
                         .card-button
                             .card-button-row
                                 .padding-col-2
-                                    gap: 11px !important
+                                    gap: 11px
                                     p
-                                        margin-left: 26px+11px !important
+                                        margin-left: 26px+11px
 
     .snp-container-4
-        padding: 0 53px !important
+        padding: 0 53px
         .snp-container-4-content
-            margin: 0 !important
+            margin: 0
             .snp-container-4-content-row-1
                 width: 100%
                 .snp-container-4-content-cards
                     .snp-container-4-content-cards-row-2
-                        gap: 0 18px !important
+                        gap: 0 18px
                         .snp-container-4-content-cards-col
                             width: 450px
                             .card
@@ -138,19 +136,19 @@
         .snp-container-5-content
             .snp-container-5-content-row
                 .snp-container-5-content-images
-                    padding: 0 20px !important
-                    gap: 30px !important
+                    padding: 0 20px
+                    gap: 30px
                     .row
-                        gap: 20px !important
+                        gap: 20px
                     .row-1-photo-2
-                        display: none !important
+                        display: none
                     .row-2-photo-3
-                        display: none !important
+                        display: none
                     .row-3-photo-4
-                        display: none !important
+                        display: none
 
     .snp-container-6
-        padding: 0 53px !important
+        padding: 0 53px
         .snp-container-6-content
             .snp-container-6-content-row
                 .snp-container-6-content-cards
@@ -177,58 +175,33 @@
                 .nav-item-2
                     display: none                                  
 
-    // .snp-container-1
-    //     .snp-container-1-content
-    //         .snp-container-1-content-row-1
-    //             gap: 0 !important
-
     .snp-container-3
         .snp-container-3-content
-            min-width: 100% !important
+            min-width: 100%
 
     .snp-container-4
         .snp-container-4-content
-            min-width: 100% !important
+            min-width: 100%
             .snp-container-4-content-row-1
                 .snp-container-4-content-cards
                     width: 100%
-                    .snp-container-4-content-cards-row-2
-                        .snp-container-4-content-cards-col
-                            .card
-                                .card-body
-                                    .card-title
-                                        p
-                                            font-size: 18px
-                                    .card-text
-                                        .card-text-text
-                                            h3
-                                                font-size: 20px
-                                            p
-                                                font-size: 18px
 
     .snp-container-6
         .snp-container-6-content
-            min-width: 100% !important
+            min-width: 100%
 
     .snp-footer-wrapper
         .snp-footer
             .row
-                gap: 100px !important
+                gap: 100px
 
 @media screen and (max-width: 769px)
     .snp-header-wrapper
         .snp-header
             .col-12
-                gap: 75px !important
+                gap: 75px
                 .nav
-                    display: none !important
-
-    .snp-container-1
-        .snp-container-1-content
-            .snp-container-1-content-row-1
-                .snp-container-1-content-row-2
-                    h1
-                        font-size: 80px
+                    display: none
 
     .snp-container-3
         .snp-container-3-content
@@ -238,14 +211,14 @@
                         .card-body
                             .card-input
                                 .row
-                                    flex-direction: column !important
-                                    gap: 33px !important
+                                    flex-direction: column
+                                    gap: 33px
                             @media screen and (max-width: 571px)
                                 .card-button
                                     .card-button-row
                                         .padding-col-3
-                                            gap: 10px !important
-                                            flex-direction: column !important
+                                            gap: 10px
+                                            flex-direction: column
 
         .snp-container-6
             .snp-container-6-content
@@ -260,9 +233,9 @@
                                 .card-gradient
                                     .card-body
                                         .card-title
-                                            padding: 40px 40px 0 40px !important
+                                            padding: 40px 40px 0 40px
                                         .card-button
-                                            padding: 0 40px 40px 40px !important
+                                            padding: 0 40px 40px 40px
                             .card:hover
                                 -webkit-background-size: 250%*1.2 100%*1.2
                                 -moz-background-size: 250%*1.2 100%*1.2
@@ -276,8 +249,8 @@
                     .snp-container-4-content-cards
                         .snp-container-4-content-cards-row-2
                             width: 100%
-                            flex-direction: column !important
-                            gap: 18px !important
+                            flex-direction: column
+                            gap: 18px
                             .snp-container-4-content-cards-col
                                 .card
                                     .card-body
@@ -305,11 +278,11 @@
                                 border-radius: 30px
                                 min-height: 200px
                             .row-1-photo-3
-                                display: none !important
+                                display: none
                             .row-2-photo-2
-                                display: none !important
+                                display: none
                             .row-3-photo-3
-                                display: none !important
+                                display: none
 
     .snp-container-6
         .snp-container-6-content
@@ -340,7 +313,7 @@
                                     .card-button
                                         .row
                                             .card-button-col-2
-                                                display: none !important
+                                                display: none
 
     @media screen and (max-width: 723px)
         .snp-container-6
@@ -351,65 +324,40 @@
                             .card
                                 .card-body
                                     .card-title
-                                        // padding: 30px 25px 0 30px !important
-                                        // gap: 20px !important
-                                        h3
-                                            font-weight: 700
-                                            font-size: 23px
-                                            line-height: 120%
-                                            letter-spacing: 0.04em
-                                        p, li
-                                            font-size: 16px
-                                            line-height: 142%
                                         .snp-container-6-content-mobile-br
                                             display: none
                                     .card-button
-                                        padding-left: 60px !important 
+                                        padding-left: 60px 
                                         .row
                                             button
-                                                font-weight: 700
-                                                font-size: 16px
-                                                line-height: 142%
-                                                margin: 0 !important
-                                                padding: 0 !important
+                                                margin: 0
+                                                padding: 0
 
     .snp-container-footer
-        padding: 0 34.5px !important
+        padding: 0 34.5px
         .snp-container-footer-content
-            margin: 0 !important
+            margin: 0
             .snp-container-footer-content-cards
                 .card
                     .snp-container-footer-row
-                        flex-direction: column !important
+                        flex-direction: column
                         .card-body
                             width: 100%
-                            padding: 0 !important
-                            .card-title
-                                h3
-                                    font-weight: 700
-                                    line-height: 120%
-                                    text-align: center
-                                    letter-spacing: 0.04em
-                                p, a
-                                    line-height: 142%
-                                    text-align: center
+                            padding: 0
 
     .snp-footer-wrapper
         height: 95px
         .snp-footer
             .row
-                flex-direction: column !important
-                gap: 10px !important
+                flex-direction: column
+                gap: 10px
     
 @media screen and (max-width: 571px)
     .snp-container-1
         .snp-container-1-content
             .snp-container-1-content-row-1
                 .snp-container-1-content-row-2
-                    gap: 65px !important
-                    h1
-                        font-size: 70px
-                        line-height: 112%
+                    gap: 65px
 
     .snp-container-3
         .snp-container-3-content
@@ -417,13 +365,13 @@
                 .snp-container-3-content-cards
                     .card
                         border-radius: 30px
-                        padding: 20px !important
+                        padding: 20px
                         .card-body
                             .card-button
                                 .card-button-row
                                     .padding-col-3
-                                        gap: 10px !important
-                                        flex-direction: column !important
+                                        gap: 10px
+                                        flex-direction: column
 
     .snp-container-6
         .snp-container-6-content
@@ -441,21 +389,17 @@
                         background-size: 250%*1.2 100%*1.2
 
 @media screen and (max-width: 426px)
-    main
+    .snp-sectionList
         gap: 75px
 
     .snp-header-wrapper
-        padding: 0 20px !important
+        padding: 0 20px
         .snp-header
             .col-12
-                gap: 63px !important
+                gap: 63px
                 img
                     width: 133px
                     height: 22px
-                p
-                    margin-left: 0px !important
-                    font-size: 16px
-                    line-height: 142%
 
     .button-choosed
         text-underline-offset: 4px !important
@@ -474,20 +418,12 @@
             // min-height: 488px
             .snp-container-1-content-row-1
                 width: 100vw
-                gap: 52px !important
-                padding-bottom: 52px !important
+                gap: 52px
+                padding-bottom: 52px
                 .snp-container-1-content-row-2
                     width: 100%
-                    gap: 40px !important
-                    h1
-                        font-size: 34px
-                        line-height: 112%
-                        text-align: center
-                        letter-spacing: 0.02em
+                    gap: 40px
                     button
-                        font-size: 16px
-                        line-height: 142%
-                        letter-spacing: -0.01em
                         width: 114px
                         height: 33px
                     .snp-container-1-content-high-br
@@ -499,29 +435,19 @@
 
 
     .snp-container-2
-        padding: 0 21px !important
+        padding: 0 21px
         .snp-container-2-content
-            gap: 50px !important
+            gap: 50px
             .snp-container-2-content-nav
-                gap: 30px !important
-                h2
-                    font-weight: 700
-                    font-size: 34px
-                    line-height: 112%
-                    text-align: center
-                    letter-spacing: 0.02em
+                gap: 30px
                 .nav
-                    gap: 10px !important
-                    button
-                        font-weight: 700
-                        font-size: 16px
-                        line-height: 142%
+                    gap: 10px
                     button:hover
                         text-underline-offset: 4px !important
                         text-decoration-skip-ink: none
             .snp-container-2-content-cards
                 .row
-                    gap: 18px !important
+                    gap: 18px
                     .snp-container-2-content-cards-col
                         width: 318px
                         .card
@@ -547,220 +473,125 @@
                                     .card-button
                                         button
                                             background-color: #00000000
-
                         .card-gradient
-                            padding: 0 !important
+                            padding: 0
                             border-radius: 20px
                             .card-body
-                                padding: 25px !important
+                                padding: 25px
                                 .card-title
                                     gap: 13px
-                                    margin: 0 !important
-                                    h3
-                                        font-weight: 700
-                                        font-size: 23px
-                                        line-height: 120%
-                                        letter-spacing: 0.04em
-                                    p
-                                        font-size: 16px
-                                        line-height: 142%
-                                        letter-spacing: -0.01em
+                                    margin: 0
                                 .card-button
                                     button
-                                        font-weight: 700
-                                        font-size: 16px
-                                        line-height: 142%
-                                        padding: 0 !important
-                                        margin: 0 !important
+                                        padding: 0
+                                        margin: 0
 
     .snp-container-3
-        padding: 0 !important
+        padding: 0
         .snp-container-3-content
-            h2
-                font-weight: 700
-                font-size: 34px
-                line-height: 112%
-                text-align: center
-                letter-spacing: 0.02em
-            p
-                font-size: 16px
-                line-height: 142%
-                text-align: center
             .snp-container-3-content-row
-                gap: 40px !important
+                gap: 40px
             .snp-container-3-content-nav
-                gap: 20px !important
+                gap: 20px
             .snp-container-3-content-cards
                 .card
                     width: 318px
                     .card-body
-                        gap: 30px !important
+                        gap: 30px
                         .card-input
-                            gap: 30px !important
+                            gap: 30px
                             .row
-                                gap: 30px !important
-                                flex-direction: column !important
-                                .radio-text
-                                    font-size: 16px
-                                    line-height: 142%
-                                    text-align: left
+                                gap: 30px
+                                flex-direction: column
                                 input
-                                    font-size: 16px
-                                    line-height: 142%
-                                    text-align: left
                                     height: 46px 
-                                    padding: 10px !important
+                                    padding: 10px
                                 input::placeholder
                                     color: var(--text-color-3)
                                 textarea
-                                    font-size: 16px
-                                    line-height: 142%
-                                    text-align: left
-                                    padding: 10px !important
+                                    padding: 10px
                                 select
-                                    font-size: 16px
-                                    line-height: 142%
-                                    text-align: left
                                     height: 46px 
-                                    padding: 10px !important
-                                option
-                                    font-size: 20px
-                                    line-height: 28.4px
-                                    text-align: left
+                                    padding: 10px
                                 .card-input-select-box-img
-                                    padding: 0 10px !important
+                                    padding: 0 10px
                                 .card-input-select-img
-                                    margin-top: 30.71px+10px !important
+                                    margin-top: 30.71px+10px
                                 .snp-container-3-content-cards-comment
                                     height: 132px
                         .card-button
                             .card-button-row
-                                gap: 30px !important
+                                gap: 30px
                                 input
                                     width: 20px
                                     height: 20px
-                                p, label, span
-                                    font-size: 16px
-                                    line-height: 142%
-                                    text-align: left
                                 .padding-col-1
                                     .padding-col-1-col
-                                        gap: 30px !important
+                                        gap: 30px
                                         .input
-                                            gap: 10px !important
+                                            gap: 10px
                                 .padding-col-2
-                                    gap: 10px !important
+                                    gap: 10px
                                     .card-button-br-1, .card-button-br-2
                                         display: block
                                 .padding-col-3
-                                    gap: 10px !important
+                                    gap: 10px
                                     button
-                                        font-size: 16px
-                                        line-height: 142%
-                                        text-align: center
-                                        padding: 12px 29.5px !important
+                                        padding: 12px 29.5px 
 
     .snp-container-4
-        padding: 0 21px !important
+        padding: 0 21px
         .snp-container-4-content
             .snp-container-4-content-row-1
-                gap: 50px !important
+                gap: 50px
                 .snp-container-4-content-col-1
-                    h2
-                        font-weight: 700
-                        font-size: 34px
-                        line-height: 112%
-                        text-align: center
-                        letter-spacing: 0.02em
-                    p
-                        font-size: 16px
-                        line-height: 142%
-                        text-align: center
-                    gap: 20px !important
+                    gap: 20px 
                 .snp-container-4-content-cards
                     .snp-container-4-content-cards-row-2
-                        flex-direction: column !important
+                        flex-direction: column
                         width: 100%
                         .snp-container-4-content-cards-col
                             width: 318px
                             .snp-container-4-content-card-1
-                                height: 408px !important
+                                height: 408px
                             .snp-container-4-content-card-2
-                                height: 592px !important
+                                height: 592px
                             .card
                                 border-radius: 20px
-                                padding: 20px !important
-                                .card-body
-                                    .card-title
-                                        p
-                                            font-weight: 700
-                                            font-size: 16px
-                                            line-height: 142%
-                                            text-align: left
-                                    .card-text
-                                        .card-text-text
-                                            h3
-                                                font-weight: 700
-                                                font-size: 23px
-                                                line-height: 120%
-                                                letter-spacing: 0.04em
-                                            p
-                                                font-size: 16px
-                                                line-height: 142%
-                                                letter-spacing: -0.01em
+                                padding: 20px
 
     .snp-container-5
-        padding: 0 21px !important
+        padding: 0 21px 
         .snp-container-5-content
             .snp-container-5-content-row
-                gap: 50px !important
+                gap: 50px
                 .snp-container-5-content-col
-                    h2
-                        font-weight: 700
-                        font-size: 34px
-                        line-height: 112%
-                        text-align: center
-                        letter-spacing: 0.02em
-                    p
-                        font-size: 16px
-                        line-height: 142%
-                        text-align: center
-                    gap: 20px !important
+                    gap: 20px
                 .snp-container-5-content-images
-                    padding: 0 !important
-                    gap: 18px !important
+                    padding: 0
+                    gap: 18px
                     .row
-                        gap: 18px !important
+                        gap: 18px
                         .col
                             min-height: 110px
                             border-radius: 20px 
                         .row-1-photo-3
-                            display: none !important
+                            display: none
                         .row-2-photo-2
-                            display: none !important
+                            display: none
                         .row-3-photo-3
-                            display: none !important
+                            display: none
 
     .snp-container-6
-        padding: 0 21px !important
+        padding: 0 21px
         .snp-container-6-content
             .snp-container-6-content-row
-                gap: 50px !important
+                gap: 50px
                 .snp-container-6-content-col-1
-                    h2
-                        font-weight: 700
-                        font-size: 34px
-                        line-height: 112%
-                        text-align: center
-                        letter-spacing: 0.02em
-                    p
-                        font-size: 16px
-                        line-height: 142%
-                        text-align: center
-                    gap: 20px !important
+                    gap: 20px
                 .snp-container-6-content-col-2
                     .snp-container-6-content-cards
-                        gap: 20px !important
+                        gap: 20px
                         .card
                             -webkit-background-size: 300% 100%
                             -moz-background-size: 300% 100%
@@ -773,29 +604,18 @@
                                 border-radius: 20px
                                 .card-body
                                     .card-title
-                                        padding: 30px 25px 0 30px !important
-                                        gap: 20px !important
-                                        h3
-                                            font-weight: 700
-                                            font-size: 23px
-                                            line-height: 120%
-                                            letter-spacing: 0.04em
-                                        p, li
-                                            font-size: 16px
-                                            line-height: 142%
+                                        padding: 30px 25px 0 30px
+                                        gap: 20px
                                         .snp-container-6-content-mobile-br
                                             display: none
                                     .card-button
-                                        padding: 0 0 31.5px 25px !important
+                                        padding: 0 0 31.5px 25px
                                         .row
                                             button
-                                                font-weight: 700
-                                                font-size: 16px
-                                                line-height: 142%
-                                                margin: 0 !important
-                                                padding: 0 !important
+                                                margin: 0
+                                                padding: 0
                                             .card-button-col-2
-                                                display: none !important
+                                                display: none
                         .card:hover
                             -webkit-background-size: 300%*1.2 100%*1.2
                             -moz-background-size: 300%*1.2 100%*1.2
@@ -804,52 +624,34 @@
                             button
                                 background-color: #00000000
     .snp-container-footer
-        padding: 0 34.5px !important
+        padding: 0 34.5px
         .snp-container-footer-content
-            margin: 0 !important
+            margin: 0
             .snp-container-footer-content-cards
                 .card
                     width: 291px
                     .snp-container-footer-row
-                        flex-direction: column !important
+                        flex-direction: column
                         img
                             width: 130px
                             height: 133px
-                            border-radius: 20px !important
+                            border-radius: 20px
                         .card-body
                             width: 100%
-                            padding: 0 !important
-                            .card-title
-                                h3
-                                    font-weight: 700
-                                    font-size: 23px
-                                    line-height: 120%
-                                    text-align: center
-                                    letter-spacing: 0.04em
-                                p, a
-                                    font-size: 16px
-                                    line-height: 142%
-                                    text-align: center
+                            padding: 0
 
     .snp-footer-wrapper
         height: 95px
-        padding: 21px 21.5px !important
+        padding: 21px 21.5px
         .snp-footer
             .row
                 width: 100%
-                gap: 7px !important
+                gap: 7px
                 .snp-footer-col-1
-                    margin: 0 !important
-                    p
-                        font-size: 16px
-                        line-height: 142%
+                    margin: 0
                 .snp-footer-links
-                    gap: 15px !important
+                    gap: 15px
                     .snp-footer-links-text
                         img
                             width: 20px
                             height: 20px
-                        a
-                            gap: 5px !important
-                            font-size: 16px
-                            line-height: 142%

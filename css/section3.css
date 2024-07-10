@@ -330,33 +330,18 @@
   display: block;
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
   gap: 19px;
-}
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 p {
-  color: var(--text-color-3);
-  font-size: 17px;
-  line-height: 24.14px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  margin-left: 45px !important;
-}
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 span {
-  color: var(--text-color-2);
-}
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 span:hover {
-  -webkit-text-decoration: underline var(--text-color-2);
-          text-decoration: underline var(--text-color-2);
-  text-underline-offset: 2px;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  cursor: pointer;
-}
-@media screen and (min-width: 1025px) {
-  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 span:active {
-    color: var(--text-color-4);
-    -webkit-text-decoration: underline var(--text-color-4);
-            text-decoration: underline var(--text-color-4);
-  }
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label {
   display: block;
@@ -367,21 +352,54 @@
   -ms-user-select: none;
   user-select: none;
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label p {
+  text-align: left;
+  margin-left: 45px !important;
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label .checkbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 26px;
-  height: 26px;
-  border: 2px solid var(--text-color-2);
-  border-radius: 5px;
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span {
+  color: var(--text-color-2);
+}
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span:hover {
+  -webkit-text-decoration: underline var(--text-color-2);
+          text-decoration: underline var(--text-color-2);
+  text-underline-offset: 2px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 1025px) {
+  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span:active {
+    color: var(--text-color-4);
+    -webkit-text-decoration: underline var(--text-color-4);
+            text-decoration: underline var(--text-color-4);
+  }
+  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--text-color-2);
+    border-radius: 5px;
+  }
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label input:checked ~ .checkbox {
   background-color: #FFFFFF;
@@ -397,10 +415,24 @@
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .card-button-br-1, .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .card-button-br-2 {
   display: none;
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
   gap: 30px;
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 button {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 button {
   font-size: 20px;
   line-height: 28.4px;
   text-align: center;
@@ -411,25 +443,25 @@
   padding: 15px 30px !important;
   white-space: nowrap;
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1 {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-1 {
   background-color: var(--text-color-4);
   color: var(--text-color-1);
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2 {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-2 {
   background-color: #E0F0E5;
   color: var(--text-color-4);
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:hover {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-1:hover {
   background-color: #3B7E7B;
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:hover {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-2:hover {
   background-color: #F1F3F2;
 }
 @media screen and (min-width: 1025px) {
-  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-1:active {
+  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-1:active {
     background-color: #627F7E;
   }
-  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .padding-col-3 .card-button-button-2:active {
+  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-2:active {
     background-color: #D9DFDB;
   }
 }
