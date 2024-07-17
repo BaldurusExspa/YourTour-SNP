@@ -10,6 +10,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 88px;
+  margin: 135px 0 0 0;
   background-color: var(--input-border-color-1);
 }
 .snp-footer-wrapper .snp-footer {

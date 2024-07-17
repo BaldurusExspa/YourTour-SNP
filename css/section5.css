@@ -9,7 +9,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
 }
 .snp-container-5 .snp-container-content {
   display: -webkit-box;
@@ -87,11 +86,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
   width: 100%;
   min-height: 301px;
-  border-radius: 50px;
+  padding: 0;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  border-radius: 50px;
 }

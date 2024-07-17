@@ -1,6 +1,17 @@
 @import "root.css";
+.snp-container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .snp-container-footer .snp-container-content {
-  color: var(--text-color-2);
+  width: 100%;
 }
 .snp-container-footer .snp-container-content .snp-container-content-row {
   -webkit-box-orient: horizontal;
@@ -16,10 +27,10 @@
 }
 .snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card {
   width: 771px;
-  border-radius: 50px;
+  white-space: nowrap;
   border: none;
   background-color: var(--input-color-1);
-  white-space: nowrap;
+  border-radius: 50px;
 }
 .snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row {
   display: -webkit-box;
@@ -76,9 +87,9 @@
   white-space: nowrap;
 }
 .snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title a {
-  color: var(--text-color-2);
   text-align: center;
   text-decoration: none;
+  color: var(--text-color-2);
 }
 .snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title a:hover {
   -webkit-text-decoration: underline 2px var(--text-color-2);
@@ -89,11 +100,11 @@
   cursor: pointer;
 }
 .snp-container-footer .snp-container-content .snp-container-content-row .snp-container-content-cards .card .snp-container-footer-row .snp-container-footer-col-2 .card-body .card-title a:active {
-  color: var(--text-color-4);
   -webkit-text-decoration: underline 2px var(--text-color-4) !important;
           text-decoration: underline 2px var(--text-color-4) !important;
   text-underline-offset: 1px;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+  color: var(--text-color-4);
   cursor: pointer;
 }

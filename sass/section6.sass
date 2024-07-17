@@ -25,17 +25,17 @@
                 gap: 50px
                 .card
                     position: relative
+                    width: 1170px
+                    height: 567px
                     color: var(--text-color-1)
-                    background-repeat: no-repeat
-                    background-position: center center
                     -webkit-background-size: 100% 100%
                     -moz-background-size: 100% 100%
                     -o-background-size: 100% 100%
                     background-size: 100% 100%
+                    background-repeat: no-repeat
+                    background-position: center center
                     border: none
                     border-radius: 50px
-                    width: 1170px
-                    height: 567px
                     -webkit-transition: background-size 0.3s ease
                     -moz-transition: background-size 0.3s ease
                     -o-transition: background-size 0.3s ease
@@ -50,45 +50,42 @@
                         cursor: pointer
                         button
                             background-color: var(--text-color-4)
-                            -webkit-transition: .1s
-                            -moz-transition: .1s
-                            -o-transition: .1s
-                            transition: .1s
+                            -webkit-transition: background-color .1s
+                            -moz-transition: background-color .1s
+                            -o-transition: background-color .1s
+                            transition: background-color .1s
                     .card:active
                         button
                             background-color: var(--orange-200)
-                            -webkit-transition: .1s
-                            -moz-transition: .1s
-                            -o-transition: .1s
-                            transition: .1s
+                            -webkit-transition: background-color .1s
+                            -moz-transition: background-color .1s
+                            -o-transition: background-color .1s
+                            transition: background-color .1s
                 button
+                    padding: 7px 20px
                     font-size: 23px
                     font-weight: 700
                     line-height: 28.06px
                     text-align: left
+                    color: var(--text-color-1)
                     background: none
                     border: none
-                    color: var(--text-color-1)
                     border-radius: 50px
-                    -webkit-transition: all 0.2s ease
-                    -moz-transition: all 0.2s ease
-                    -o-transition: all 0.2s ease
-                    transition: all 0.2s ease
-                    padding: 7px 20px
-                img
-                    padding-left: 15px
+                    .card-btn-text
+                        padding-right: 15px
+                svg
                     fill: var(--text-color-1)
                 .card-gradient
                     display: flex
+                    height: 100%
                     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%)
                     border-radius: 50px
-                    height: 100%
                     cursor: pointer
                     .card-body
                         display: flex
                         flex-direction: column
-                        padding: 0
                         width: 100%
+                        padding: 0
                         .card-title
                             display: flex
                             flex-direction: column
@@ -97,22 +94,22 @@
                             h3
                                 text-align: left
                             p
-                                color: var(--text-color-1)
                                 text-align: left
+                                color: var(--text-color-1)
                             ul
-                                color: var(--text-color-1)
                                 padding: 0 0 0 17px
-                            li
                                 color: var(--text-color-1)
+                            li
                                 text-align: left
+                                color: var(--text-color-1)
                         .card-button
                             display: flex
+                            flex: 1
                             flex-direction: column
                             justify-content: flex-end
                             align-items: center
-                            padding: 0 60px 60px 40px
                             width: 100%
-                            flex: 1
+                            padding: 0 60px 60px 40px
                             .row
                                 display: flex
                                 flex-direction: row
@@ -128,19 +125,19 @@
                                     padding: 0
                                     gap: 35px
                                     a
-                                        color: var(--text-color-1)
                                         text-align: center
                                         text-decoration: none
-                                    a:hover
                                         color: var(--text-color-1)
+                                    a:hover
                                         text-decoration: underline 1px var(--text-color-1)
                                         text-underline-offset: 2px
                                         text-decoration-skip-ink: none
+                                        color: var(--text-color-1)
                                         cursor: pointer
                                     @media screen and (min-width: 1025px)
                                         a:active
-                                            color: var(--orange-200)
                                             text-decoration: underline 1px var(--orange-200)
                                             text-underline-offset: 2px
                                             text-decoration-skip-ink: none
+                                            color: var(--orange-200)
                                             cursor: pointer

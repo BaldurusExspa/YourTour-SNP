@@ -9,7 +9,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
+  padding-top: 135px;
 }
 .snp-container .snp-container-content {
   display: -webkit-box;
@@ -42,8 +42,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 35px;
   padding: 0;
+  gap: 35px;
 }
 .snp-container .snp-container-content .snp-container-content-row .snp-container-content-cards {
   display: -webkit-box;

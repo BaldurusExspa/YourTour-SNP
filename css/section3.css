@@ -344,8 +344,9 @@
   gap: 19px;
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label {
-  display: block;
   position: relative;
+  display: block;
+  width: 100%;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -353,13 +354,24 @@
   user-select: none;
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label p {
+  margin: 0 0 0 45px;
   text-align: left;
-  margin-left: 45px !important;
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label p span {
   color: var(--text-color-2);
 }
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span .checkbox {
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label .checkbox .checkbox-span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,28 +390,26 @@
           text-decoration-skip-ink: none;
   cursor: pointer;
 }
-@media screen and (min-width: 1025px) {
-  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span:active {
-    color: var(--text-color-4);
-    -webkit-text-decoration: underline var(--text-color-4);
-            text-decoration: underline var(--text-color-4);
-  }
-  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label .checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 26px;
-    height: 26px;
-    border: 2px solid var(--text-color-2);
-    border-radius: 5px;
-  }
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label span:active {
+  color: var(--text-color-4);
+  -webkit-text-decoration: underline var(--text-color-4);
+          text-decoration: underline var(--text-color-4);
+}
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--text-color-2);
+  border-radius: 5px;
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label input:checked ~ .checkbox {
   background-color: #FFFFFF;
@@ -411,9 +421,6 @@
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .checkbox-label input:checked ~ .checkbox:after {
   display: block;
-}
-.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .card-button-br-1, .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-2 .card-button-br-2 {
-  display: none;
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 {
   display: -webkit-box;
@@ -432,6 +439,12 @@
   padding: 0;
   gap: 30px;
 }
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-1 p {
+  color: var(--text-color-1);
+}
+.snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-2 p {
+  color: var(--text-color-4);
+}
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 button {
   font-size: 20px;
   line-height: 28.4px;
@@ -440,7 +453,7 @@
   height: 58px;
   border-radius: 10px;
   border: none;
-  padding: 15px 30px !important;
+  padding: 15px 30px;
   white-space: nowrap;
 }
 .snp-container-3 .snp-container-content .snp-container-content-row .form .snp-container-content-cards .card .card-body .card-button .card-button-row .card-button-row-col-3 .card-button-button-1 {
