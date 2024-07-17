@@ -1,0 +1,141 @@
+@import "root.css";
+.snp-container-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.snp-container-4 .snp-container-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 673px;
+  padding: 40px;
+  color: var(--text-color-2);
+  background-color: var(--input-border-color-1);
+  border: none;
+  border-radius: 50px;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body .card-title p {
+  text-align: left;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body .card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body .card-text .card-text-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body .card-text .card-text-text br {
+  display: none;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body .card-text .card-text-text h3 {
+  text-align: left;
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body .card-text .card-text-text p {
+  color: var(--text-color-3);
+}
+.snp-container-4 .snp-container-content .snp-container-content-row .snp-container-content-cards .snp-container-content-cards-row .snp-container-content-cards-col .card .card-body .card-text img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}

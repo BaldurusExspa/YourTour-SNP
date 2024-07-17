@@ -1,0 +1,282 @@
+@import root.css
+
+// .selected
+//     transform: scale(1, -1)
+
+.snp-container-3
+    display: flex
+    justify-content: center
+    align-items: center
+    .snp-container-content
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+        .snp-container-content-row
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 0
+            .snp-container-content-nav
+                display: flex
+                flex-direction: column
+                padding: 0
+            .form
+                padding: 0
+                .snp-container-content-cards
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 0
+                    .card
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        position: relative
+                        color: var(--text-color-2)
+                        width: 1170px
+                        border: none
+                        border-radius: 50px
+                        padding: 70px
+                        .card-body
+                            display: flex
+                            flex-direction: column
+                            padding: 0
+                            width: 100%
+                            gap: 33px
+                            .card-input
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                flex-direction: column
+                                gap: 33px
+                                .row
+                                    display: flex
+                                    flex-direction: row
+                                    gap: 30px
+                                    .snp-container-content-cards-col
+                                        display: flex
+                                        flex-direction: column
+                                        position: relative
+                                        gap: 8px
+                                        padding: 0
+                                        .card-input-select-box-img
+                                            display: flex
+                                            justify-content: flex-end
+                                            pointer-events: none
+                                            position: absolute
+                                            width: 100%
+                                            height: 100%
+                                            padding: 0 20px
+                                            .card-input-select-img
+                                                margin-top: 36.4px+21px
+                                        label,
+                                        textarea,
+                                        input,
+                                        select,
+                                        option
+                                            text-align: left
+                                            color: var(--text-color-2)
+                                        input
+                                            width: 100%
+                                            height: 68px
+                                            background-color: var(--input-color-1)
+                                            border-radius: 10px
+                                            border: 1px solid var(--input-border-color-1)
+                                            padding: 20px
+                                        input::placeholder
+                                            color: var(--text-color-3)
+                                        input:focus
+                                            outline: 1px solid var(--text-color-3)
+                                        input:hover
+                                            border: 1px solid var(--input-border-color-1)
+                                            background-color: var(--input-border-color-1)
+                                            cursor: pointer
+                                        textarea
+                                            background-color: var(--input-color-1)
+                                            border-radius: 10px
+                                            border: 1px solid var(--input-border-color-1)
+                                            padding: 20px
+                                            height: 152px
+                                        textarea:focus
+                                            outline: 1px solid var(--text-color-3)
+                                        textarea:hover
+                                            border: 1px solid var(--input-border-color-1)
+                                            background-color: var(--input-border-color-1)
+                                            cursor: pointer
+                                        select
+                                            width: 100%
+                                            height: 68px
+                                            background-color: var(--input-color-1)
+                                            border-radius: 10px
+                                            border: 1px solid var(--input-border-color-1)
+                                            padding: 20px
+                                            appearance: none
+                                        select:hover
+                                            border: 1px solid var(--input-border-color-1)
+                                            background-color: var(--input-border-color-1)
+                                            cursor: pointer
+                                            option
+                                                background-color: var(--input-color-1)
+                                        select:focus
+                                            outline: 1px solid var(--text-color-3)
+                                        select:invalid
+                                            color: var(--text-color-3)
+                            .card-button
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                flex-direction: column
+                                .card-button-row
+                                    display: flex
+                                    flex-direction: row
+                                    gap: 33px
+                                    .card-button-row-col-1
+                                        display: flex
+                                        flex-direction: column
+                                        padding: 0
+                                        gap: 8px
+                                        p, label
+                                            color: var(--text-color-2)
+                                            text-align: left
+                                        .card-button-row-col-1-radioBtn
+                                            display: flex
+                                            gap: 31px
+                                            padding: 0
+                                            .input
+                                                display: flex
+                                                justify-content: center
+                                                align-items: center
+                                                .radio-label
+                                                    display: block
+                                                    position: relative
+                                                    cursor: pointer
+                                                    -webkit-user-select: none
+                                                    -moz-user-select: none
+                                                    -ms-user-select: none
+                                                    user-select: none
+                                                    label
+                                                        color: var(--text-color-2)
+                                                        margin-left: 11px+26px
+                                                    input
+                                                        position: absolute
+                                                        opacity: 0
+                                                        cursor: pointer
+                                                        height: 0
+                                                        width: 0
+                                                    .radio
+                                                        display: flex
+                                                        justify-content: center
+                                                        align-items: center
+                                                        position: absolute
+                                                        top: 0
+                                                        left: 0
+                                                        cursor: pointer
+                                                        width: 26px
+                                                        height: 26px
+                                                        border-radius: 50px
+                                                        border: 2px solid var(--text-color-2)
+                                                .radio-label input:checked ~ .radio
+                                                    background-color: #FFFFFF
+                                                .radio:after
+                                                    content: url('../media/icons/Ellipse 2.svg')
+                                                    position: absolute
+                                                    display: none
+                                                .radio-label input:checked ~ .radio:after
+                                                    display: block
+                                    .card-button-row-col-2
+                                        display: flex
+                                        flex-direction: row
+                                        align-items: center
+                                        padding: 0
+                                        gap: 19px
+                                        .checkbox-label
+                                            position: relative
+                                            display: block
+                                            width: 100%
+                                            cursor: pointer
+                                            -webkit-user-select: none
+                                            -moz-user-select: none
+                                            -ms-user-select: none
+                                            user-select: none
+                                            p
+                                                margin: 0 0 0 26px+19px
+                                                text-align: left
+                                                span
+                                                    color: var(--text-color-2)
+                                            .checkbox
+                                                display: flex
+                                                justify-content: center
+                                                align-items: center
+                                                .checkbox-span
+                                                    display: flex
+                                                    justify-content: center
+                                                    align-items: center
+                                            span:hover
+                                                text-decoration: underline var(--text-color-2)
+                                                text-underline-offset: 2px
+                                                text-decoration-skip-ink: none
+                                                cursor: pointer
+                                            span:active 
+                                                color: var(--text-color-4)
+                                                text-decoration: underline var(--text-color-4)
+                                            input
+                                                position: absolute
+                                                opacity: 0
+                                                cursor: pointer
+                                                height: 0
+                                                width: 0
+                                            .checkbox
+                                                position: absolute
+                                                top: 0
+                                                left: 0
+                                                width: 26px
+                                                height: 26px
+                                                border: 2px solid var(--text-color-2)
+                                                border-radius: 5px 
+                                        .checkbox-label input:checked ~ .checkbox
+                                            background-color: #FFFFFF
+                                        .checkbox:after
+                                            content: url('../media/icons/Rectangle 36 (Stroke).svg')
+                                            position: absolute
+                                            display: none
+                                        .checkbox-label input:checked ~ .checkbox:after
+                                            display: block
+                                    .card-button-row-col-3
+                                        display: flex
+                                        flex-direction: row
+                                        justify-content: flex-start
+                                        align-items: center
+                                        padding: 0
+                                        gap: 30px
+                                        .card-button-button-1
+                                            p
+                                                color: var(--text-color-1)
+                                        .card-button-button-2
+                                            p
+                                                color: var(--text-color-4)
+                                        button
+                                            font-size: 20px
+                                            line-height: 28.4px
+                                            text-align: center
+                                            width: 235px
+                                            height: 58px
+                                            border-radius: 10px
+                                            border: none
+                                            padding: 15px 30px
+                                            white-space: nowrap
+                                        .card-button-button-1
+                                            background-color: var(--text-color-4)
+                                            color: var(--text-color-1)
+                                        .card-button-button-2
+                                            background-color: #E0F0E5
+                                            color: var(--text-color-4)
+                                        .card-button-button-1:hover
+                                            background-color: #3B7E7B
+                                        .card-button-button-2:hover
+                                            background-color: #F1F3F2
+                                        @media screen and (min-width: 1025px)
+                                            .card-button-button-1:active
+                                                background-color: #627F7E
+                                            .card-button-button-2:active
+                                                background-color: #D9DFDB
