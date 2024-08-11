@@ -1,0 +1,129 @@
+.button-choosed
+    p
+        text-decoration: underline 2px var(--orange-200)
+        text-underline-offset: 10px
+        text-decoration-skip-ink: none
+        color: var(--orange-200)
+
+.button-choosed:hover
+    p
+        text-decoration: underline 2px var(--orange-200)
+        text-underline-offset: 10px
+        text-decoration-skip-ink: none
+        color: var(--orange-200)
+
+@include mobile-l
+    .button-choosed
+        p
+            text-decoration: underline 2px var(--orange-200)
+            text-underline-offset: 4px
+            text-decoration-skip-ink: none
+            color: var(--orange-200)
+
+    .button-choosed:hover
+        p
+            text-decoration: underline 2px var(--orange-200)
+            text-underline-offset: 4px
+            text-decoration-skip-ink: none
+            color: var(--orange-200)
+
+.snp-tours-section
+    .nav
+        gap: 30px
+        button
+            text-align: left
+            color: var(--text-color-2)
+            background: none
+            border: none
+        button:hover
+            text-decoration: underline 2px var(--text-color-2)
+            text-underline-offset: 10px
+            text-decoration-skip-ink: none
+            color: var(--text-color-2)
+    .snp-container-content-cards-col
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 370px
+        padding: 0
+        .card
+            width: 100%
+            height: 531px
+            padding: 0
+            color: var(--text-color-1)
+            background-size: 100% 100%
+            background-repeat: no-repeat
+            background-position: center center
+            -webkit-background-size: 100% 100%
+            -moz-background-size: 100% 100%
+            -o-background-size: 100% 100%
+            border-radius: 50px
+            border: none
+            -webkit-transition: background-size 0.3s ease
+            -moz-transition: background-size 0.3s ease
+            -o-transition: background-size 0.3s ease
+            transition: background-size 0.3s ease
+        @media screen and (min-width: 769px)
+            .card:hover
+                -webkit-background-size: 100%*1.2 100%*1.2
+                -moz-background-size: 100%*1.2 100%*1.2
+                -o-background-size: 100%*1.2 100%*1.2
+                background-size: 100%*1.2 100%*1.2
+                // Without not working
+                .card-gradient
+                    .card-body
+                        .card-button
+                            button
+                                background-color: var(--text-color-4)
+                                -webkit-transition: background-color .1s ease
+                                -moz-transition: background-color .1s ease
+                                -o-transition: background-color .1s ease
+                                transition: background-color .1s ease
+            .card:active
+                // Without not working
+                .card-gradient
+                    .card-body
+                        .card-button
+                            button
+                                background-color: var(--orange-200)
+                                -webkit-transition: background-color .1s ease
+                                -moz-transition: background-color .1s ease
+                                -o-transition: background-color .1s ease
+                                transition: background-color .1s ease
+        .card-gradient
+            display: flex
+            height: 100%
+            padding-bottom: 43px
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%) !important
+            border-radius: 50px
+            .card-body
+                display: flex
+                flex-direction: column
+                padding: 0
+                .card-title
+                    display: flex
+                    flex-direction: column
+                    margin: 50px 50px 0px 50px   
+                    gap: 16px 
+                    h3,
+                    p
+                        text-align: start                  
+                .card-button
+                    display: flex
+                    flex: 1
+                    justify-content: start
+                    align-items: flex-end
+                    width: 100%
+                    button
+                        padding: 7px 20px
+                        margin: 0 0 0 30px
+                        text-align: left
+                        color: var(--text-color-1)
+                        background: none
+                        border: none
+                        border-radius: 50px
+                        cursor: pointer
+                        .card-btn-text
+                            padding-right: 15px
+                    svg
+                        fill: var(--text-color-1)
