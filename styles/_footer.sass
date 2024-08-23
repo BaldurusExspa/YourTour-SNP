@@ -1,43 +1,43 @@
-.snp-footer-wrapper
+.footer
     display: flex
     justify-content: center
     align-items: center
     height: 88px
     margin: 135px 0 0 0
     background-color: var(--input-border-color-1)
-    .snp-footer
+    &__wrapper
         display: flex
         justify-content: center
         align-items: center
-        .row
+    &__row
+        display: flex
+        flex-direction: row
+        gap: 527px
+    &__column-1
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+    &__column-2
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+    &__links-content
+        display: flex
+        gap: 25px
+    &__link
+        display: flex
+        flex-direction: row
+        a
             display: flex
             flex-direction: row
-            gap: 527px
-            .snp-footer-col-1
-                display: flex
-                justify-content: center
-                align-items: center
-                padding: 0
-            .snp-footer-col-2
-                display: flex
-                justify-content: center
-                align-items: center
-                padding: 0
-                .snp-footer-links
-                    display: flex
-                    gap: 25px
-                    .snp-footer-links-text
-                        display: flex
-                        flex-direction: row
-                        a
-                            display: flex
-                            flex-direction: row
-                            gap: 10px
-                            color: var(--text-color-2)
-                            text-align: left
-                            text-decoration: none
-                        a:hover
-                            text-decoration: underline 1px var(--text-color-2)
-                            text-underline-offset: 4px
-                            text-decoration-skip-ink: none
-                            cursor: pointer
+            gap: 10px
+            color: var(--text-color-2)
+            text-align: left
+            text-decoration: none
+        a:hover
+            text-decoration: underline 1px var(--text-color-2)
+            text-underline-offset: 4px
+            text-decoration-skip-ink: none
+            cursor: pointer

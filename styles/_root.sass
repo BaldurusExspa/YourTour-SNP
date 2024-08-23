@@ -9,8 +9,16 @@
 
 $media: screen
 
+@mixin midscreen
+    @media #{$media} and (max-width: 1200px)
+        @content
+
 @mixin laptop
     @media #{$media} and (max-width: 1025px)
+        @content
+
+@mixin laptop-s
+    @media #{$media} and (max-width: 950px)
         @content
 
 @mixin tablet
@@ -25,7 +33,7 @@ $media: screen
     @media #{$media} and (max-width: 481px) 
         @content
 
-.snp-text-h1
+.text-h1
     font:
         size: 96px
         weight: 700
@@ -33,79 +41,79 @@ $media: screen
     text-align: center
     letter-spacing: 0.02em
 @include tablet
-    .snp-text-h1
+    .text-h1
         font:
             size: 80px
 @include mobile-l
-    .snp-text-h1
+    .text-h1
         font:
             size: 52px
 @include mobile-m
-    .snp-text-h1
+    .text-h1
         font:
             size: 34px
         line-height: 112%
 
-.snp-text-h2
+.text-h2
     font:
         size: 59px
         weight: 700
     line-height: 124%
     text-align: center
 @include mobile-l
-    .snp-text-h2
+    .text-h2
         font:
             size: 40px
         line-height: 120%
 @include mobile-m
-    .snp-text-h2
+    .text-h2
         font:
             size: 34px
         line-height: 112%
 
-.snp-text-h3
+.text-h3
     font:
         size: 35px
         weight: 500
     line-height: 122%
     text-align: center
 @include tablet
-    .snp-text-h3
+    .text-h3
         font:
             size: 27px
             weight: 600
         line-height: 121%
 @include mobile-l
-    .snp-text-h3
+    .text-h3
         font:
             size: 25px
         line-height: 120%
 @include mobile-m
-    .snp-txt-h3
+    .txt-h3
         font:
             size: 23px
             weight: 700
         line-height: 120%
 
-.snp-text-p-big
+.text-p-big
     font:
         size: 23px
         weight: 700
     line-height: 122%
     text-align: center
-@include mobile-l
-    .snp-text-p-big
+@include laptop-s
+    .text-p-big
         font:
             size: 20px
         line-height: 130%
         letter-spacing: 0.7px
 @include mobile-m
-    .snp-text-p-big
+    .text-p-big
         font:
             size: 16px
         line-height: 142%
 
-.snp-text-p-normal
+.text-p-normal
     font:
         size: 20px
         weight: 400
@@ -113,15 +121,15 @@ $media: screen
     text-align: center
     color: var(--text-color-3)
 @include mobile-l
-    .snp-text-p-normal
+    .text-p-normal
         font:
             size: 18px
 @include mobile-m
-    .snp-text-p-normal
+    .text-p-normal
         font:
             size: 16px
 
-.snp-text-p-small
+.text-p-small
     font:
         size: 17px
         weight: 400
@@ -129,6 +137,6 @@ $media: screen
     letter-spacing: -0.01em
     text-align: center
 @include mobile-m
-    .snp-text-p-small
+    .text-p-small
         font:
             size: 16px

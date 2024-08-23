@@ -10,676 +10,552 @@
 @import footerSection
 @import footer
 
-.snp-section-list
+.section-list
     display: flex
     flex-direction: column
+    align-items: center
 
-@media #{$media} and (max-width: 1200px)
-    .snp-container
-        .snp-container-content
-            .snp-container-content-row
-                width: 918px
+@include midscreen
+    .content-row
+        width: 918px
 
-    .snp-header-wrapper
-        .snp-header
-            .row
-                .col-12
-                    gap: 62px
-                    .nav
-                        gap: 40px
+    .header
+        &__content
+            gap: 62px
+        &__nav
+            gap: 40px
 
-    .snp-review-section
+    .review-section
         .card
             height: 841px
 
-    .snp-gallery-section
-        .snp-container-content
+    .gallery-section
+        &__content
             padding: 0 25px
-            .snp-container-content-row
-                width: 100%
-                .snp-container-content-cards
-                    .row
-                        gap: 25px
+        &__row
+            width: 100%
+        .card-container
+            &__row
+                gap: 25px
 
-    .snp-stories-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        width: 975px
-                        -webkit-background-size: 120% 100%
-                        -moz-background-size: 120% 100%
-                        -o-background-size: 120% 100%
-                        background-size: 120% 100%
-                    .card:hover
-                        -webkit-background-size: 120%*1.2 100%*1.2
-                        -moz-background-size: 120%*1.2 100%*1.2
-                        -o-background-size: 120%*1.2 100%*1.2
-                        background-size: 120%*1.2 100%*1.2
+    .stories-section
+        .card
+            width: 975px
+            -webkit-background-size: 120% 100%
+            -moz-background-size: 120% 100%
+            -o-background-size: 120% 100%
+            background-size: 120% 100%
+        .card:hover
+            -webkit-background-size: 120%*1.2 100%*1.2
+            -moz-background-size: 120%*1.2 100%*1.2
+            -o-background-size: 120%*1.2 100%*1.2
+            background-size: 120%*1.2 100%*1.2
 
-    .snp-footer-wrapper
-        .snp-footer
-            .row
-                gap: 277px
+    .footer
+        &__row
+            gap: 277px
 
 @include laptop
-    .snp-container
-        .snp-container-content
-            .snp-container-content-row
-                width: 900px
+    .content-row
+        width: 900px
 
-    .snp-header-wrapper
-        .snp-header
-            .row
-                .col-12
-                    .nav
-                        gap: 30px
+    .header
+        &__nav
+            gap: 30px
 
-    .snp-welcome-section
-        .snp-welcome-section-content
-            .snp-welcome-section-content-row-1
-                .snp-welcome-section-content-row-2
-                    .snp-welcome-section-content-high-br
-                        display: none
-                    .snp-welcome-section-content-middle-br
-                        display: block
-                    .snp-welcome-section-content-mobile-br
-                        display: none
+    .welcome-section
+        .high-br
+            display: none
+        .middle-br
+            display: block
+        .mobile-br
+            display: none
 
-    .snp-tours-section
-        .snp-container-content
+    .tours-section
+        &__content
             margin: 0
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .row
-                        gap: 18px 18px
-                        .snp-container-content-cards-col
-                            width: 450px
-                            .card
-                                -webkit-background-size: 100% 120%
-                                -moz-background-size: 100% 120%
-                                -o-background-size: 100% 120%
-                                background-size: 100% 120%
-                            .card:hover
-                                -webkit-background-size: 100%*1.2 120%*1.2
-                                -moz-background-size: 100%*1.2 120%*1.2
-                                -o-background-size: 100%*1.2 120%*1.2
-                                background-size: 100%*1.2 120%*1.2
-
-    .snp-createTour-section
-        .snp-container-content
-            margin: 0
-            .snp-container-content-row
-                .form
-                    .snp-container-content-cards
-                        .card
-                            padding: 60px
-                            .card-body
-                                .card-input
-                                    .row
-                                        gap: 0 20px
-                                .card-button
-                                    .card-button-row
-                                        .card-button-row-col-2
-                                            gap: 11px
-                                            .checkbox-label
-                                                p
-                                                    margin-left: 26px+11px
-
-    .snp-review-section
-        .snp-container-content
-            margin: 0
-        .snp-container-content-row
+        &__row
             width: 100%
-        .snp-container-content-cards
-        .snp-container-content-cards-row
-            gap: 18px
-        .snp-container-content-cards-col
-            width: 450px
+        .card-container
+            &__row
+                gap: 18px 18px
+            &__column
+                width: 450px
+            .card
+                -webkit-background-size: 100% 120%
+                -moz-background-size: 100% 120%
+                -o-background-size: 100% 120%
+                background-size: 100% 120%
+            .card:hover
+                -webkit-background-size: 100%*1.2 120%*1.2
+                -moz-background-size: 100%*1.2 120%*1.2
+                -o-background-size: 100%*1.2 120%*1.2
+                background-size: 100%*1.2 120%*1.2
+
+    .createTour-section
+        &__content
+            margin: 0
         .card
-            height: 841px
+            padding: 60px
+            .input-container
+                &__row
+                    gap: 0 20px
+            .button-container
+                &__column-2
+                    gap: 11px
+                &__checkbox-label
+                    p
+                        margin-left: 26px+11px
 
-    .snp-gallery-section
-        .snp-container-content
+    .review-section
+        &__content
+            margin: 0
+        &__row
+            width: 100%
+        .card-container
+            &__row
+                gap: 18px
+            &__column
+                width: 450px
+            .card
+                height: 841px
+
+    .gallery-section
+        &__content
             padding: 0 20px
-            .snp-container-content-row
-                width: 100%
-                .snp-container-content-cards
-                    gap: 30px
-                    .row
-                        gap: 20px
-                        .row-1-photo-2
-                            display: none
-                        .row-2-photo-3
-                            display: none
-                        .row-3-photo-4
-                            display: none
+        &__row
+            width: 100%
+        .card-container
+            gap: 30px
+            &__row
+                gap: 20px
+            .row-1-photo-2
+                display: none
+            .row-2-photo-3
+                display: none
+            .row-3-photo-4
+                display: none
 
-    .snp-stories-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        width: 100%
-                        -webkit-background-size: 120% 100%
-                        -moz-background-size: 120% 100%
-                        -o-background-size: 120% 100%
-                        background-size: 120% 100%
-                    .card:hover
-                        -webkit-background-size: 120%*1.2 100%*1.2
-                        -moz-background-size: 120%*1.2 100%*1.2
-                        -o-background-size: 120%*1.2 100%*1.2
-                        background-size: 120%*1.2 100%*1.2
+    .stories-section
+        .card
+            width: 100%
+            -webkit-background-size: 120% 100%
+            -moz-background-size: 120% 100%
+            -o-background-size: 120% 100%
+            background-size: 120% 100%
+        .card:hover
+            -webkit-background-size: 120%*1.2 100%*1.2
+            -moz-background-size: 120%*1.2 100%*1.2
+            -o-background-size: 120%*1.2 100%*1.2
+            background-size: 120%*1.2 100%*1.2
 
-@media #{$media} and (max-width: 950px)
-    .snp-container
-        .snp-container-content
-            .snp-container-content-row
-                width: 90%
+@include laptop-s
+    .content-row
+        width: 90%
 
-    .snp-header-wrapper
-        .snp-header
-            .row
-                .col-12
-                    gap: 100px
-                    .nav-item
-                        display: none
+    .header
+        &__column
+            gap: 100px
+        &__nav-item
+            display: none
 
-    .snp-createTour-section
-        .snp-container-content
+    .createTour-section
+        &__content
             min-width: 100%
-            .snp-container-content-row
-                .form
-                    .snp-container-content-cards
-                        .card
-                            padding: 40px
-                            .card-body
-                                .card-button
-                                    .card-button-row
-                                        .card-button-row-col-3
-                                            justify-content: center
+        .card
+            padding: 40px
+        .button-container
+            &__column-3
+                justify-content: center
 
-    .snp-review-section
-        .snp-container-content
+    .review-section
+        &__content
             min-width: 100%
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .snp-container-content-cards-row
-                        .snp-container-content-cards-col
-                            .card
-                                height: 950px
-                                padding: 30px
+        .card
+            height: 950px
+            padding: 30px
 
-    .snp-gallery-section
-        .snp-container-content
-            .snp-container-content-row
-                width: 100%
-                .snp-container-content-cards
-                    .row
-                        .col
-                            border-radius: 40px
+    .gallery-section
+        &__row
+            width: 100%
+        .card-container
+            &__column
+                border-radius: 40px
 
-    .snp-stories-section
-        .snp-container-content
+    .stories-section
+        width: 100%
+        &__content
             min-width: 100%
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        border-radius: 35px
-                        .card-gradient
-                            border-radius: 35px
+        .card
+            border-radius: 35px
+            &__gradient
+                border-radius: 35px
 
-    .snp-container-footer
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        .snp-container-footer-row
-                            flex-direction: column
-                            .snp-container-footer-col-2
-                                .card-body
-                                    .card-title
-                                        h3,
-                                        p
-                                            text-align: center
+    .footer-container
+        .footer-card
+            &__row
+                flex-direction: column
+            &__title
+                h3,
+                p
+                    text-align: center
 
-    .snp-footer-wrapper
-        .snp-footer
-            .row
-                gap: 100px
+    .footer
+        &__row
+            gap: 100px
 
 @include tablet
-    .snp-container
+    .container
         padding-top: 100px
-        .snp-container-content
-            .snp-container-content-row
-                gap: 75px
+    .content-row
+        gap: 75px
 
-    .snp-header-wrapper
-        .snp-header
-            .row
-                .col-12
-                    gap: 75px
-                    .nav
-                        display: none
+    .header
+        &__content
+            gap: 75px
+        &__nav
+            display: none
 
-    .snp-welcome-section
+    .welcome-section
         height: 778px
 
-    .snp-createTour-section
-        .snp-container-content
-            .snp-container-content-row
-                .form
-                    .snp-container-content-cards
-                        .card
-                            .card-body
-                                .card-input
-                                    .row
-                                        flex-direction: column
-                                        gap: 33px
-                                        .snp-container-content-cards-col
-                                            .card-input-select-box-img
-                                                .card-input-select-img
-                                                    margin-top: 36.4px+16px
-                                            input,
-                                            select
-                                                height: 59px
-                                                padding: 15px
-                                            textarea
-                                                height: 142px
-                                                padding: 15px
-                                @include mobile-l
-                                    .card-button
-                                        .card-button-row
-                                            .card-button-row-col-3
-                                                flex-direction: column
-                                                gap: 10px
+    .createTour-section
+        .input-container
+            &__row
+                flex-direction: column
+                gap: 33px
+            &__column
+                input,
+                select
+                    height: 59px
+                    padding: 15px
+                textarea
+                    height: 142px
+                    padding: 15px
+            &__select-image
+                margin-top: 36.4px+16px
+        @include mobile-l
+            .button-container
+                &__column-3
+                    flex-direction: column
+                    gap: 10px
 
-    .snp-review-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .snp-container-content-cards-row
-                        flex-direction: column
-                        .snp-container-content-cards-col
-                            .card
-                                height: 100%
-                                .card-body
-                                    .card-text
-                                        flex: 0
-                                        padding: 40px 0 0 0
+    .review-section
+        .card-container
+            &__row
+                flex-direction: column
+            .card
+                height: 100%
+                &__text-container
+                    flex: 0
+                    padding: 40px 0 0 0
 
-    .snp-gallery-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .row
-                        .row-1-photo-3
-                            display: none
-                        .row-2-photo-2
-                            display: none
-                        .row-3-photo-3
-                            display: none
+    .gallery-section
+        .row-1-photo-3
+            display: none
+        .row-2-photo-2
+            display: none
+        .row-3-photo-3
+            display: none
 
-    .snp-stories-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        width: 100%
-                        height: 500px
-                        -webkit-background-size: 170% 100%
-                        -moz-background-size: 170% 100%
-                        -o-background-size: 170% 100%
-                        background-size: 170% 100%
-                        .card-gradient
-                            .card-body
-                                .card-title
-                                    padding: 40px 40px 0 40px
-                                    .snp-stories-section-content-mobile-br
-                                        display: none
-                                .card-button
-                                    padding: 0 40px 40px 40px
-                                    .row
-                                        button
-                                            padding: 1.5px 0
-                                            margin: 0
-                                        .card-button-col-2
-                                            display: none
-                    .card:hover
-                        -webkit-background-size: 170%*1.2 100%*1.2
-                        -moz-background-size: 170%*1.2 100%*1.2
-                        -o-background-size: 170%*1.2 100%*1.2
-                        background-size: 170%*1.2 100%*1.2
+    .stories-section
+        .card
+            width: 100%
+            height: 500px
+            -webkit-background-size: 170% 100%
+            -moz-background-size: 170% 100%
+            -o-background-size: 170% 100%
+            background-size: 170% 100%
+            &__title
+                padding: 40px 40px 0 40px
+            .mobile-br
+                display: none
+            .button-container
+                padding: 0 40px 40px 40px
+                &__row
+                    button
+                        padding: 1.5px 0
+                        margin: 0
+                &__column-2
+                    display: none
+        .card:hover
+            -webkit-background-size: 170%*1.2 100%*1.2
+            -moz-background-size: 170%*1.2 100%*1.2
+            -o-background-size: 170%*1.2 100%*1.2
+            background-size: 170%*1.2 100%*1.2
 
-    .snp-container-footer
-        .snp-container-content
+    .footer-container
+        &__content
             margin: 0
-            .snp-container-content-row
-                .snp-container-footer-content-cards
-                    .card
-                        .snp-container-footer-row
-                            flex-direction: column
-                            .snp-container-footer-col-2
-                                .card-body
-                                    width: 100%
-                                    padding: 0
+        .footer-card
+            &__row
+                flex-direction: column
+            &__body
+                width: 100%
+                padding: 0
 
-    .snp-footer-wrapper
+    .footer
         height: 95px
         margin-top: 100px
-        .snp-footer
-            .row
+        &__row
+            flex-direction: column
+            gap: 10px
+    
+@include mobile-l
+    .welcome-section
+        height: 600px
+        &__row
+            padding-bottom: 70px
+            gap: 70px
+        &__content
+            gap: 45px
+        &__text
+            button
+                width: 114px
+                height: 33px
+        .high-br
+            display: none
+        .middle-br
+            display: none
+        .mobile-br
+            display: block
+
+    .createTour-section
+        .card
+            padding: 20px
+            border-radius: 30px
+        .button-container
+            &__column-3
                 flex-direction: column
                 gap: 10px
 
-@include mobile-l
-    .snp-welcome-section
-        height: 600px
-        .snp-welcome-section-content
-            .snp-welcome-section-content-row-1
-                padding-bottom: 70px
-                gap: 70px
-                .snp-welcome-section-content-col-1
-                    .snp-welcome-section-content-row-2
-                        gap: 45px
-                        .col-12
-                            button
-                                width: 114px
-                                height: 33px
-                            .snp-welcome-section-content-high-br
-                                display: none
-                            .snp-welcome-section-content-middle-br
-                                display: none
-                            .snp-welcome-section-content-mobile-br
-                                display: block
+    .stories-section
+        .card   
+            -webkit-background-size: 250% 100%
+            -moz-background-size: 250% 100%
+            -o-background-size: 250% 100%
+            background-size: 250% 100%
+        .card:hover
+            -webkit-background-size: 250%*1.2 100%*1.2
+            -moz-background-size: 250%*1.2 100%*1.2
+            -o-background-size: 250%*1.2 100%*1.2
+            background-size: 250%*1.2 100%*1.2
 
-    .snp-createTour-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        padding: 20px
-                        border-radius: 30px
-                        .card-body
-                            .card-button
-                                .card-button-row
-                                    .card-button-row-col-3
-                                        flex-direction: column
-                                        gap: 10px
-
-    .snp-stories-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card   
-                        -webkit-background-size: 250% 100%
-                        -moz-background-size: 250% 100%
-                        -o-background-size: 250% 100%
-                        background-size: 250% 100%
-                    .card:hover
-                        -webkit-background-size: 250%*1.2 100%*1.2
-                        -moz-background-size: 250%*1.2 100%*1.2
-                        -o-background-size: 250%*1.2 100%*1.2
-                        background-size: 250%*1.2 100%*1.2
-
-    .snp-container-footer
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        .snp-container-footer-row
-                            .snp-container-footer-col-1
-                                img
-                                    width: 220px
-                                    height: 220px
-                                    border-radius: 30px
+    .footer-container
+        .footer-card
+            &__column-1
+                img
+                    width: 220px
+                    height: 220px
+                    border-radius: 30px
 
 @include mobile-m
-    .snp-container
+    .container
         padding-top: 75px
-        .snp-container-content
-            .snp-container-content-row
-                gap: 40px
-                .snp-container-content-nav
-                    gap: 20px
+    .content-row
+        gap: 40px
+    .navigation
+        gap: 20px
 
-    .snp-header-wrapper
+    .header
         padding: 0 20px
-        .snp-header
-            .row
-                .col-12
-                    gap: 63px
-                    svg
-                        width: 133px
-                        height: 22px
+        &__content
+            // gap: 63px
+            gap: 30px
+            svg
+                width: 133px
+                height: 22px
 
-    .snp-welcome-section
+    .welcome-section
         height: 488px
-        .snp-welcome-section-content
-            .snp-welcome-section-content-row-1
-                padding-bottom: 52px
-                gap: 52px
-                .snp-welcome-section-content-col-1
-                    .snp-welcome-section-content-row-2
-                        width: 100%
-                        gap: 40px
-                        button
-                            width: 114px
-                            height: 33px
-                        .snp-welcome-section-content-high-br
-                            display: none
-                        .snp-welcome-section-content-middle-br
-                            display: none
-                        .snp-welcome-section-content-mobile-br
-                            display: block
+        &__row
+            padding-bottom: 52px
+            gap: 52px
+        &__content
+            width: 100%
+            gap: 40px
+            button
+                width: 114px
+                height: 33px
+        high-br
+            display: none
+        middle-br
+            display: none
+        mobile-br
+            display: block
 
-    .snp-tours-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-nav
-                    .nav
-                        gap: 10px
-                        button:hover
-                            text-underline-offset: 4px
-                            text-decoration-skip-ink: none
-                .snp-container-content-cards
-                    .row
-                        gap: 18px 0
-                        .snp-container-content-cards-col
-                            width: 318px
-                            .card
-                                height: 318px
-                                -webkit-background-size: 105% 145%
-                                -moz-background-size: 105% 145%
-                                -o-background-size: 105% 145%
-                                background-size: 105% 145%
-                                border-radius: 20px
-                            .card:hover
-                                -webkit-background-size: 105%*1.2 145%*1.2
-                                -moz-background-size: 105%*1.2 145%*1.2
-                                -o-background-size: 105%*1.2 145%*1.2
-                                background-size: 105%*1.2 145%*1.2
-                                .card-gradient
-                                    .card-body
-                                        .card-button
-                                            button
-                                                background-color: #00000000
-                            .card:active
-                                .card-gradient
-                                    .card-body
-                                        .card-button
-                                            button
-                                                background-color: #00000000
-                            .card-gradient
-                                padding: 0
-                                border-radius: 20px
-                                .card-body
-                                    padding: 25px
-                                    .card-title
-                                        margin: 0
-                                        gap: 13px
-                                    .card-button
-                                        button
-                                            padding: 0
-                                            margin: 0
-
-    .snp-createTour-section
-        .snp-container-content
-            .snp-container-content-row
-                .form
-                    .snp-container-content-cards
-                        .card
-                            width: 318px
-                            padding: 20px
-                            border-radius: 30px
-                            .card-body
-                                gap: 30px
-                                .card-input
-                                    gap: 30px
-                                    .row
-                                        flex-direction: column
-                                        gap: 30px
-                                        .snp-container-content-cards-col
-                                            input
-                                                height: 46px 
-                                                padding: 10px
-                                            input::placeholder
-                                                color: var(--text-color-3)
-                                            textarea
-                                                height: 132px
-                                                padding: 10px
-                                            select
-                                                height: 46px 
-                                                padding: 10px
-                                            .card-input-select-box-img
-                                                padding: 0 10px
-                                                .card-input-select-img
-                                                    margin-top: 30.71px+10px
-                                .card-button
-                                    .card-button-row
-                                        gap: 30px
-                                        input
-                                            width: 20px
-                                            height: 20px
-                                        .card-button-row-col-1
-                                            .card-button-row-col-1-radioBtn
-                                                gap: 30px
-                                                .input
-                                                    gap: 10px
-                                        .card-button-row-col-2
-                                            gap: 10px
-                                            .card-button-br-1, .card-button-br-2
-                                                display: block
-                                        .card-button-row-col-3
-                                            gap: 10px
-                                            button
-                                                width: 124px
-                                                height: 37px
-                                                padding: 12px 29.5px
-
-    .snp-review-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .snp-container-content-cards-row
-                        flex-direction: column
-                        width: 100%
-                        .snp-container-content-cards-col
-                            width: 318px
-                            .card
-                                padding: 20px
-                                border-radius: 20px
-
-    .snp-gallery-section
-        .snp-container-content
-            padding: 0 21px
-            .snp-container-content-row
-                .snp-container-content-cards
+    .tours-section
+        .navigation
+            &__nav
+                gap: 10px
+                button:hover
+                    text-underline-offset: 4px
+                    text-decoration-skip-ink: none
+        .card-container
+            &__row
+                gap: 18px 0
+            &__column
+                width: 318px
+        .card
+            height: 318px
+            -webkit-background-size: 105% 145%
+            -moz-background-size: 105% 145%
+            -o-background-size: 105% 145%
+            background-size: 105% 145%
+            border-radius: 20px
+            &__gradient
+                padding: 0
+                border-radius: 20px
+            &__body
+                padding: 25px
+            &__title
+                margin: 0
+                gap: 13px
+            &__button
+                button
                     padding: 0
-                    gap: 18px
-                    .row
-                        gap: 18px
-                        .col
-                            min-height: 110px
-                            border-radius: 20px 
-                        .row-1-photo-3
-                            display: none
-                        .row-2-photo-2
-                            display: none
-                        .row-3-photo-3
-                            display: none
+                    margin: 0
 
-    .snp-stories-section
-        .snp-container-content
-            .snp-container-content-row
-                .snp-container-content-cards
-                    gap: 20px
-                    .card
-                        width: 318px
-                        height: 455px
-                        -webkit-background-size: 300% 100%
-                        -moz-background-size: 300% 100%
-                        -o-background-size: 300% 100%
-                        background-size: 300% 100%
-                        border-radius: 20px
-                        .card-gradient
-                            border-radius: 20px
-                            .card-body
-                                .card-title
-                                    padding: 30px 25px 0 30px
-                                    gap: 20px
-                                    .snp-stories-section-content-mobile-br
-                                        display: none
-                                .card-button
-                                    padding: 0 0 31.5px 25px
-                                    .row
-                                        button
-                                            padding: 0
-                                            margin: 0
-                                        .card-button-col-2
-                                            display: none
-                    .card:hover
-                        -webkit-background-size: 300%*1.2 100%*1.2
-                        -moz-background-size: 300%*1.2 100%*1.2
-                        -o-background-size: 300%*1.2 100%*1.2
-                        background-size: 300%*1.2 100%*1.2
-                        button
-                            background-color: #00000000
+    .createTour-section
+        .card
+            width: 318px
+            padding: 20px
+            border-radius: 30px
+            &__body
+                gap: 30px
+        .input-container
+            gap: 30px
+            &__row
+                flex-direction: column
+                gap: 30px
+            &__column
+                input
+                    height: 46px 
+                    padding: 10px
+                input::placeholder
+                    color: var(--text-color-3)
+                textarea
+                    height: 132px
+                    padding: 10px
+                select
+                    height: 46px 
+                    padding: 10px
+            &__select_image
+                padding: 0 10px
+            &__span_image
+                margin-top: 30.71px+10px
+        .button-container
+            &__row
+                gap: 30px
+                input
+                    width: 20px
+                    height: 20px
+            &__radio-content
+                gap: 30px
+                .input
+                    gap: 10px
+            &__column-2
+                gap: 10px
+            &__column-3
+                gap: 10px
+                button
+                    width: 124px
+                    height: 37px
+                    padding: 12px 29.5px
 
-    .snp-container-footer
-        .snp-container-content
+    .review-section
+        .card-container
+            &__row
+                flex-direction: column
+                width: 100%
+            &__column
+                width: 318px
+        .card
+            padding: 20px
+            border-radius: 20px
+
+    .gallery-section
+        &__content
+            padding: 0 21px
+        .card-container
+            padding: 0
+            gap: 18px
+            &__row
+                gap: 18px
+            &__column
+                min-height: 110px
+                border-radius: 20px 
+            .row-1-photo-3
+                display: none
+            .row-2-photo-2
+                display: none
+            .row-3-photo-3
+                display: none
+
+    .stories-section
+        .card-container
+            gap: 20px
+        .card
+            width: 318px
+            height: 455px
+            -webkit-background-size: 300% 100%
+            -moz-background-size: 300% 100%
+            -o-background-size: 300% 100%
+            background-size: 300% 100%
+            border-radius: 20px
+            &__gradient
+                border-radius: 20px
+            &__title
+                padding: 30px 25px 0 30px
+            gap: 20px
+        .mobile-br
+            display: none
+        .button-container
+            padding: 0 0 31.5px 25px
+            &__row
+                button
+                    padding: 0
+                    margin: 0
+            &__column-2
+                display: none
+        .card:hover
+            -webkit-background-size: 300%*1.2 100%*1.2
+            -moz-background-size: 300%*1.2 100%*1.2
+            -o-background-size: 300%*1.2 100%*1.2
+            background-size: 300%*1.2 100%*1.2
+            button
+                background-color: #00000000
+
+    .footer-container
+        &__content
             margin: 0
-            .snp-container-content-row
-                .snp-container-content-cards
-                    .card
-                        width: 291px
-                        .snp-container-footer-row
-                            flex-direction: column
-                            .snp-container-footer-col-1
-                                img
-                                    width: 130px
-                                    height: 133px
-                                    border-radius: 20px
-                            .snp-container-footer-col-2
-                                .card-body
-                                    width: 100%
-                                    padding: 0
+        .footer-card
+            width: 291px
+            &__row
+                flex-direction: column
+            &__column-1
+                img
+                    width: 130px
+                    height: 133px
+                    border-radius: 20px
+            &__body
+                width: 100%
+                padding: 0
 
-    .snp-footer-wrapper
+    .footer
         height: 95px
         margin: 75px 0 0 0
         padding: 21px 21.5px
-        .snp-footer
-            .row
-                width: 100%
-                gap: 7px
-                .snp-footer-col-1
-                    margin: 0
-                .snp-footer-col-2
-                    .snp-footer-links
-                        gap: 15px
-                        .snp-footer-links-text
-                            svg
-                                width: 20px
-                                height: 20px
+        &__row
+            width: 100%
+            gap: 7px
+        &__column-1
+            margin: 0
+        &__links-content
+            gap: 15px
+        &__link
+            a
+                gap: 5px
+            svg
+                width: 20px
+                height: 20px
