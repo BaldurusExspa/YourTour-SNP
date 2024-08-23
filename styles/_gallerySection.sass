@@ -1,30 +1,31 @@
-.snp-gallery-section
-    .snp-container-content
+.gallery-section
+    padding-top: 135px
+    &__content
         width: 100%
         padding: 0 30px
-        .snp-container-content-row
+    .content-row
+        width: 100%
+    .card-container
+        display: flex
+        justify-content: center
+        flex-direction: column
+        gap: 30px
+        &__row
+            display: flex
+            justify-content: flex-start
+            height: auto
+            gap: 30px
+        &__column
+            display: flex
+            justify-content: center
+            align-items: center
             width: 100%
-            .snp-container-content-cards
-                display: flex
-                justify-content: center
-                flex-direction: column
-                gap: 30px
-                .row
-                    display: flex
-                    justify-content: flex-start
-                    height: auto
-                    gap: 30px
-                    .col
-                        display: flex
-                        justify-content: center
-                        align-items: center
-                        width: 100%
-                        min-height: 301px
-                        padding: 0
-                        -webkit-background-size: cover
-                        -moz-background-size: cover
-                        -o-background-size: cover
-                        background-size: cover
-                        background-repeat: no-repeat
-                        background-position: center center
-                        border-radius: 50px
+            min-height: 301px
+            padding: 0
+            -webkit-background-size: cover
+            -moz-background-size: cover
+            -o-background-size: cover
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center center
+            border-radius: 50px
