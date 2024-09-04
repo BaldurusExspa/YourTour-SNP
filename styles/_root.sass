@@ -9,6 +9,10 @@
 
 $media: screen
 
+@mixin bigscreen
+    @media #{$media} and (max-width: 1440px)
+        @content
+
 @mixin midscreen
     @media #{$media} and (max-width: 1200px)
         @content

@@ -15,6 +15,13 @@
     flex-direction: column
     align-items: center
 
+@include bigscreen
+    .createTour-section
+        &__form
+            width: 100%
+        .card
+            width: 100%
+
 @include midscreen
     .content-row
         width: 918px
@@ -24,6 +31,25 @@
             gap: 62px
         &__nav
             gap: 40px
+
+    .tours-section
+        .card-container
+            grid-template-rows: auto auto auto
+            grid-template-columns: auto auto
+
+    .createTour-section
+        &__form
+            width: 100%
+        .card
+            width: 100%
+            padding: 65px
+        .input-container
+            &__row
+                gap: 20px
+        .button-container
+            &__checkbox-label
+                p
+                    margin: 0 0 0 26px+11px
 
     .review-section
         .card
@@ -72,13 +98,10 @@
             display: none
 
     .tours-section
-        &__content
-            margin: 0
         &__row
             width: 100%
         .card-container
-            &__row
-                gap: 18px 18px
+            gap: 18px
             &__column
                 width: 450px
             .card
@@ -93,19 +116,17 @@
                 background-size: 100%*1.2 120%*1.2
 
     .createTour-section
-        &__content
-            margin: 0
         .card
             padding: 60px
-            .input-container
-                &__row
-                    gap: 0 20px
-            .button-container
-                &__column-2
-                    gap: 11px
-                &__checkbox-label
-                    p
-                        margin-left: 26px+11px
+        .input-container
+            &__row
+                gap: 0 20px
+        .button-container
+            &__column-2
+                gap: 11px
+            &__checkbox-label
+                p
+                    margin-left: 26px+11px
 
     .review-section
         &__content
@@ -159,11 +180,21 @@
         &__nav-item
             display: none
 
+    .tours-section
+        .card-container
+            grid-template-rows: auto
+            grid-template-columns: auto
+
     .createTour-section
         &__content
             min-width: 100%
         .card
             padding: 40px
+        .input-container
+            input,
+            select,
+            textarea
+                padding: 15px
         .button-container
             &__column-3
                 justify-content: center
@@ -199,6 +230,8 @@
                 h3,
                 p
                     text-align: center
+            &__column-2
+                justify-content: center
 
     .footer
         &__row
@@ -220,6 +253,9 @@
         height: 778px
 
     .createTour-section
+        .card
+            padding: 30px
+            border-radius: 35px
         .input-container
             &__row
                 flex-direction: column
@@ -227,10 +263,9 @@
             &__column
                 input,
                 select
-                    height: 59px
                     padding: 15px
                 textarea
-                    height: 142px
+                    height: 112px
                     padding: 15px
             &__select-image
                 margin-top: 36.4px+16px
@@ -358,7 +393,6 @@
         gap: 20px
 
     .header
-        padding: 0 20px
         &__content
             // gap: 63px
             gap: 30px
@@ -545,7 +579,7 @@
     .footer
         height: 95px
         margin: 75px 0 0 0
-        padding: 21px 21.5px
+        // padding: 21px 21.5px
         &__row
             width: 100%
             gap: 7px
