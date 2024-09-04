@@ -1,59 +1,74 @@
 .createTour-section
-    &__row
-        padding: 0
-    .createTour-form
-        padding: 0
     .card-container
         display: flex
         justify-content: center
         align-items: center
-        padding: 0
     .card
+        position: relative
         display: flex
         justify-content: center
         align-items: center
-        position: relative
-        color: var(--text-color-2)
         width: 1170px
+        padding: 70px
+        color: var(--text-color-2)
+        background-color: #fff
         border: none
         border-radius: 50px
-        padding: 70px
         &__body
             display: flex
             flex-direction: column
-            padding: 0
             width: 100%
             gap: 33px
     .input-container
         display: flex
+        flex-direction: column
         justify-content: center
         align-items: center
-        flex-direction: column
+        width: 100%
         gap: 33px
+        label,
+        textarea,
+        input,
+        select,
+        option
+            text-align: left
+            color: var(--text-color-2)
         &__row
             display: flex
-            flex-direction: row
+            // grid-template-columns: auto auto
+            // grid-template-rows: auto auto auto auto
+            width: 100%
             gap: 30px
-        &__column
+        &__comment
+            position: relative
             display: flex
             flex-direction: column
-            position: relative
+            width: 100%
             gap: 8px
-            padding: 0
-            label,
-            textarea,
-            input,
-            select,
-            option
-                text-align: left
-                color: var(--text-color-2)
-            input
-                width: 100%
-                height: 68px
+            textarea
+                height: 152px
+                padding: 20px
                 background-color: var(--input-color-1)
                 border-radius: 10px
                 border: 1px solid var(--input-border-color-1)
+                resize: none
+            textarea:focus
+                outline: 1px solid var(--text-color-3)
+            textarea:hover
+                border: 1px solid var(--input-border-color-1)
+                background-color: var(--input-border-color-1)
+                cursor: pointer
+        &__column
+            position: relative
+            display: flex
+            flex-direction: column
+            width: 100%
+            gap: 8px
+            input
                 padding: 20px
+                background-color: var(--input-color-1)
+                border-radius: 10px
+                border: 1px solid var(--input-border-color-1)
             input::placeholder
                 color: var(--text-color-3)
             input:focus
@@ -62,25 +77,12 @@
                 border: 1px solid var(--input-border-color-1)
                 background-color: var(--input-border-color-1)
                 cursor: pointer
-            textarea
-                background-color: var(--input-color-1)
-                border-radius: 10px
-                border: 1px solid var(--input-border-color-1)
-                padding: 20px
-                height: 152px
-            textarea:focus
-                outline: 1px solid var(--text-color-3)
-            textarea:hover
-                border: 1px solid var(--input-border-color-1)
-                background-color: var(--input-border-color-1)
-                cursor: pointer
             select
                 width: 100%
-                height: 68px
+                padding: 20px
                 background-color: var(--input-color-1)
                 border-radius: 10px
                 border: 1px solid var(--input-border-color-1)
-                padding: 20px
                 appearance: none
             select:hover
                 border: 1px solid var(--input-border-color-1)
@@ -99,22 +101,22 @@
             position: absolute
             width: 100%
             height: 100%
-            padding: 0 20px
         &__span-image
             margin-top: 36.4px+21px
+            padding: 0 20px 0 0
     .button-container
         display: flex
         justify-content: center
-        align-items: center
+        align-items: flex-start
         flex-direction: column
         &__row
             display: flex
-            flex-direction: row
+            flex-direction: column
+            width: 100%
             gap: 33px
         &__column-1
             display: flex
             flex-direction: column
-            padding: 0
             gap: 8px
             p,
             label
@@ -123,7 +125,6 @@
         &__radio-content
             display: flex
             gap: 31px
-            padding: 0
         &__button-input
             display: flex
             justify-content: center
@@ -137,14 +138,15 @@
             -ms-user-select: none
             user-select: none
             label
-                color: var(--text-color-2)
                 margin-left: 11px+26px
+                color: var(--text-color-2)
             input
                 position: absolute
-                opacity: 0
-                cursor: pointer
                 height: 0
                 width: 0
+                opacity: 0
+                cursor: pointer
+                
         &__radio-button
             position: absolute
             top: 0
@@ -174,7 +176,6 @@
             display: flex
             flex-direction: row
             align-items: center
-            padding: 0
             gap: 19px
         &__checkbox-label
             position: relative
@@ -188,8 +189,8 @@
             p
                 margin: 0 0 0 26px+19px
                 text-align: left
-                span
-                    color: var(--text-color-2)
+            span
+                color: var(--text-color-2)
             span:hover
                 text-decoration: underline var(--text-color-2)
                 text-underline-offset: 2px
@@ -229,13 +230,12 @@
             display: block
             justify-content: center
             align-items: center
-            height: 26px
+            // height: 26px
         &__column-3
             display: flex
             flex-direction: row
             justify-content: flex-start
             align-items: center
-            padding: 0
             gap: 30px
             button
                 width: 235px

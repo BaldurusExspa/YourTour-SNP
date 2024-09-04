@@ -32,6 +32,7 @@
         text-decoration: underline var(--text-color-1)
         text-underline-offset: 7px
     &__nav
+        display: flex
         gap: 50px
 
 @keyframes fixed-header
@@ -49,13 +50,12 @@
     background: rgba(243, 239, 232, 0.6)
     backdrop-filter: blur(10px)
     animation: fixed-header .3s
-    .col-12
-        a,
-        p,
-        svg
-            color: var(--text-color-2)
-            fill: var(--text-color-2)
-        a:hover
-            text-decoration: underline var(--text-color-2)
-            text-underline-offset: 7px
-            text-decoration-skip-ink: none
+    a,
+    p,
+    svg
+        color: var(--text-color-2)
+        fill: var(--text-color-2)
+    a:hover
+        text-decoration: underline var(--text-color-2)
+        text-underline-offset: 7px
+        text-decoration-skip-ink: none
