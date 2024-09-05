@@ -1924,7 +1924,11 @@
     padding: 15px;
   }
   .createTour-section .input-container__select-image {
+    height: 60px;
     margin-top: 52.4px;
+  }
+  .createTour-section .input-container__span-image {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 769px) and (max-width: 571px) {
